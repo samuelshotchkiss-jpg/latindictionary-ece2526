@@ -80,10 +80,7 @@
         .result-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; margin-bottom: 15px; }
         .result-header h2 { margin: 0; color: var(--accent-color); font-size: 1.8em; word-break: break-word; }
         
-        /* The button is inside the header on desktop */
         .result-header #add-to-list-btn { flex-shrink: 0; }
-        
-        /* By default, the bottom button container is hidden */
         .result-footer { display: none; }
 
         #result-display p { font-size: 1.1em; line-height: 1.6; margin-top: 0; }
@@ -112,7 +109,6 @@
         .study-list-frequency { color: #888; font-size: 0.8em; font-style: italic; margin-top: 6px; }
         .remove-from-list-btn { background: none; border: none; color: var(--danger-color); cursor: pointer; font-size: 1.5em; font-weight: bold; padding: 0 5px; }
 
-        /* --- MOBILE OPTIMIZATIONS --- */
         #toggle-word-wheel-btn, #close-word-wheel-btn { display: none; }
         #mobile-menu-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 3999; }
 
@@ -136,13 +132,19 @@
             #result-display { padding: 20px; }
             #result-display p { font-size: 1em; }
 
-            /* MODIFIED: Move button to footer on mobile */
             .result-header #add-to-list-btn { display: none; }
             .result-footer { display: block; text-align: center; margin-top: 25px; }
             .result-footer #add-to-list-btn { width: 100%; }
             
-            /* MODIFIED: Adjust headword font size on mobile */
+            /* MODIFIED: Font size of headword on mobile */
             .result-header h2 { font-size: 1.1em; font-weight: bold; }
+            
+            /* MODIFIED: Styling for the 'My Study List' button on mobile */
+            #view-study-list-btn {
+                background-color: var(--accent-color);
+                color: var(--accent-text-color);
+                border-radius: 8px; /* More rectangular */
+            }
 
             .modal-content { width: 95%; height: 85vh; max-height: 90vh; }
         }
@@ -161,13 +163,14 @@
         </aside>
 
         <main id="main-content">
+            <!-- MODIFIED: Order of buttons changed for mobile stacking -->
             <div class="top-controls">
-                <button id="toggle-word-wheel-btn" class="btn btn-secondary">&#9776; Show Word List</button>
+                <button id="view-study-list-btn" class="btn btn-secondary">My Study List</button>
                 <div class="search-wrapper">
                     <input type="text" id="search-input" placeholder="Type a Latin word...">
                     <div id="suggestions-list"></div>
                 </div>
-                <button id="view-study-list-btn" class="btn btn-secondary">My Study List</button>
+                <button id="toggle-word-wheel-btn" class="btn btn-secondary">&#9776; Show Word List</button>
             </div>
             
             <div id="result-display">
@@ -582,7 +585,7 @@
 "discō discere didicī","to learn",4
 "eō īre iī/īvī itum","to go",4
 "ēripiō ēripere ēripuī ēreptus","to snatch away, rescue",4
-"etenim","for, and indeed",4
+"etenim","for, and in fact",4
 "etiamsī","even if, although",4
 "exeō exīre exīvī/exiī exitus","to go out, exit",4
 "familia familiae f.","family, household",4
@@ -2111,6 +2114,8 @@
             const closeWordWheelBtn = document.getElementById('close-word-wheel-btn');
             const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
             
+            // --- Functions ---
+            
             function setCookie(name, value, days) {
                 let expires = "";
                 if (days) {
@@ -2167,7 +2172,6 @@
                 wordWheel.appendChild(fragment);
             }
 
-            /** MODIFIED: displayWordDetails now uses the new header and footer structure **/
             function displayWordDetails(word) {
                 if (!word) {
                     resultDisplay.innerHTML = `<div class="placeholder-text"><p>Word not found.</p></div>`;
@@ -2190,8 +2194,7 @@
                         ${buttonHtml}
                     </div>
                 `;
-
-                // Add event listener to both buttons (only one is visible at a time)
+                
                 resultDisplay.querySelectorAll('#add-to-list-btn').forEach(btn => {
                     btn.addEventListener('click', () => {
                         if (isSaved) removeFromStudyList(word.latin);
@@ -2268,9 +2271,9 @@
                 studyListModal.style.display = 'flex';
             }
 
+            /** MODIFIED: generateTSVContent no longer includes a header **/
             function generateTSVContent() {
-                const header = "Latin Word\tEnglish Definition\tFrequency\n";
-                return header + studyList.map(latinWord => {
+                return studyList.map(latinWord => {
                     const word = vocabulary.find(w => w.latin === latinWord);
                     return word ? [word.latin, word.definition, word.frequency].join('\t') : '';
                 }).filter(Boolean).join('\n');
@@ -2318,10 +2321,17 @@
                 const reader = new FileReader();
                 reader.onload = function(event) {
                     const content = event.target.result;
-                    const lines = content.trim().split('\n').slice(1);
+                    // Now handles files both with and without headers
+                    const lines = content.trim().split('\n');
+                    const firstLineCols = lines[0].split('\t');
+                    // Simple check if the first line is likely a header
+                    const hasHeader = firstLineCols[0].toLowerCase().includes('latin') || firstLineCols[0].toLowerCase().includes('word');
+                    const dataLines = hasHeader ? lines.slice(1) : lines;
+                    
                     const newList = [];
                     const allLatinWords = new Set(vocabulary.map(v => v.latin));
-                    lines.forEach(line => {
+                    
+                    dataLines.forEach(line => {
                         const latinWord = line.split('\t')[0].trim();
                         if (latinWord && allLatinWords.has(latinWord)) {
                             newList.push(latinWord);
