@@ -39,7 +39,7 @@
             flex-direction: column;
             height: 100%;
             transition: transform 0.3s ease-in-out;
-            z-index: 4000; /* High z-index for mobile overlay */
+            z-index: 4000;
         }
         #word-wheel-title { padding: 20px; font-size: 1.2em; font-weight: bold; border-bottom: 1px solid var(--border-color); color: var(--accent-color); text-align: center; }
         #word-wheel { list-style: none; padding: 0; margin: 0; overflow-y: auto; flex-grow: 1; }
@@ -79,7 +79,12 @@
         
         .result-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; margin-bottom: 15px; }
         .result-header h2 { margin: 0; color: var(--accent-color); font-size: 1.8em; word-break: break-word; }
-        #add-to-list-btn { flex-shrink: 0; }
+        
+        /* The button is inside the header on desktop */
+        .result-header #add-to-list-btn { flex-shrink: 0; }
+        
+        /* By default, the bottom button container is hidden */
+        .result-footer { display: none; }
 
         #result-display p { font-size: 1.1em; line-height: 1.6; margin-top: 0; }
         #result-display .frequency { font-size: 0.9em; color: #777; margin-top: 20px; font-style: italic; }
@@ -113,43 +118,31 @@
 
         @media (max-width: 768px) {
             #word-wheel-container {
-                position: fixed;
-                left: 0;
-                top: 0;
-                height: 100%;
-                width: 80vw;
-                max-width: 280px;
-                transform: translateX(-100%);
-                border-right: 2px solid var(--border-color);
+                position: fixed; left: 0; top: 0; height: 100%; width: 80vw; max-width: 280px;
+                transform: translateX(-100%); border-right: 2px solid var(--border-color);
             }
-            #word-wheel-container.mobile-visible {
-                transform: translateX(0);
-            }
+            #word-wheel-container.mobile-visible { transform: translateX(0); }
             
             #toggle-word-wheel-btn { display: block; text-align: center; }
             #close-word-wheel-btn { display: block; position: absolute; top: 10px; right: 5px; font-size: 1.5em; padding: 5px 10px; }
 
             #main-content { padding: 15px; }
 
-            /* MODIFIED: Stack top controls vertically */
-            .top-controls {
-                flex-direction: column;
-                align-items: stretch; /* Make items full width */
-                margin-bottom: 20px;
-                gap: 10px;
-            }
+            .top-controls { flex-direction: column; align-items: stretch; margin-bottom: 20px; gap: 10px; }
             
-            /* MODIFIED: Enlarge touch targets */
-            #search-input, .btn {
-                padding-top: 15px;
-                padding-bottom: 15px;
-                font-size: 1.1em;
-            }
+            #search-input, .btn { padding-top: 15px; padding-bottom: 15px; font-size: 1.1em; }
             #suggestions-list div { padding: 15px 20px; font-size: 1.1em; }
 
-            .result-header h2 { font-size: 1.5em; }
             #result-display { padding: 20px; }
             #result-display p { font-size: 1em; }
+
+            /* MODIFIED: Move button to footer on mobile */
+            .result-header #add-to-list-btn { display: none; }
+            .result-footer { display: block; text-align: center; margin-top: 25px; }
+            .result-footer #add-to-list-btn { width: 100%; }
+            
+            /* MODIFIED: Adjust headword font size on mobile */
+            .result-header h2 { font-size: 1.1em; font-weight: bold; }
 
             .modal-content { width: 95%; height: 85vh; max-height: 90vh; }
         }
@@ -185,7 +178,6 @@
         </main>
     </div>
 
-    <!-- NEW: Mobile overlay for closing the menu -->
     <div id="mobile-menu-overlay"></div>
 
     <!-- Modals -->
@@ -2119,8 +2111,6 @@
             const closeWordWheelBtn = document.getElementById('close-word-wheel-btn');
             const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
             
-            // --- Functions ---
-            
             function setCookie(name, value, days) {
                 let expires = "";
                 if (days) {
@@ -2177,27 +2167,39 @@
                 wordWheel.appendChild(fragment);
             }
 
+            /** MODIFIED: displayWordDetails now uses the new header and footer structure **/
             function displayWordDetails(word) {
                 if (!word) {
                     resultDisplay.innerHTML = `<div class="placeholder-text"><p>Word not found.</p></div>`;
                     return;
                 }
                 const isSaved = studyList.includes(word.latin);
+                const buttonHtml = `
+                    <button id="add-to-list-btn" class="btn ${isSaved ? 'btn-danger' : 'btn-primary'}">
+                        ${isSaved ? 'Remove from List' : 'Add to List'}
+                    </button>`;
+                
                 resultDisplay.innerHTML = `
                     <div class="result-header">
                         <h2>${word.latin}</h2>
-                        <button id="add-to-list-btn" class="btn ${isSaved ? 'btn-danger' : 'btn-primary'}">
-                            ${isSaved ? 'Remove from List' : 'Add to List'}
-                        </button>
+                        ${buttonHtml}
                     </div>
                     <p>${word.definition}</p>
                     <div class="frequency">Frequency in Readings: ${word.frequency}</div>
+                    <div class="result-footer">
+                        ${buttonHtml}
+                    </div>
                 `;
-                document.getElementById('add-to-list-btn').addEventListener('click', () => {
-                    if (isSaved) removeFromStudyList(word.latin);
-                    else addToStudyList(word.latin);
-                    displayWordDetails(word);
+
+                // Add event listener to both buttons (only one is visible at a time)
+                resultDisplay.querySelectorAll('#add-to-list-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        if (isSaved) removeFromStudyList(word.latin);
+                        else addToStudyList(word.latin);
+                        displayWordDetails(word);
+                    });
                 });
+
                 updateWordWheelSelection(word.latin);
                 searchInput.value = word.latin;
                 suggestionsList.style.display = 'none';
@@ -2218,11 +2220,7 @@
                 const studyListSet = new Set(studyList);
                 const allWords = wordWheel.querySelectorAll('li');
                 allWords.forEach(li => {
-                    if (studyListSet.has(li.dataset.latin)) {
-                        li.classList.add('in-study-list');
-                    } else {
-                        li.classList.remove('in-study-list');
-                    }
+                    li.classList.toggle('in-study-list', studyListSet.has(li.dataset.latin));
                 });
             }
 
@@ -2237,11 +2235,10 @@
                 }
             }
             
-            function removeFromStudyList(latinWord) {
+            function removeFromStudyList(latinWord, refreshModal = false) {
                 studyList = studyList.filter(word => word !== latinWord);
                 saveStudyList();
-                const isModalOpen = studyListModal.style.display === 'flex';
-                if (isModalOpen) {
+                if (refreshModal) {
                     showStudyListModal();
                 }
             }
@@ -2365,7 +2362,6 @@
                     const wordObject = vocabulary.find(w => w.latin === latinWord);
                     if (wordObject) {
                         displayWordDetails(wordObject);
-                        // If on mobile, close the menu after selection
                         if (window.innerWidth <= 768) {
                             closeMobileMenu();
                         }
@@ -2373,7 +2369,6 @@
                 }
             }
             
-            // --- NEW Mobile Menu Functions ---
             function openMobileMenu() {
                 wordWheelContainer.classList.add('mobile-visible');
                 mobileMenuOverlay.style.display = 'block';
@@ -2419,7 +2414,6 @@
                 importFileInput.addEventListener('change', processImportFile);
                 copyListBtn.addEventListener('click', copyTSVToClipboard);
 
-                // Mobile menu toggles
                 toggleWordWheelBtn.addEventListener('click', openMobileMenu);
                 closeWordWheelBtn.addEventListener('click', closeMobileMenu);
                 mobileMenuOverlay.addEventListener('click', closeMobileMenu);
