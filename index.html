@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +15,7 @@
             --border-color: #dddddd;
             --shadow-color: rgba(0, 0, 0, 0.1);
             --danger-color: #c0392b;
-            --study-list-color: #27ae60; /* Color for highlighted words */
+            --study-list-color: #27ae60;
         }
 
         body {
@@ -39,6 +38,7 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            transition: transform 0.3s ease-in-out;
         }
         #word-wheel-title { padding: 20px; font-size: 1.2em; font-weight: bold; border-bottom: 1px solid var(--border-color); color: var(--accent-color); text-align: center; }
         #word-wheel { list-style: none; padding: 0; margin: 0; overflow-y: auto; flex-grow: 1; }
@@ -46,27 +46,11 @@
         #word-wheel li:hover { background-color: var(--accent-secondary); color: var(--accent-color); }
         #word-wheel li.selected { background-color: var(--accent-color); color: var(--accent-text-color); font-weight: bold; }
         
-        #word-wheel li.in-study-list {
-            color: var(--study-list-color);
-            font-weight: 600;
-        }
-        #word-wheel li.in-study-list.selected {
-             background-color: var(--accent-color);
-             color: var(--accent-text-color);
-        }
+        #word-wheel li.in-study-list { color: var(--study-list-color); font-weight: 600; }
+        #word-wheel li.in-study-list.selected { background-color: var(--accent-color); color: var(--accent-text-color); }
 
-        #wheel-legend {
-            padding: 15px;
-            font-size: 0.8em;
-            color: #777;
-            text-align: center;
-            border-top: 1px solid var(--border-color);
-            flex-shrink: 0;
-        }
-        #wheel-legend span {
-            color: var(--study-list-color);
-            font-weight: bold;
-        }
+        #wheel-legend { padding: 15px; font-size: 0.8em; color: #777; text-align: center; border-top: 1px solid var(--border-color); flex-shrink: 0; }
+        #wheel-legend span { color: var(--study-list-color); font-weight: bold; }
         
         #main-content {
             flex-grow: 1;
@@ -75,6 +59,7 @@
             flex-direction: column;
             align-items: center;
             height: 100%;
+            box-sizing: border-box;
             overflow-y: auto;
         }
         
@@ -88,16 +73,10 @@
         #suggestions-list div { padding: 12px 20px; cursor: pointer; }
         #suggestions-list div:hover { background-color: var(--primary-bg); }
         
-        #result-display { background-color: var(--secondary-bg); width: 100%; max-width: 600px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px var(--shadow-color); border: 1px solid var(--border-color); min-height: 150px; }
+        #result-display { background-color: var(--secondary-bg); width: 100%; max-width: 600px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px var(--shadow-color); border: 1px solid var(--border-color); min-height: 150px; box-sizing: border-box; }
         .placeholder-text { color: #999; text-align: center; font-size: 1.2em; padding: 40px 0; }
         
-        .result-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
+        .result-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; margin-bottom: 15px; }
         .result-header h2 { margin: 0; color: var(--accent-color); font-size: 1.8em; word-break: break-word; }
         #add-to-list-btn { flex-shrink: 0; }
 
@@ -111,12 +90,11 @@
         .btn-secondary:hover { background-color: #d1d9e9; }
         .btn-danger { background-color: var(--danger-color); color: white; }
 
-        /* Modal Styles */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 2000; justify-content: center; align-items: center; }
         .modal-content { background-color: white; padding: 30px; border-radius: 15px; max-width: 600px; width: 90%; max-height: 80vh; display: flex; flex-direction: column; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
         .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 15px; }
         .modal-header h2 { margin: 0; color: var(--accent-color); }
-        .modal-close { font-size: 1.5em; cursor: pointer; color: #aaa; background: none; border: none; }
+        .modal-close { font-size: 1.5em; cursor: pointer; color: #aaa; background: none; border: none; padding: 0 10px; }
         .modal-body { overflow-y: auto; line-height: 1.6; }
         .modal-footer { border-top: 1px solid var(--border-color); padding-top: 20px; margin-top: 20px; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 10px; }
         
@@ -127,12 +105,67 @@
         .study-list-definition { color: #555; font-size: 0.9em; margin-top: 4px; }
         .study-list-frequency { color: #888; font-size: 0.8em; font-style: italic; margin-top: 6px; }
         .remove-from-list-btn { background: none; border: none; color: var(--danger-color); cursor: pointer; font-size: 1.5em; font-weight: bold; padding: 0 5px; }
+
+        /* --- MOBILE OPTIMIZATIONS --- */
+        #toggle-word-wheel-btn, #close-word-wheel-btn { display: none; } /* Hide mobile buttons by default */
+
+        @media (max-width: 768px) {
+            #word-wheel-container {
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100%;
+                z-index: 3000;
+                transform: translateX(-100%); /* Hidden off-screen */
+                border-right: 2px solid var(--border-color);
+            }
+            #word-wheel-container.mobile-visible {
+                transform: translateX(0); /* Slide in */
+            }
+
+            #toggle-word-wheel-btn {
+                display: block;
+                font-size: 1.2em;
+                padding: 8px 12px;
+            }
+
+            #close-word-wheel-btn {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 5px;
+            }
+
+            #main-content {
+                padding: 20px;
+            }
+
+            .top-controls {
+                margin-bottom: 20px;
+            }
+
+            .result-header h2 {
+                font-size: 1.5em;
+            }
+
+            #result-display p {
+                font-size: 1em;
+            }
+
+            .modal-content {
+                width: 95%;
+                height: 85vh;
+                max-height: 90vh;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="app-container">
         <aside id="word-wheel-container">
+            <!-- NEW: Close button for mobile overlay -->
+            <button id="close-word-wheel-btn" class="modal-close">&times;</button>
             <div id="word-wheel-title">Vocabulary List</div>
             <ul id="word-wheel"></ul>
             <div id="wheel-legend">
@@ -142,11 +175,13 @@
 
         <main id="main-content">
             <div class="top-controls">
+                <!-- NEW: Toggle button for mobile -->
+                <button id="toggle-word-wheel-btn" class="btn btn-secondary">&#9776; Menu</button>
                 <div class="search-wrapper">
                     <input type="text" id="search-input" placeholder="Type a Latin word to search...">
                     <div id="suggestions-list"></div>
                 </div>
-                <button id="view-study-list-btn" class="btn btn-secondary">My Study List</button>
+                <button id="view-study-list-btn" class="btn btn-secondary">My List</button>
             </div>
             
             <div id="result-display">
@@ -185,7 +220,6 @@
             <div class="modal-footer">
                 <button id="import-list-btn" class="btn btn-secondary">Import TSV</button>
                 <input type="file" id="import-file-input" accept=".tsv,.txt" style="display: none;">
-                <!-- MODIFIED: Class changed to btn-primary -->
                 <button id="copy-list-btn" class="btn btn-primary">Copy to Clipboard</button>
                 <button id="download-list-btn" class="btn btn-primary">Download as TSV</button>
             </div>
@@ -560,7 +594,7 @@
 "discō discere didicī","to learn",4
 "eō īre iī/īvī itum","to go",4
 "ēripiō ēripere ēripuī ēreptus","to snatch away, rescue",4
-"etenim","for, and indeed",4
+"etenim","for, and in fact",4
 "etiamsī","even if, although",4
 "exeō exīre exīvī/exiī exitus","to go out, exit",4
 "familia familiae f.","family, household",4
@@ -2073,6 +2107,7 @@
             const suggestionsList = document.getElementById('suggestions-list');
             const resultDisplay = document.getElementById('result-display');
             const wordWheel = document.getElementById('word-wheel');
+            const wordWheelContainer = document.getElementById('word-wheel-container');
             const cookieNoticeModal = document.getElementById('cookie-notice-modal');
             const acknowledgeCookieBtn = document.getElementById('acknowledge-cookie-btn');
             const viewStudyListBtn = document.getElementById('view-study-list-btn');
@@ -2084,6 +2119,8 @@
             const importListBtn = document.getElementById('import-list-btn');
             const importFileInput = document.getElementById('import-file-input');
             const copyListBtn = document.getElementById('copy-list-btn');
+            const toggleWordWheelBtn = document.getElementById('toggle-word-wheel-btn');
+            const closeWordWheelBtn = document.getElementById('close-word-wheel-btn');
             
             // --- Functions ---
             
@@ -2329,7 +2366,13 @@
                 if (e.target && e.target.nodeName === "LI") {
                     const latinWord = e.target.dataset.latin;
                     const wordObject = vocabulary.find(w => w.latin === latinWord);
-                    if (wordObject) displayWordDetails(wordObject);
+                    if (wordObject) {
+                        displayWordDetails(wordObject);
+                        // If on mobile, close the menu after selection
+                        if (window.innerWidth <= 768) {
+                            wordWheelContainer.classList.remove('mobile-visible');
+                        }
+                    }
                 }
             }
 
@@ -2368,6 +2411,14 @@
                 importListBtn.addEventListener('click', handleImport);
                 importFileInput.addEventListener('change', processImportFile);
                 copyListBtn.addEventListener('click', copyTSVToClipboard);
+
+                // Mobile menu toggles
+                toggleWordWheelBtn.addEventListener('click', () => {
+                    wordWheelContainer.classList.add('mobile-visible');
+                });
+                closeWordWheelBtn.addEventListener('click', () => {
+                    wordWheelContainer.classList.remove('mobile-visible');
+                });
             }
 
             document.addEventListener('DOMContentLoaded', initialize);
@@ -2375,4 +2426,3 @@
     </script>
 </body>
 </html>
-
