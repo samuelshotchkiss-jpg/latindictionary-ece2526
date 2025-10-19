@@ -28,7 +28,7 @@
             overflow: hidden;
         }
 
-        .app-container { display: flex; width: 100%; height: 100%; }
+        .app-container { display: flex; width: 100%; height: 100%; position: relative; }
 
         #word-wheel-container {
             flex: 0 0 280px;
@@ -39,6 +39,7 @@
             flex-direction: column;
             height: 100%;
             transition: transform 0.3s ease-in-out;
+            z-index: 4000; /* High z-index for mobile overlay */
         }
         #word-wheel-title { padding: 20px; font-size: 1.2em; font-weight: bold; border-bottom: 1px solid var(--border-color); color: var(--accent-color); text-align: center; }
         #word-wheel { list-style: none; padding: 0; margin: 0; overflow-y: auto; flex-grow: 1; }
@@ -90,7 +91,7 @@
         .btn-secondary:hover { background-color: #d1d9e9; }
         .btn-danger { background-color: var(--danger-color); color: white; }
 
-        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 2000; justify-content: center; align-items: center; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 5000; justify-content: center; align-items: center; }
         .modal-content { background-color: white; padding: 30px; border-radius: 15px; max-width: 600px; width: 90%; max-height: 80vh; display: flex; flex-direction: column; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
         .modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 15px; }
         .modal-header h2 { margin: 0; color: var(--accent-color); }
@@ -107,7 +108,8 @@
         .remove-from-list-btn { background: none; border: none; color: var(--danger-color); cursor: pointer; font-size: 1.5em; font-weight: bold; padding: 0 5px; }
 
         /* --- MOBILE OPTIMIZATIONS --- */
-        #toggle-word-wheel-btn, #close-word-wheel-btn { display: none; } /* Hide mobile buttons by default */
+        #toggle-word-wheel-btn, #close-word-wheel-btn { display: none; }
+        #mobile-menu-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 3999; }
 
         @media (max-width: 768px) {
             #word-wheel-container {
@@ -115,48 +117,41 @@
                 left: 0;
                 top: 0;
                 height: 100%;
-                z-index: 3000;
-                transform: translateX(-100%); /* Hidden off-screen */
+                width: 80vw;
+                max-width: 280px;
+                transform: translateX(-100%);
                 border-right: 2px solid var(--border-color);
             }
             #word-wheel-container.mobile-visible {
-                transform: translateX(0); /* Slide in */
+                transform: translateX(0);
             }
+            
+            #toggle-word-wheel-btn { display: block; text-align: center; }
+            #close-word-wheel-btn { display: block; position: absolute; top: 10px; right: 5px; font-size: 1.5em; padding: 5px 10px; }
 
-            #toggle-word-wheel-btn {
-                display: block;
-                font-size: 1.2em;
-                padding: 8px 12px;
-            }
+            #main-content { padding: 15px; }
 
-            #close-word-wheel-btn {
-                display: block;
-                position: absolute;
-                top: 10px;
-                right: 5px;
-            }
-
-            #main-content {
-                padding: 20px;
-            }
-
+            /* MODIFIED: Stack top controls vertically */
             .top-controls {
+                flex-direction: column;
+                align-items: stretch; /* Make items full width */
                 margin-bottom: 20px;
+                gap: 10px;
             }
+            
+            /* MODIFIED: Enlarge touch targets */
+            #search-input, .btn {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: 1.1em;
+            }
+            #suggestions-list div { padding: 15px 20px; font-size: 1.1em; }
 
-            .result-header h2 {
-                font-size: 1.5em;
-            }
+            .result-header h2 { font-size: 1.5em; }
+            #result-display { padding: 20px; }
+            #result-display p { font-size: 1em; }
 
-            #result-display p {
-                font-size: 1em;
-            }
-
-            .modal-content {
-                width: 95%;
-                height: 85vh;
-                max-height: 90vh;
-            }
+            .modal-content { width: 95%; height: 85vh; max-height: 90vh; }
         }
     </style>
 </head>
@@ -164,7 +159,6 @@
 
     <div class="app-container">
         <aside id="word-wheel-container">
-            <!-- NEW: Close button for mobile overlay -->
             <button id="close-word-wheel-btn" class="modal-close">&times;</button>
             <div id="word-wheel-title">Vocabulary List</div>
             <ul id="word-wheel"></ul>
@@ -175,13 +169,12 @@
 
         <main id="main-content">
             <div class="top-controls">
-                <!-- NEW: Toggle button for mobile -->
-                <button id="toggle-word-wheel-btn" class="btn btn-secondary">&#9776; Menu</button>
+                <button id="toggle-word-wheel-btn" class="btn btn-secondary">&#9776; Show Word List</button>
                 <div class="search-wrapper">
-                    <input type="text" id="search-input" placeholder="Type a Latin word to search...">
+                    <input type="text" id="search-input" placeholder="Type a Latin word...">
                     <div id="suggestions-list"></div>
                 </div>
-                <button id="view-study-list-btn" class="btn btn-secondary">My List</button>
+                <button id="view-study-list-btn" class="btn btn-secondary">My Study List</button>
             </div>
             
             <div id="result-display">
@@ -191,6 +184,9 @@
             </div>
         </main>
     </div>
+
+    <!-- NEW: Mobile overlay for closing the menu -->
+    <div id="mobile-menu-overlay"></div>
 
     <!-- Modals -->
     <div id="cookie-notice-modal" class="modal-overlay">
@@ -594,7 +590,7 @@
 "discō discere didicī","to learn",4
 "eō īre iī/īvī itum","to go",4
 "ēripiō ēripere ēripuī ēreptus","to snatch away, rescue",4
-"etenim","for, and in fact",4
+"etenim","for, and indeed",4
 "etiamsī","even if, although",4
 "exeō exīre exīvī/exiī exitus","to go out, exit",4
 "familia familiae f.","family, household",4
@@ -2121,6 +2117,7 @@
             const copyListBtn = document.getElementById('copy-list-btn');
             const toggleWordWheelBtn = document.getElementById('toggle-word-wheel-btn');
             const closeWordWheelBtn = document.getElementById('close-word-wheel-btn');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
             
             // --- Functions ---
             
@@ -2370,10 +2367,20 @@
                         displayWordDetails(wordObject);
                         // If on mobile, close the menu after selection
                         if (window.innerWidth <= 768) {
-                            wordWheelContainer.classList.remove('mobile-visible');
+                            closeMobileMenu();
                         }
                     }
                 }
+            }
+            
+            // --- NEW Mobile Menu Functions ---
+            function openMobileMenu() {
+                wordWheelContainer.classList.add('mobile-visible');
+                mobileMenuOverlay.style.display = 'block';
+            }
+            function closeMobileMenu() {
+                wordWheelContainer.classList.remove('mobile-visible');
+                mobileMenuOverlay.style.display = 'none';
             }
 
             function initialize() {
@@ -2413,12 +2420,9 @@
                 copyListBtn.addEventListener('click', copyTSVToClipboard);
 
                 // Mobile menu toggles
-                toggleWordWheelBtn.addEventListener('click', () => {
-                    wordWheelContainer.classList.add('mobile-visible');
-                });
-                closeWordWheelBtn.addEventListener('click', () => {
-                    wordWheelContainer.classList.remove('mobile-visible');
-                });
+                toggleWordWheelBtn.addEventListener('click', openMobileMenu);
+                closeWordWheelBtn.addEventListener('click', closeMobileMenu);
+                mobileMenuOverlay.addEventListener('click', closeMobileMenu);
             }
 
             document.addEventListener('DOMContentLoaded', initialize);
