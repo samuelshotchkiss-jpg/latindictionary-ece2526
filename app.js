@@ -46,19 +46,18 @@
         return null;
     }
 
-    /** MODIFIED: Now also removes parentheses and equals signs **/
     function normalizeForSearch(str) {
         if (!str) return '';
         return str
             .toLowerCase()
-            .normalize('NFD') // Decompose diacritics (e.g., 'ē' -> 'e' + '̄')
-            .replace(/[\u0300-\u036f]/g, '') // Remove the diacritic marks
-            .replace(/[–-()=]/g, ''); // Remove en-dashes, hyphens, parentheses, and equals
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[–\-()=]/g, ''); // CORRECTED: Hyphen is now escaped
     }
 
     function parseCSV(data) {
         const records = [];
-        const lines = data.trim().split('\n').slice(1); // Skip header
+        const lines = data.trim().split('\n').slice(1);
         for (const line of lines) {
             const values = [];
             let current = '';
@@ -126,14 +125,13 @@
                 } else {
                     addToStudyList(word.latin);
                 }
-                displayWordDetails(word); // Re-render to update button state
+                displayWordDetails(word);
             });
         });
 
         updateWordWheelSelection(word.latin);
         searchInput.value = word.latin;
         suggestionsList.style.display = 'none';
-        suggestionsList.innerHTML = '';
     }
     
     function updateWordWheelSelection(latinWord) {
@@ -258,7 +256,6 @@
         e.target.value = '';
     }
 
-    /** MODIFIED: Smarter search and bolding logic **/
     function onSearchInput(e) {
         const rawSearchTerm = e.target.value;
         const normalizedSearchTerm = normalizeForSearch(rawSearchTerm);
@@ -343,7 +340,7 @@
         fetch('vocabulary.csv')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 return response.text();
             })
@@ -355,7 +352,7 @@
             })
             .catch(error => {
                 console.error('Error fetching vocabulary:', error);
-                resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html.</p></div>`;
+                resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html and that the repository is configured correctly.</p></div>`;
             });
 
         searchInput.addEventListener('input', onSearchInput);
