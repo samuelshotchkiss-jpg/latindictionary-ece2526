@@ -46,9 +46,14 @@
         return null;
     }
 
+    /** MODIFIED: Now also removes parentheses and equals signs **/
     function normalizeForSearch(str) {
         if (!str) return '';
-        return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[–-]/g, '');
+        return str
+            .toLowerCase()
+            .normalize('NFD') // Decompose diacritics (e.g., 'ē' -> 'e' + '̄')
+            .replace(/[\u0300-\u036f]/g, '') // Remove the diacritic marks
+            .replace(/[–-()=]/g, ''); // Remove en-dashes, hyphens, parentheses, and equals
     }
 
     function parseCSV(data) {
@@ -128,12 +133,12 @@
         updateWordWheelSelection(word.latin);
         searchInput.value = word.latin;
         suggestionsList.style.display = 'none';
+        suggestionsList.innerHTML = '';
     }
     
     function updateWordWheelSelection(latinWord) {
         const currentSelected = wordWheel.querySelector('.selected');
         if (currentSelected) currentSelected.classList.remove('selected');
-        
         const newSelectedItem = wordWheel.querySelector(`li[data-latin="${CSS.escape(latinWord)}"]`);
         if (newSelectedItem) {
             newSelectedItem.classList.add('selected');
@@ -195,7 +200,6 @@
     }
 
     function generateTSVContent() {
-        // Omits header as requested
         return studyList.map(latinWord => {
             const word = vocabulary.find(w => w.latin === latinWord);
             return word ? [word.latin, word.definition, word.frequency].join('\t') : '';
@@ -254,12 +258,14 @@
         e.target.value = '';
     }
 
+    /** MODIFIED: Smarter search and bolding logic **/
     function onSearchInput(e) {
         const rawSearchTerm = e.target.value;
         const normalizedSearchTerm = normalizeForSearch(rawSearchTerm);
 
         if (normalizedSearchTerm.length === 0) {
-            suggestionsList.style.display = 'none'; return;
+            suggestionsList.style.display = 'none';
+            return;
         }
 
         const matches = vocabulary.filter(word => 
@@ -284,7 +290,7 @@
                     if (normalizeForSearch(part).startsWith(normalizedSearchTerm)) {
                         let matchEndIndex = 0;
                         for (let i = 0; i <= part.length; i++) {
-                            if (normalizeForSearch(part.substring(0, i)) === normalizedSearchTerm) {
+                            if (normalizeForSearch(part.substring(0, i)).startsWith(normalizedSearchTerm)) {
                                 matchEndIndex = i;
                             }
                         }
@@ -334,7 +340,6 @@
             try { studyList = JSON.parse(savedList); } catch (e) { studyList = []; }
         }
 
-        // Fetch vocabulary data, then build the app
         fetch('vocabulary.csv')
             .then(response => {
                 if (!response.ok) {
@@ -353,7 +358,6 @@
                 resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html.</p></div>`;
             });
 
-        // Attach all event listeners
         searchInput.addEventListener('input', onSearchInput);
         wordWheel.addEventListener('click', onWordWheelClick);
         searchInput.addEventListener('blur', () => setTimeout(() => { suggestionsList.style.display = 'none'; }, 150));
