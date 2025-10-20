@@ -52,7 +52,7 @@
             .toLowerCase()
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, '')
-            .replace(/[–\-()=]/g, ''); // CORRECTED: Hyphen is now escaped
+            .replace(/[–\-()=]/g, '');
     }
 
     function parseCSV(data) {
@@ -132,6 +132,7 @@
         updateWordWheelSelection(word.latin);
         searchInput.value = word.latin;
         suggestionsList.style.display = 'none';
+        suggestionsList.innerHTML = '';
     }
     
     function updateWordWheelSelection(latinWord) {
@@ -256,6 +257,7 @@
         e.target.value = '';
     }
 
+    /** CORRECTED: Smarter search and bolding logic **/
     function onSearchInput(e) {
         const rawSearchTerm = e.target.value;
         const normalizedSearchTerm = normalizeForSearch(rawSearchTerm);
@@ -283,17 +285,24 @@
             topMatches.forEach(match => {
                 const div = document.createElement('div');
                 const parts = match.latin.split(' ');
+
                 const htmlParts = parts.map(part => {
-                    if (normalizeForSearch(part).startsWith(normalizedSearchTerm)) {
+                    const normalizedPart = normalizeForSearch(part);
+                    if (normalizedPart.startsWith(normalizedSearchTerm)) {
+                        // Find the length of the original substring that matches the normalized search term
                         let matchEndIndex = 0;
-                        for (let i = 0; i <= part.length; i++) {
-                            if (normalizeForSearch(part.substring(0, i)).startsWith(normalizedSearchTerm)) {
+                        for (let i = 1; i <= part.length; i++) {
+                            if (normalizeForSearch(part.substring(0, i)) === normalizedSearchTerm) {
                                 matchEndIndex = i;
+                                break;
                             }
                         }
-                        if (matchEndIndex > 0) {
-                            return `<strong>${part.substring(0, matchEndIndex)}</strong>${part.substring(matchEndIndex)}`;
+                        // Fallback if the loop doesn't find a perfect match (e.g. partial input)
+                        if (matchEndIndex === 0) {
+                             matchEndIndex = rawSearchTerm.length;
                         }
+
+                        return `<strong>${part.substring(0, matchEndIndex)}</strong>${part.substring(matchEndIndex)}`;
                     }
                     return part;
                 });
