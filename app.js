@@ -55,6 +55,7 @@
             .replace(/[–\-()=]/g, '');
     }
 
+    /** MODIFIED: Now parses the 4th column for Part of Speech **/
     function parseCSV(data) {
         const records = [];
         const lines = data.trim().split('\n').slice(1);
@@ -75,11 +76,12 @@
             }
             values.push(current.trim());
             
-            if (values.length >= 3) {
+            if (values.length >= 3) { // Ensure at least 3 columns exist
                 records.push({
                     latin: values[0].replace(/"/g, ''),
                     definition: values[1].replace(/"/g, ''),
-                    frequency: parseInt(values[2].replace(/"/g, '') || 0, 10)
+                    frequency: parseInt(values[2].replace(/"/g, '') || 0, 10),
+                    partOfSpeech: (values[3] || '').replace(/"/g, '') // Add the new field
                 });
             }
         }
@@ -100,6 +102,7 @@
         wordWheel.appendChild(fragment);
     }
 
+    /** MODIFIED: Injects the part-of-speech element into the display **/
     function displayWordDetails(word) {
         if (!word) {
             resultDisplay.innerHTML = `<div class="placeholder-text"><p>Word not found.</p></div>`;
@@ -113,6 +116,7 @@
                 <h2>${word.latin}</h2>
                 ${buttonHtml}
             </div>
+            <div class="part-of-speech">${word.partOfSpeech || ''}</div>
             <p>${word.definition}</p>
             <div class="frequency">Frequency in Readings: ${word.frequency}</div>
             <div class="result-footer">${buttonHtml}</div>
@@ -201,7 +205,7 @@
     function generateTSVContent() {
         return studyList.map(latinWord => {
             const word = vocabulary.find(w => w.latin === latinWord);
-            return word ? [word.latin, word.definition, word.frequency].join('\t') : '';
+            return word ? [word.latin, word.definition, word.frequency, word.partOfSpeech].join('\t') : '';
         }).filter(Boolean).join('\n');
     }
 
@@ -257,7 +261,6 @@
         e.target.value = '';
     }
 
-    /** CORRECTED: Smarter search and bolding logic **/
     function onSearchInput(e) {
         const rawSearchTerm = e.target.value;
         const normalizedSearchTerm = normalizeForSearch(rawSearchTerm);
@@ -285,11 +288,9 @@
             topMatches.forEach(match => {
                 const div = document.createElement('div');
                 const parts = match.latin.split(' ');
-
                 const htmlParts = parts.map(part => {
                     const normalizedPart = normalizeForSearch(part);
                     if (normalizedPart.startsWith(normalizedSearchTerm)) {
-                        // Find the length of the original substring that matches the normalized search term
                         let matchEndIndex = 0;
                         for (let i = 1; i <= part.length; i++) {
                             if (normalizeForSearch(part.substring(0, i)) === normalizedSearchTerm) {
@@ -297,12 +298,13 @@
                                 break;
                             }
                         }
-                        // Fallback if the loop doesn't find a perfect match (e.g. partial input)
-                        if (matchEndIndex === 0) {
-                             matchEndIndex = rawSearchTerm.length;
+                        if (matchEndIndex === 0 && normalizedSearchTerm.length > 0) {
+                            matchEndIndex = rawSearchTerm.length;
                         }
 
-                        return `<strong>${part.substring(0, matchEndIndex)}</strong>${part.substring(matchEndIndex)}`;
+                        if (matchEndIndex > 0) {
+                            return `<strong>${part.substring(0, matchEndIndex)}</strong>${part.substring(matchEndIndex)}`;
+                        }
                     }
                     return part;
                 });
@@ -394,4 +396,159 @@
     }
 
     document.addEventListener('DOMContentLoaded', initialize);
-})();
+})();```
+
+---
+
+### 2. `styles.css` (Updated)
+
+This adds the new `.part-of-speech` class with the styling you requested.
+
+```css
+:root {
+    --primary-bg: #f4f4f9;
+    --secondary-bg: #ffffff;
+    --text-color: #333333;
+    --accent-color: #4a69bd;
+    --accent-secondary: #e1e7f5;
+    --accent-text-color: #ffffff;
+    --border-color: #dddddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --danger-color: #c0392b;
+    --study-list-color: #27ae60;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container { display: flex; width: 100%; height: 100%; position: relative; }
+
+#word-wheel-container {
+    flex: 0 0 280px;
+    background-color: var(--secondary-bg);
+    border-right: 1px solid var(--border-color);
+    box-shadow: 2px 0 5px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    z-index: 4000;
+}
+#word-wheel-title { padding: 20px; font-size: 1.2em; font-weight: bold; border-bottom: 1px solid var(--border-color); color: var(--accent-color); text-align: center; }
+#word-wheel { list-style: none; padding: 0; margin: 0; overflow-y: auto; flex-grow: 1; }
+#word-wheel li { padding: 12px 20px; cursor: pointer; font-size: 0.95em; border-bottom: 1px solid var(--primary-bg); transition: background-color 0.2s, color 0.2s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#word-wheel li:hover { background-color: var(--accent-secondary); color: var(--accent-color); }
+#word-wheel li.selected { background-color: var(--accent-color); color: var(--accent-text-color); font-weight: bold; }
+#word-wheel li.in-study-list { color: var(--study-list-color); font-weight: 600; }
+#word-wheel li.in-study-list.selected { background-color: var(--accent-color); color: var(--accent-text-color); }
+
+#wheel-legend { padding: 15px; font-size: 0.8em; color: #777; text-align: center; border-top: 1px solid var(--border-color); flex-shrink: 0; }
+#wheel-legend span { color: var(--study-list-color); font-weight: bold; }
+
+#main-content {
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.top-controls { display: flex; align-items: center; width: 100%; max-width: 600px; margin-bottom: 30px; gap: 15px; }
+.search-wrapper { position: relative; flex-grow: 1; }
+
+#search-input { width: 100%; padding: 15px 20px; font-size: 1.1em; border-radius: 50px; border: 1px solid var(--border-color); box-shadow: 0 2px 8px var(--shadow-color); box-sizing: border-box; }
+#search-input:focus { outline: none; border-color: var(--accent-color); box-shadow: 0 0 0 3px rgba(74, 105, 189, 0.2); }
+
+#suggestions-list { display: none; position: absolute; top: 100%; left: 0; right: 0; background-color: var(--secondary-bg); border: 1px solid var(--border-color); border-top: none; border-radius: 0 0 15px 15px; box-shadow: 0 8px 10px var(--shadow-color); max-height: 250px; overflow-y: auto; z-index: 1000; }
+#suggestions-list div { padding: 12px 20px; cursor: pointer; }
+#suggestions-list div:hover { background-color: var(--primary-bg); }
+
+#result-display { background-color: var(--secondary-bg); width: 100%; max-width: 600px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px var(--shadow-color); border: 1px solid var(--border-color); min-height: 150px; box-sizing: border-box; }
+.placeholder-text { color: #999; text-align: center; font-size: 1.2em; padding: 40px 0; }
+
+.result-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; margin-bottom: 10px; }
+.result-header h2 { margin: 0; color: var(--accent-color); font-size: 1.8em; word-break: break-word; }
+.result-header .add-to-list-btn-action { flex-shrink: 0; }
+.result-footer { display: none; }
+
+/* NEW: Style for the part of speech */
+.part-of-speech {
+    font-family: 'SF Mono', SFMono-Regular, 'Courier New', monospace;
+    color: #888;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#result-display p { font-size: 1.1em; line-height: 1.6; margin-top: 0; }
+#result-display .frequency { font-size: 0.9em; color: #777; margin-top: 20px; font-style: italic; }
+
+.btn { padding: 10px 15px; font-size: 0.9em; font-weight: bold; border-radius: 20px; border: none; cursor: pointer; transition: background-color 0.2s, box-shadow 0.2s; white-space: nowrap; }
+.btn-primary { background-color: var(--accent-color); color: var(--accent-text-color); }
+.btn-primary:hover { background-color: #3a599d; }
+.btn-secondary { background-color: var(--accent-secondary); color: var(--accent-color); }
+.btn-secondary:hover { background-color: #d1d9e9; }
+.btn-danger { background-color: var(--danger-color); color: white; }
+
+.modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 5000; justify-content: center; align-items: center; }
+.modal-content { background-color: white; padding: 30px; border-radius: 15px; max-width: 600px; width: 90%; max-height: 80vh; display: flex; flex-direction: column; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
+.modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 15px; }
+.modal-header h2 { margin: 0; color: var(--accent-color); }
+.modal-close { font-size: 1.5em; cursor: pointer; color: #aaa; background: none; border: none; padding: 0 10px; }
+.modal-body { overflow-y: auto; line-height: 1.6; }
+.modal-footer { border-top: 1px solid var(--border-color); padding-top: 20px; margin-top: 20px; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 10px; }
+
+#study-list-ul { list-style: none; padding: 0; }
+#study-list-ul li { display: flex; justify-content: space-between; align-items: flex-start; padding: 15px 10px; border-bottom: 1px solid var(--primary-bg); }
+.study-list-item-content { display: flex; flex-direction: column; margin-right: 15px; flex-grow: 1; }
+.study-list-latin { font-weight: bold; color: var(--text-color); font-size: 1.1em; }
+.study-list-definition { color: #555; font-size: 0.9em; margin-top: 4px; }
+.study-list-frequency { color: #888; font-size: 0.8em; font-style: italic; margin-top: 6px; }
+.remove-from-list-btn { background: none; border: none; color: var(--danger-color); cursor: pointer; font-size: 1.5em; font-weight: bold; padding: 0 5px; }
+
+#toggle-word-wheel-btn, #close-word-wheel-btn { display: none; }
+#mobile-menu-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 3999; }
+
+@media (max-width: 768px) {
+    #word-wheel-container {
+        position: fixed; left: 0; top: 0; height: 100%; width: 80vw; max-width: 280px;
+        transform: translateX(-100%); border-right: 2px solid var(--border-color);
+    }
+    #word-wheel-container.mobile-visible { transform: translateX(0); }
+    
+    #toggle-word-wheel-btn { display: block; text-align: center; }
+    #close-word-wheel-btn { display: block; position: absolute; top: 10px; right: 5px; font-size: 1.5em; padding: 5px 10px; }
+
+    #main-content { padding: 15px; }
+    .top-controls { flex-direction: column-reverse; align-items: stretch; margin-bottom: 20px; gap: 10px; }
+    
+    #search-input, .btn { padding-top: 15px; padding-bottom: 15px; font-size: 1.1em; }
+    #suggestions-list div { padding: 15px 20px; font-size: 1.1em; }
+
+    #result-display { padding: 20px; }
+    #result-display p { font-size: 1em; }
+
+    .result-header .add-to-list-btn-action { display: none; }
+    .result-footer { display: block; text-align: center; margin-top: 25px; }
+    .result-footer .add-to-list-btn-action { width: 100%; }
+    
+    .result-header h2 { font-size: 1.1em; font-weight: bold; }
+    
+    #view-study-list-btn {
+        background-color: var(--accent-color);
+        color: var(--accent-text-color);
+        border-radius: 8px;
+    }
+    .modal-content { width: 95%; height: 85vh; max-height: 90vh; }
+}

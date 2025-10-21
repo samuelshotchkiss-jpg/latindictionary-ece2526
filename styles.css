@@ -69,10 +69,20 @@ body {
 #result-display { background-color: var(--secondary-bg); width: 100%; max-width: 600px; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px var(--shadow-color); border: 1px solid var(--border-color); min-height: 150px; box-sizing: border-box; }
 .placeholder-text { color: #999; text-align: center; font-size: 1.2em; padding: 40px 0; }
 
-.result-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; margin-bottom: 15px; }
+.result-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; margin-bottom: 10px; }
 .result-header h2 { margin: 0; color: var(--accent-color); font-size: 1.8em; word-break: break-word; }
 .result-header .add-to-list-btn-action { flex-shrink: 0; }
 .result-footer { display: none; }
+
+/* NEW: Style for the part of speech */
+.part-of-speech {
+    font-family: 'SF Mono', SFMono-Regular, 'Courier New', monospace;
+    color: #888;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
 
 #result-display p { font-size: 1.1em; line-height: 1.6; margin-top: 0; }
 #result-display .frequency { font-size: 0.9em; color: #777; margin-top: 20px; font-style: italic; }
