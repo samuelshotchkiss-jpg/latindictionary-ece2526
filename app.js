@@ -5,8 +5,8 @@
     const resultDisplay = document.getElementById('result-display');
     const wordWheel = document.getElementById('word-wheel');
     const wordWheelContainer = document.getElementById('word-wheel-container');
-    const privacyNoticeModal = document.getElementById('privacy-notice-modal'); // Renamed
-    const acknowledgePrivacyBtn = document.getElementById('acknowledge-privacy-btn'); // Renamed
+    const privacyNoticeModal = document.getElementById('privacy-notice-modal');
+    const acknowledgePrivacyBtn = document.getElementById('acknowledge-privacy-btn');
     const viewStudyListBtn = document.getElementById('view-study-list-btn');
     const studyListModal = document.getElementById('study-list-modal');
     const closeStudyListModal = document.getElementById('close-study-list-modal');
@@ -23,7 +23,7 @@
     let vocabulary = [];
     let studyList = [];
     const STORAGE_KEY_LIST = 'latinStudyList';
-    const STORAGE_KEY_CONSENT = 'privacyConsent'; // New key for consent
+    const STORAGE_KEY_CONSENT = 'privacyConsent';
 
     // --- Core & Data Functions ---
 
@@ -282,8 +282,7 @@
                 const div = document.createElement('div');
                 const parts = match.latin.split(' ');
                 const htmlParts = parts.map(part => {
-                    const normalizedPart = normalizeForSearch(part);
-                    if (normalizedPart.startsWith(normalizedSearchTerm)) {
+                    if (normalizeForSearch(part).startsWith(normalizedSearchTerm)) {
                         let matchEndIndex = 0;
                         for (let i = 1; i <= part.length; i++) {
                             if (normalizeForSearch(part.substring(0, i)) === normalizedSearchTerm) {
@@ -332,13 +331,43 @@
         mobileMenuOverlay.style.display = 'none';
     }
 
+    // --- ONE-TIME MIGRATION LOGIC (CORRECTED) ---
+    function migrateFromCookieToLocalStorage() {
+        const cookieName = 'studyList';
+        const cookie = document.cookie.split('; ').find(row => row.startsWith(cookieName + '='));
+
+        if (cookie) {
+            console.log("Old cookie found. Migrating to localStorage.");
+            try {
+                // Decode the cookie value before parsing
+                const cookieValue = decodeURIComponent(cookie.split('=')[1]);
+                const parsedData = JSON.parse(cookieValue);
+
+                if (Array.isArray(parsedData)) {
+                    localStorage.setItem(STORAGE_KEY_LIST, JSON.stringify(parsedData));
+                    // Delete the old cookie by setting its expiration date to the past
+                    document.cookie = cookieName + '=; Max-Age=-99999999; path=/;';
+                    console.log("Migration successful. Old cookie deleted.");
+                }
+            } catch (e) {
+                console.error("Failed to parse or migrate cookie data:", e);
+                // Delete the malformed cookie anyway to prevent future errors
+                document.cookie = cookieName + '=; Max-Age=-99999999; path=/;';
+            }
+        }
+    }
+
     // --- INITIALIZATION ---
     function initialize() {
-        // MODIFIED: Check for privacy consent in localStorage, not cookies
+        // Run migration FIRST, before loading any data.
+        migrateFromCookieToLocalStorage();
+        
+        // Now, check for privacy consent using localStorage
         if (!localStorage.getItem(STORAGE_KEY_CONSENT)) {
             privacyNoticeModal.style.display = 'flex';
         }
         
+        // Load data from localStorage
         loadStudyList();
 
         fetch('vocabulary.csv')
@@ -362,7 +391,6 @@
         wordWheel.addEventListener('click', onWordWheelClick);
         searchInput.addEventListener('blur', () => setTimeout(() => { suggestionsList.style.display = 'none'; }, 150));
         
-        // MODIFIED: Acknowledge button now uses localStorage
         acknowledgePrivacyBtn.addEventListener('click', () => {
             privacyNoticeModal.style.display = 'none';
             localStorage.setItem(STORAGE_KEY_CONSENT, 'true');
