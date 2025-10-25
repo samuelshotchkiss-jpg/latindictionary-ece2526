@@ -5,8 +5,8 @@
     const resultDisplay = document.getElementById('result-display');
     const wordWheel = document.getElementById('word-wheel');
     const wordWheelContainer = document.getElementById('word-wheel-container');
-    const cookieNoticeModal = document.getElementById('cookie-notice-modal');
-    const acknowledgeCookieBtn = document.getElementById('acknowledge-cookie-btn');
+    const privacyNoticeModal = document.getElementById('privacy-notice-modal'); // Renamed
+    const acknowledgePrivacyBtn = document.getElementById('acknowledge-privacy-btn'); // Renamed
     const viewStudyListBtn = document.getElementById('view-study-list-btn');
     const studyListModal = document.getElementById('study-list-modal');
     const closeStudyListModal = document.getElementById('close-study-list-modal');
@@ -22,7 +22,8 @@
     
     let vocabulary = [];
     let studyList = [];
-    const STORAGE_KEY = 'latinStudyList'; // Key for localStorage
+    const STORAGE_KEY_LIST = 'latinStudyList';
+    const STORAGE_KEY_CONSENT = 'privacyConsent'; // New key for consent
 
     // --- Core & Data Functions ---
 
@@ -137,12 +138,12 @@
     // --- Study List & Storage Functions ---
 
     function saveStudyList() {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(studyList));
+        localStorage.setItem(STORAGE_KEY_LIST, JSON.stringify(studyList));
         updateWordWheelStyles();
     }
 
     function loadStudyList() {
-        const savedList = localStorage.getItem(STORAGE_KEY);
+        const savedList = localStorage.getItem(STORAGE_KEY_LIST);
         if (savedList) {
             try {
                 studyList = JSON.parse(savedList);
@@ -331,46 +332,14 @@
         mobileMenuOverlay.style.display = 'none';
     }
 
-    // --- ONE-TIME MIGRATION LOGIC ---
-    function migrateFromCookieToLocalStorage() {
-        const cookieName = 'studyList';
-        const nameEQ = cookieName + "=";
-        const ca = document.cookie.split(';');
-        let oldCookieData = null;
-
-        for(let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) === 0) {
-                oldCookieData = c.substring(nameEQ.length, c.length);
-                break;
-            }
-        }
-        
-        if (oldCookieData) {
-            console.log("Old cookie found. Migrating to localStorage.");
-            try {
-                const parsedData = JSON.parse(oldCookieData);
-                if (Array.isArray(parsedData)) {
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify(parsedData));
-                    // Delete the old cookie by setting its expiration date to the past
-                    document.cookie = cookieName + '=; Max-Age=-99999999; path=/;';
-                    console.log("Migration successful. Old cookie deleted.");
-                }
-            } catch (e) {
-                console.error("Failed to parse or migrate cookie data:", e);
-            }
-        }
-    }
-
     // --- INITIALIZATION ---
     function initialize() {
-        if (!getCookie('cookieConsent')) {
-            cookieNoticeModal.style.display = 'flex';
+        // MODIFIED: Check for privacy consent in localStorage, not cookies
+        if (!localStorage.getItem(STORAGE_KEY_CONSENT)) {
+            privacyNoticeModal.style.display = 'flex';
         }
-
-        migrateFromCookieToLocalStorage(); // Run migration check
-        loadStudyList(); // Load data from localStorage
+        
+        loadStudyList();
 
         fetch('vocabulary.csv')
             .then(response => {
@@ -393,9 +362,10 @@
         wordWheel.addEventListener('click', onWordWheelClick);
         searchInput.addEventListener('blur', () => setTimeout(() => { suggestionsList.style.display = 'none'; }, 150));
         
-        acknowledgeCookieBtn.addEventListener('click', () => {
-            cookieNoticeModal.style.display = 'none';
-            setCookie('cookieConsent', 'true', 365);
+        // MODIFIED: Acknowledge button now uses localStorage
+        acknowledgePrivacyBtn.addEventListener('click', () => {
+            privacyNoticeModal.style.display = 'none';
+            localStorage.setItem(STORAGE_KEY_CONSENT, 'true');
         });
 
         viewStudyListBtn.addEventListener('click', showStudyListModal);
@@ -419,4 +389,4 @@
     }
 
     document.addEventListener('DOMContentLoaded', initialize);
-})();
+})();```
