@@ -22,29 +22,9 @@
     
     let vocabulary = [];
     let studyList = [];
+    const STORAGE_KEY = 'latinStudyList'; // Key for localStorage
 
-    // --- Core Functions ---
-
-    function setCookie(name, value, days) {
-        let expires = "";
-        if (days) {
-            const date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
-    }
-
-    function getCookie(name) {
-        const nameEQ = name + "=";
-        const ca = document.cookie.split(';');
-        for (let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
+    // --- Core & Data Functions ---
 
     function normalizeForSearch(str) {
         if (!str) return '';
@@ -55,7 +35,6 @@
             .replace(/[–\-()=]/g, '');
     }
 
-    /** MODIFIED: Now parses the 4th column for Part of Speech **/
     function parseCSV(data) {
         const records = [];
         const lines = data.trim().split('\n').slice(1);
@@ -76,18 +55,18 @@
             }
             values.push(current.trim());
             
-            if (values.length >= 3) { // Ensure at least 3 columns exist
+            if (values.length >= 3) {
                 records.push({
                     latin: values[0].replace(/"/g, ''),
                     definition: values[1].replace(/"/g, ''),
                     frequency: parseInt(values[2].replace(/"/g, '') || 0, 10),
-                    partOfSpeech: (values[3] || '').replace(/"/g, '') // Add the new field
+                    partOfSpeech: (values[3] || '').replace(/"/g, '')
                 });
             }
         }
         return records;
     }
-
+    
     // --- UI Update Functions ---
 
     function populateWordWheel() {
@@ -102,7 +81,6 @@
         wordWheel.appendChild(fragment);
     }
 
-    /** MODIFIED: Injects the part-of-speech element into the display **/
     function displayWordDetails(word) {
         if (!word) {
             resultDisplay.innerHTML = `<div class="placeholder-text"><p>Word not found.</p></div>`;
@@ -156,12 +134,24 @@
         });
     }
 
-    // --- Study List Functions ---
+    // --- Study List & Storage Functions ---
 
     function saveStudyList() {
-        setCookie('studyList', JSON.stringify(studyList), 365);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(studyList));
         updateWordWheelStyles();
     }
+
+    function loadStudyList() {
+        const savedList = localStorage.getItem(STORAGE_KEY);
+        if (savedList) {
+            try {
+                studyList = JSON.parse(savedList);
+            } catch (e) {
+                studyList = [];
+            }
+        }
+    }
+
     function addToStudyList(latinWord) {
         if (!studyList.includes(latinWord)) {
             studyList.push(latinWord);
@@ -261,6 +251,8 @@
         e.target.value = '';
     }
 
+    // --- Event Handlers ---
+
     function onSearchInput(e) {
         const rawSearchTerm = e.target.value;
         const normalizedSearchTerm = normalizeForSearch(rawSearchTerm);
@@ -299,7 +291,7 @@
                             }
                         }
                         if (matchEndIndex === 0 && normalizedSearchTerm.length > 0) {
-                            matchEndIndex = rawSearchTerm.length;
+                             matchEndIndex = rawSearchTerm.length;
                         }
 
                         if (matchEndIndex > 0) {
@@ -339,20 +331,50 @@
         mobileMenuOverlay.style.display = 'none';
     }
 
+    // --- ONE-TIME MIGRATION LOGIC ---
+    function migrateFromCookieToLocalStorage() {
+        const cookieName = 'studyList';
+        const nameEQ = cookieName + "=";
+        const ca = document.cookie.split(';');
+        let oldCookieData = null;
+
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) {
+                oldCookieData = c.substring(nameEQ.length, c.length);
+                break;
+            }
+        }
+        
+        if (oldCookieData) {
+            console.log("Old cookie found. Migrating to localStorage.");
+            try {
+                const parsedData = JSON.parse(oldCookieData);
+                if (Array.isArray(parsedData)) {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(parsedData));
+                    // Delete the old cookie by setting its expiration date to the past
+                    document.cookie = cookieName + '=; Max-Age=-99999999; path=/;';
+                    console.log("Migration successful. Old cookie deleted.");
+                }
+            } catch (e) {
+                console.error("Failed to parse or migrate cookie data:", e);
+            }
+        }
+    }
+
+    // --- INITIALIZATION ---
     function initialize() {
         if (!getCookie('cookieConsent')) {
             cookieNoticeModal.style.display = 'flex';
         }
-        const savedList = getCookie('studyList');
-        if (savedList) {
-            try { studyList = JSON.parse(savedList); } catch (e) { studyList = []; }
-        }
+
+        migrateFromCookieToLocalStorage(); // Run migration check
+        loadStudyList(); // Load data from localStorage
 
         fetch('vocabulary.csv')
             .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 return response.text();
             })
             .then(csvData => {
@@ -366,6 +388,7 @@
                 resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html and that the repository is configured correctly.</p></div>`;
             });
 
+        // Attach all event listeners
         searchInput.addEventListener('input', onSearchInput);
         wordWheel.addEventListener('click', onWordWheelClick);
         searchInput.addEventListener('blur', () => setTimeout(() => { suggestionsList.style.display = 'none'; }, 150));
