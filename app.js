@@ -389,4 +389,4 @@
     }
 
     document.addEventListener('DOMContentLoaded', initialize);
-})();```
+})();
