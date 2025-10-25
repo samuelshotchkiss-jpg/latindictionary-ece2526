@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latin Vocabulary Study App</title>
-    <!-- The leading slash has been removed from the href -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,14 +38,14 @@
 
     <div id="mobile-menu-overlay"></div>
 
-    <!-- Modals -->
+    <!-- MODIFIED: Privacy notice updated to reflect localStorage -->
     <div id="cookie-notice-modal" class="modal-overlay">
         <div class="modal-content">
-            <div class="modal-header"><h2>Welcome!</h2></div>
+            <div class="modal-header"><h2>Welcome! (Privacy Notice)</h2></div>
             <div class="modal-body">
-                <p>This app uses your browser's local storage (a single cookie) to save your personal vocabulary study list.</p>
-                <p><b>Your data is stored only on your computer.</b> It is never collected, analyzed, or sent anywhere. This functionality is provided for your convenience to help you create and manage study lists across sessions.</p>
-                <p>By clicking "Acknowledge," you agree to the use of this local storage feature.</p>
+                <p>This app uses your browser's **Local Storage** to save your personal vocabulary study list.</p>
+                <p><b>Your data is stored only on this computer and within this browser.</b> It is never collected, analyzed, or sent anywhere else. This feature is provided for your convenience so your list is remembered between sessions.</p>
+                <p>By clicking "Acknowledge," you agree to the use of Local Storage for this purpose.</p>
             </div>
             <div class="modal-footer">
                 <button id="acknowledge-cookie-btn" class="btn btn-primary">Acknowledge</button>
@@ -73,7 +72,6 @@
         </div>
     </div>
 
-    <!-- The leading slash has been removed from the src -->
     <script src="app.js"></script>
 </body>
 </html>
