@@ -36,32 +36,41 @@
             .replace(/[–\-()=]/g, '');
     }
 
+    /** MODIFIED: Now intelligently parses 2, 3, or 4 columns **/
     function parseCSV(data) {
         const records = [];
-        const lines = data.trim().split('\n').slice(1);
+        const lines = data.trim().split(/\r?\n/).slice(1);
+
         for (const line of lines) {
-            const values = [];
-            let current = '';
-            let inQuotes = false;
-            for (let i = 0; i < line.length; i++) {
-                const char = line[i];
-                if (char === '"' && (i === 0 || line[i - 1] !== '\\')) {
-                    inQuotes = !inQuotes;
-                } else if (char === ',' && !inQuotes) {
-                    values.push(current.trim());
-                    current = '';
-                } else {
-                    current += char;
-                }
-            }
-            values.push(current.trim());
+            const values = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
             
-            if (values.length >= 3) {
+            if (values.length >= 2) {
+                const latin = (values[0] || '').replace(/"/g, '');
+                const definition = (values[1] || '').replace(/"/g, '');
+                const column3 = (values[2] || '').replace(/"/g, '');
+                const column4 = (values[3] || '').replace(/"/g, '');
+
+                let frequency = null;
+                let partOfSpeech = '';
+                
+                // Attempt to parse column 3 as a number
+                const freqNum = parseInt(column3);
+
+                if (!isNaN(freqNum)) {
+                    // Column 3 is a number, so it's the frequency.
+                    frequency = freqNum;
+                    partOfSpeech = column4; // Column 4 is the part of speech.
+                } else {
+                    // Column 3 is NOT a number, so it must be the part of speech.
+                    partOfSpeech = column3;
+                    // Frequency remains null.
+                }
+
                 records.push({
-                    latin: values[0].replace(/"/g, ''),
-                    definition: values[1].replace(/"/g, ''),
-                    frequency: parseInt(values[2].replace(/"/g, '') || 0, 10),
-                    partOfSpeech: (values[3] || '').replace(/"/g, '')
+                    latin: latin,
+                    definition: definition,
+                    frequency: frequency,
+                    partOfSpeech: partOfSpeech
                 });
             }
         }
@@ -90,24 +99,24 @@
         const isSaved = studyList.includes(word.latin);
         const buttonHtml = `<button class="btn add-to-list-btn-action ${isSaved ? 'btn-danger' : 'btn-primary'}">${isSaved ? 'Remove from List' : 'Add to List'}</button>`;
         
+        const posHtml = word.partOfSpeech ? `<div class="part-of-speech">${word.partOfSpeech}</div>` : '';
+        const freqHtml = (word.frequency !== null) ? `<div class="frequency">Frequency: ${word.frequency}</div>` : '';
+
         resultDisplay.innerHTML = `
             <div class="result-header">
                 <h2>${word.latin}</h2>
                 ${buttonHtml}
             </div>
-            <div class="part-of-speech">${word.partOfSpeech || ''}</div>
+            ${posHtml}
             <p>${word.definition}</p>
-            <div class="frequency">Frequency in Readings: ${word.frequency}</div>
+            ${freqHtml}
             <div class="result-footer">${buttonHtml}</div>
         `;
         
         resultDisplay.querySelectorAll('.add-to-list-btn-action').forEach(btn => {
             btn.addEventListener('click', () => {
-                if (isSaved) {
-                    removeFromStudyList(word.latin);
-                } else {
-                    addToStudyList(word.latin);
-                }
+                if (isSaved) removeFromStudyList(word.latin);
+                else addToStudyList(word.latin);
                 displayWordDetails(word);
             });
         });
@@ -115,7 +124,6 @@
         updateWordWheelSelection(word.latin);
         searchInput.value = word.latin;
         suggestionsList.style.display = 'none';
-        suggestionsList.innerHTML = '';
     }
     
     function updateWordWheelSelection(latinWord) {
@@ -163,9 +171,7 @@
     function removeFromStudyList(latinWord, refreshModal = false) {
         studyList = studyList.filter(word => word !== latinWord);
         saveStudyList();
-        if (refreshModal) {
-            showStudyListModal();
-        }
+        if (refreshModal) showStudyListModal();
     }
     
     function showStudyListModal() {
@@ -177,12 +183,13 @@
             studyList.sort((a, b) => a.localeCompare(b)).forEach(latinWord => {
                 const wordObject = vocabulary.find(w => w.latin === latinWord);
                 if (wordObject) {
+                    const freqHtml = (wordObject.frequency !== null) ? `<span class="study-list-frequency">Frequency: ${wordObject.frequency}</span>` : '';
                     const li = document.createElement('li');
                     li.innerHTML = `
                         <div class="study-list-item-content">
                             <span class="study-list-latin">${wordObject.latin}</span>
                             <span class="study-list-definition">${wordObject.definition}</span>
-                            <span class="study-list-frequency">Frequency: ${wordObject.frequency}</span>
+                            ${freqHtml}
                         </div>
                         <button class="remove-from-list-btn" data-word="${latinWord}" title="Remove from list">&times;</button>
                     `;
@@ -196,7 +203,13 @@
     function generateTSVContent() {
         return studyList.map(latinWord => {
             const word = vocabulary.find(w => w.latin === latinWord);
-            return word ? [word.latin, word.definition, word.frequency, word.partOfSpeech].join('\t') : '';
+            if (!word) return '';
+
+            const row = [word.latin, word.definition];
+            if (word.frequency !== null) row.push(word.frequency);
+            if (word.partOfSpeech) row.push(word.partOfSpeech);
+            
+            return row.join('\t');
         }).filter(Boolean).join('\n');
     }
 
@@ -331,43 +344,12 @@
         mobileMenuOverlay.style.display = 'none';
     }
 
-    // --- ONE-TIME MIGRATION LOGIC (CORRECTED) ---
-    function migrateFromCookieToLocalStorage() {
-        const cookieName = 'studyList';
-        const cookie = document.cookie.split('; ').find(row => row.startsWith(cookieName + '='));
-
-        if (cookie) {
-            console.log("Old cookie found. Migrating to localStorage.");
-            try {
-                // Decode the cookie value before parsing
-                const cookieValue = decodeURIComponent(cookie.split('=')[1]);
-                const parsedData = JSON.parse(cookieValue);
-
-                if (Array.isArray(parsedData)) {
-                    localStorage.setItem(STORAGE_KEY_LIST, JSON.stringify(parsedData));
-                    // Delete the old cookie by setting its expiration date to the past
-                    document.cookie = cookieName + '=; Max-Age=-99999999; path=/;';
-                    console.log("Migration successful. Old cookie deleted.");
-                }
-            } catch (e) {
-                console.error("Failed to parse or migrate cookie data:", e);
-                // Delete the malformed cookie anyway to prevent future errors
-                document.cookie = cookieName + '=; Max-Age=-99999999; path=/;';
-            }
-        }
-    }
-
     // --- INITIALIZATION ---
     function initialize() {
-        // Run migration FIRST, before loading any data.
-        migrateFromCookieToLocalStorage();
-        
-        // Now, check for privacy consent using localStorage
         if (!localStorage.getItem(STORAGE_KEY_CONSENT)) {
             privacyNoticeModal.style.display = 'flex';
         }
         
-        // Load data from localStorage
         loadStudyList();
 
         fetch('vocabulary.csv')
@@ -380,41 +362,4 @@
                 vocabulary.sort((a, b) => a.latin.localeCompare(b.latin));
                 populateWordWheel();
                 updateWordWheelStyles();
-            })
-            .catch(error => {
-                console.error('Error fetching vocabulary:', error);
-                resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html and that the repository is configured correctly.</p></div>`;
-            });
-
-        // Attach all event listeners
-        searchInput.addEventListener('input', onSearchInput);
-        wordWheel.addEventListener('click', onWordWheelClick);
-        searchInput.addEventListener('blur', () => setTimeout(() => { suggestionsList.style.display = 'none'; }, 150));
-        
-        acknowledgePrivacyBtn.addEventListener('click', () => {
-            privacyNoticeModal.style.display = 'none';
-            localStorage.setItem(STORAGE_KEY_CONSENT, 'true');
-        });
-
-        viewStudyListBtn.addEventListener('click', showStudyListModal);
-        closeStudyListModal.addEventListener('click', () => studyListModal.style.display = 'none');
-        
-        studyListUl.addEventListener('click', (e) => {
-            const removeBtn = e.target.closest('.remove-from-list-btn');
-            if (removeBtn) {
-                removeFromStudyList(removeBtn.dataset.word, true);
-            }
-        });
-
-        downloadListBtn.addEventListener('click', downloadTSV);
-        importListBtn.addEventListener('click', handleImport);
-        importFileInput.addEventListener('change', processImportFile);
-        copyListBtn.addEventListener('click', copyTSVToClipboard);
-
-        toggleWordWheelBtn.addEventListener('click', openMobileMenu);
-        closeWordWheelBtn.addEventListener('click', closeMobileMenu);
-        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
-    }
-
-    document.addEventListener('DOMContentLoaded', initialize);
-})();
+       
