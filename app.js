@@ -362,4 +362,40 @@
                 vocabulary.sort((a, b) => a.latin.localeCompare(b.latin));
                 populateWordWheel();
                 updateWordWheelStyles();
-       
+            })
+            .catch(error => {
+                console.error('Error fetching vocabulary:', error);
+                resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html and that the repository is configured correctly.</p></div>`;
+            });
+
+        searchInput.addEventListener('input', onSearchInput);
+        wordWheel.addEventListener('click', onWordWheelClick);
+        searchInput.addEventListener('blur', () => setTimeout(() => { suggestionsList.style.display = 'none'; }, 150));
+        
+        acknowledgePrivacyBtn.addEventListener('click', () => {
+            privacyNoticeModal.style.display = 'none';
+            localStorage.setItem(STORAGE_KEY_CONSENT, 'true');
+        });
+
+        viewStudyListBtn.addEventListener('click', showStudyListModal);
+        closeStudyListModal.addEventListener('click', () => studyListModal.style.display = 'none');
+        
+        studyListUl.addEventListener('click', (e) => {
+            const removeBtn = e.target.closest('.remove-from-list-btn');
+            if (removeBtn) {
+                removeFromStudyList(removeBtn.dataset.word, true);
+            }
+        });
+
+        downloadListBtn.addEventListener('click', downloadTSV);
+        importListBtn.addEventListener('click', handleImport);
+        importFileInput.addEventListener('change', processImportFile);
+        copyListBtn.addEventListener('click', copyTSVToClipboard);
+
+        toggleWordWheelBtn.addEventListener('click', openMobileMenu);
+        closeWordWheelBtn.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    }
+
+    document.addEventListener('DOMContentLoaded', initialize);
+})();
