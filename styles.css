@@ -145,3 +145,59 @@ body {
     }
     .modal-content { width: 95%; height: 85vh; max-height: 90vh; }
 }
+/* NEW: Grammar Forms Section Styles */
+.forms-section {
+    margin: 20px 0 10px 0;
+    background-color: var(--primary-bg);
+    border-radius: 8px;
+    padding: 12px 18px;
+    border: 1px solid var(--border-color);
+}
+.forms-section summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent-color);
+    outline: none;
+    font-size: 1.05em;
+    user-select: none;
+}
+.forms-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    max-height: 220px; /* Introduces the scrollbar */
+    overflow-y: auto;  /* Allows scrolling */
+    scrollbar-width: thin; /* Makes the scrollbar look neat */
+    border-top: 1px solid var(--border-color);
+    padding-top: 10px;
+}
+.forms-list li {
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95em;
+    transition: background-color 0.2s;
+}
+.forms-list li:last-child {
+    border-bottom: none;
+}
+.forms-list .highlighted-form {
+    background-color: rgba(74, 105, 189, 0.1);
+    border-radius: 6px;
+    border-bottom: none;
+    box-shadow: 0 0 0 1px var(--accent-secondary);
+}
+/* This guarantees the text AND the specific form word turn bold and blue */
+.forms-list .highlighted-form,
+.forms-list .highlighted-form .form-name {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+.form-name {
+    color: var(--text-color);
+    font-weight: 600;
+}
+.search-form-lemma-label {
+    color: #888;
+    font-size: 0.9em;
+    font-weight: normal;
+}

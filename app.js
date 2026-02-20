@@ -21,7 +21,8 @@
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
     
     let vocabulary = [];
-    let studyList = [];
+    let formsList = [];
+    let studyList =[];
     const STORAGE_KEY_LIST = 'latinStudyList';
     const STORAGE_KEY_CONSENT = 'privacyConsent';
 
@@ -29,48 +30,96 @@
 
     function normalizeForSearch(str) {
         if (!str) return '';
+        // Using \p{Diacritic} and string alternation to avoid bracketed RegEx classes
         return str
             .toLowerCase()
             .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .replace(/[–\-()=]/g, '');
+            .replace(/\p{Diacritic}/gu, '') 
+            .replace(/\u2013|-|\(|\)|=/g, ''); 
     }
 
-    /** MODIFIED: Now intelligently parses 2, 3, or 4 columns **/
+    // Custom CSV parser that doesn't rely on bracketed Regular Expressions
     function parseCSV(data) {
-        const records = [];
+        const records =[];
         const lines = data.trim().split(/\r?\n/).slice(1);
 
         for (const line of lines) {
-            const values = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
+            let inQuotes = false;
+            let currentVal = "";
+            const values = new Array();
+
+            for (let i = 0; i < line.length; i++) {
+                const char = line.charAt(i);
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    values.push(currentVal.trim());
+                    currentVal = "";
+                } else {
+                    currentVal += char;
+                }
+            }
+            values.push(currentVal.trim());
             
             if (values.length >= 2) {
-                const latin = (values[0] || '').replace(/"/g, '');
-                const definition = (values[1] || '').replace(/"/g, '');
-                const column3 = (values[2] || '').replace(/"/g, '');
-                const column4 = (values[3] || '').replace(/"/g, '');
+                // Using slice.pop() to safely get indices without using brackets
+                const latin = (values.slice(0, 1).pop() || '').replace(/"/g, '');
+                const definition = (values.slice(1, 2).pop() || '').replace(/"/g, '');
+                const column3 = (values.slice(2, 3).pop() || '').replace(/"/g, '');
+                const column4 = (values.slice(3, 4).pop() || '').replace(/"/g, '');
 
                 let frequency = null;
                 let partOfSpeech = '';
                 
-                // Attempt to parse column 3 as a number
                 const freqNum = parseInt(column3);
 
                 if (!isNaN(freqNum)) {
-                    // Column 3 is a number, so it's the frequency.
                     frequency = freqNum;
-                    partOfSpeech = column4; // Column 4 is the part of speech.
+                    partOfSpeech = column4;
                 } else {
-                    // Column 3 is NOT a number, so it must be the part of speech.
                     partOfSpeech = column3;
-                    // Frequency remains null.
                 }
 
                 records.push({
                     latin: latin,
                     definition: definition,
                     frequency: frequency,
-                    partOfSpeech: partOfSpeech
+                    partOfSpeech: partOfSpeech,
+                    forms:[] 
+                });
+            }
+        }
+        return records;
+    }
+
+    // Same custom parser logic for the forms.csv file
+    function parseFormsCSV(data) {
+        const records =[];
+        const lines = data.trim().split(/\r?\n/).slice(1);
+
+        for (const line of lines) {
+            let inQuotes = false;
+            let currentVal = "";
+            const values = new Array();
+
+            for (let i = 0; i < line.length; i++) {
+                const char = line.charAt(i);
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    values.push(currentVal.trim());
+                    currentVal = "";
+                } else {
+                    currentVal += char;
+                }
+            }
+            values.push(currentVal.trim());
+
+            if (values.length >= 3) {
+                records.push({
+                    form: (values.slice(0, 1).pop() || '').replace(/"/g, ''),
+                    lemma: (values.slice(1, 2).pop() || '').replace(/"/g, ''),
+                    definition: (values.slice(2, 3).pop() || '').replace(/"/g, '')
                 });
             }
         }
@@ -91,7 +140,7 @@
         wordWheel.appendChild(fragment);
     }
 
-    function displayWordDetails(word) {
+    function displayWordDetails(word, selectedFormObj = null) {
         if (!word) {
             resultDisplay.innerHTML = `<div class="placeholder-text"><p>Word not found.</p></div>`;
             return;
@@ -102,6 +151,27 @@
         const posHtml = word.partOfSpeech ? `<div class="part-of-speech">${word.partOfSpeech}</div>` : '';
         const freqHtml = (word.frequency !== null) ? `<div class="frequency">Frequency: ${word.frequency}</div>` : '';
 
+        // Generate Expandable Forms Section
+        let formsHtml = '';
+        if (word.forms && word.forms.length > 0) {
+            const isOpen = selectedFormObj ? 'open' : '';
+            const listItems = word.forms.map(f => {
+                const isSelected = selectedFormObj && f.form === selectedFormObj.form;
+                return `<li class="${isSelected ? 'highlighted-form' : ''}">
+                    <span class="form-name">${f.form}</span>: ${f.definition}
+                </li>`;
+            }).join('');
+            
+            formsHtml = `
+                <details class="forms-section" ${isOpen}>
+                    <summary>Forms</summary>
+                    <ul class="forms-list">
+                        ${listItems}
+                    </ul>
+                </details>
+            `;
+        }
+
         resultDisplay.innerHTML = `
             <div class="result-header">
                 <h2>${word.latin}</h2>
@@ -109,27 +179,44 @@
             </div>
             ${posHtml}
             <p>${word.definition}</p>
+            ${formsHtml}
             ${freqHtml}
             <div class="result-footer">${buttonHtml}</div>
         `;
+
+        if (selectedFormObj) {
+            const highlighted = resultDisplay.querySelector('.highlighted-form');
+            if (highlighted) {
+                setTimeout(() => highlighted.scrollIntoView({ behavior: 'smooth', block: 'center' }), 50);
+            }
+        }
         
         resultDisplay.querySelectorAll('.add-to-list-btn-action').forEach(btn => {
             btn.addEventListener('click', () => {
                 if (isSaved) removeFromStudyList(word.latin);
                 else addToStudyList(word.latin);
-                displayWordDetails(word);
+                displayWordDetails(word, selectedFormObj); 
             });
         });
 
         updateWordWheelSelection(word.latin);
-        searchInput.value = word.latin;
+        searchInput.value = selectedFormObj ? selectedFormObj.form : word.latin;
         suggestionsList.style.display = 'none';
     }
     
     function updateWordWheelSelection(latinWord) {
         const currentSelected = wordWheel.querySelector('.selected');
         if (currentSelected) currentSelected.classList.remove('selected');
-        const newSelectedItem = wordWheel.querySelector(`li[data-latin="${CSS.escape(latinWord)}"]`);
+        // Escaping brackets here using standard DOM querying instead
+        const items = wordWheel.querySelectorAll('li');
+        let newSelectedItem = null;
+        for (const item of items) {
+            if (item.dataset.latin === latinWord) {
+                newSelectedItem = item;
+                break;
+            }
+        }
+
         if (newSelectedItem) {
             newSelectedItem.classList.add('selected');
             newSelectedItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -153,11 +240,8 @@
     function loadStudyList() {
         const savedList = localStorage.getItem(STORAGE_KEY_LIST);
         if (savedList) {
-            try {
-                studyList = JSON.parse(savedList);
-            } catch (e) {
-                studyList = [];
-            }
+            try { studyList = JSON.parse(savedList); } 
+            catch (e) { studyList =[]; }
         }
     }
 
@@ -205,7 +289,8 @@
             const word = vocabulary.find(w => w.latin === latinWord);
             if (!word) return '';
 
-            const row = [word.latin, word.definition];
+            // Using Array.of to avoid array literal brackets
+            const row = Array.of(word.latin, word.definition);
             if (word.frequency !== null) row.push(word.frequency);
             if (word.partOfSpeech) row.push(word.partOfSpeech);
             
@@ -214,7 +299,9 @@
     }
 
     function downloadTSV() {
-        const blob = new Blob([generateTSVContent()], { type: 'text/tab-separated-values;charset=utf-8;' });
+        // Using Array.of instead of brackets
+        const blobContent = Array.of(generateTSVContent());
+        const blob = new Blob(blobContent, { type: 'text/tab-separated-values;charset=utf-8;' });
         const link = document.createElement("a");
         const url = URL.createObjectURL(blob);
         link.setAttribute("href", url);
@@ -241,22 +328,29 @@
     }
 
     function processImportFile(e) {
-        const file = e.target.files[0];
+        // Using FileList.item(0) to avoid bracket notation
+        const file = e.target.files.item(0);
         if (!file) return;
         const reader = new FileReader();
         reader.onload = function(event) {
             const content = event.target.result;
             const lines = content.trim().split('\n');
-            const firstLineCols = lines.length > 0 ? lines[0].split('\t') : [];
-            const hasHeader = firstLineCols.length > 0 && (firstLineCols[0].toLowerCase().includes('latin') || firstLineCols[0].toLowerCase().includes('word'));
+            const firstLine = lines.slice(0, 1).pop();
+            const firstLineCols = lines.length > 0 ? firstLine.split('\t') :[];
+            const firstCol = firstLineCols.slice(0, 1).pop() || '';
+            
+            const hasHeader = firstLineCols.length > 0 && (firstCol.toLowerCase().includes('latin') || firstCol.toLowerCase().includes('word'));
             const dataLines = hasHeader ? lines.slice(1) : lines;
-            const newList = [];
+            const newList =[];
             const allLatinWords = new Set(vocabulary.map(v => v.latin));
             dataLines.forEach(line => {
-                const latinWord = line.split('\t')[0].trim();
+                const parts = line.split('\t');
+                const latinWord = parts.slice(0, 1).pop().trim();
                 if (latinWord && allLatinWords.has(latinWord)) newList.push(latinWord);
             });
-            studyList = [...new Set(newList)];
+            
+            // Using Array.from to spread the Set instead of spread brackets
+            studyList = Array.from(new Set(newList));
             saveStudyList();
             showStudyListModal();
             alert(`Import complete. ${studyList.length} valid words were added.`);
@@ -276,16 +370,63 @@
             return;
         }
 
-        const matches = vocabulary.filter(word => 
-            word.latin.split(' ').some(part => normalizeForSearch(part).startsWith(normalizedSearchTerm))
-        );
+        let matches = new Array(); // Initializes the matches array
+        const addedDisplays = new Set();
 
+        // 1. Gather all matching headwords (lemmata)
+        vocabulary.forEach(word => {
+            const parts = word.latin.split(' ');
+            const matchesLemma = parts.some(part => normalizeForSearch(part).startsWith(normalizedSearchTerm));
+            
+            if (matchesLemma) {
+                matches.push({
+                    type: 'lemma',
+                    text: word.latin,
+                    displayStr: word.latin,
+                    word: word,
+                    isForm: false
+                });
+                addedDisplays.add(word.latin);
+            }
+        });
+
+        // 2. Gather matching inflected forms
+        formsList.forEach(formObj => {
+            if (normalizeForSearch(formObj.form).startsWith(normalizedSearchTerm)) {
+                // To support ambiguous forms (like cuius representing both quī and quis)
+                const displayStr = `${formObj.form} > ${formObj.lemma}`;
+                if (!addedDisplays.has(displayStr)) {
+                    const wordObj = vocabulary.find(w => w.latin === formObj.lemma);
+                    if (wordObj) {
+                        matches.push({
+                            type: 'form',
+                            text: formObj.form, // Bolding applies ONLY to this text
+                            displayStr: displayStr,
+                            word: wordObj,
+                            formObj: formObj,
+                            isForm: true
+                        });
+                        addedDisplays.add(displayStr);
+                    }
+                }
+            }
+        });
+
+        // 3. Sort exclusively by dictionary Frequency (highest to lowest), falling back to alphabetical
         matches.sort((a, b) => {
-            const aIsPrimary = normalizeForSearch(a.latin.split(' ')[0]).startsWith(normalizedSearchTerm);
-            const bIsPrimary = normalizeForSearch(b.latin.split(' ')[0]).startsWith(normalizedSearchTerm);
-            if (aIsPrimary && !bIsPrimary) return -1;
-            if (!aIsPrimary && bIsPrimary) return 1;
-            return a.latin.localeCompare(b.latin);
+            const freqA = a.word.frequency !== null ? a.word.frequency : -1;
+            const freqB = b.word.frequency !== null ? b.word.frequency : -1;
+            
+            if (freqA !== freqB) {
+                return freqB - freqA; // Largest frequency first
+            }
+            
+            // If frequencies are tied, put standard lemmata before sub-forms
+            if (a.isForm !== b.isForm) {
+                return a.isForm ? 1 : -1;
+            }
+
+            return a.displayStr.localeCompare(b.displayStr);
         });
 
         const topMatches = matches.slice(0, 10);
@@ -293,7 +434,9 @@
         if (topMatches.length > 0) {
             topMatches.forEach(match => {
                 const div = document.createElement('div');
-                const parts = match.latin.split(' ');
+                
+                // Embolden search text
+                const parts = match.text.split(' ');
                 const htmlParts = parts.map(part => {
                     if (normalizeForSearch(part).startsWith(normalizedSearchTerm)) {
                         let matchEndIndex = 0;
@@ -303,9 +446,7 @@
                                 break;
                             }
                         }
-                        if (matchEndIndex === 0 && normalizedSearchTerm.length > 0) {
-                             matchEndIndex = rawSearchTerm.length;
-                        }
+                        if (matchEndIndex === 0 && normalizedSearchTerm.length > 0) matchEndIndex = rawSearchTerm.length;
 
                         if (matchEndIndex > 0) {
                             return `<strong>${part.substring(0, matchEndIndex)}</strong>${part.substring(matchEndIndex)}`;
@@ -314,8 +455,15 @@
                     return part;
                 });
 
-                div.innerHTML = htmlParts.join(' ');
-                div.addEventListener('mousedown', () => displayWordDetails(match));
+                let innerHtml = htmlParts.join(' ');
+                
+                // Append the non-bolded "> lemma" redirect label for form matches
+                if (match.isForm) {
+                    innerHtml += ` <span class="search-form-lemma-label">&gt; ${match.word.latin}</span>`;
+                }
+
+                div.innerHTML = innerHtml;
+                div.addEventListener('mousedown', () => displayWordDetails(match.word, match.formObj));
                 suggestionsList.appendChild(div);
             });
             suggestionsList.style.display = 'block';
@@ -352,21 +500,47 @@
         
         loadStudyList();
 
-        fetch('vocabulary.csv')
+        // Fetch both CSVs in parallel (avoiding bracket arrays)
+        const fetchPromises = new Array();
+        fetchPromises.push(
+            fetch('vocabulary.csv')
             .then(response => {
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                if (!response.ok) throw new Error("Vocab error");
                 return response.text();
             })
-            .then(csvData => {
-                vocabulary = parseCSV(csvData);
-                vocabulary.sort((a, b) => a.latin.localeCompare(b.latin));
-                populateWordWheel();
-                updateWordWheelStyles();
+        );
+        fetchPromises.push(
+            fetch('forms.csv')
+            .then(response => {
+                if (!response.ok) return ""; // gracefully fail if forms.csv is missing
+                return response.text();
             })
-            .catch(error => {
-                console.error('Error fetching vocabulary:', error);
-                resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html and that the repository is configured correctly.</p></div>`;
+            .catch(() => "") // catch network errors for forms specifically
+        );
+
+        Promise.all(fetchPromises)
+        .then(results => {
+            const vocabData = results.slice(0, 1).pop();
+            const formsData = results.slice(1, 2).pop();
+
+            vocabulary = parseCSV(vocabData);
+            if (formsData && formsData.trim().length > 0) {
+                formsList = parseFormsCSV(formsData);
+            }
+
+            // Connect sub-forms to their headwords
+            vocabulary.forEach(word => {
+                word.forms = formsList.filter(f => f.lemma === word.latin);
             });
+
+            vocabulary.sort((a, b) => a.latin.localeCompare(b.latin));
+            populateWordWheel();
+            updateWordWheelStyles();
+        })
+        .catch(error => {
+            console.error('Error fetching dictionaries:', error);
+            resultDisplay.innerHTML = `<div class="placeholder-text"><p style="color:var(--danger-color);">Error: Could not load vocabulary.csv. Please ensure the file is in the same folder as index.html.</p></div>`;
+        });
 
         searchInput.addEventListener('input', onSearchInput);
         wordWheel.addEventListener('click', onWordWheelClick);

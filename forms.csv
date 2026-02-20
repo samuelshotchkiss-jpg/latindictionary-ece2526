@@ -1,0 +1,103 @@
+Form,Lemma,Definition
+haec,"hic haec hoc",this (feminine nom / neuter pl)
+hoc,"hic haec hoc",this (neuter nom/acc)
+huius,"hic haec hoc",of this / his / hers / its
+huic,"hic haec hoc",to/for this
+hunc,"hic haec hoc",this (masculine acc)
+hanc,"hic haec hoc",this (feminine acc)
+hōc,"hic haec hoc",by/with/from this (masc/neut abl)
+hāc,"hic haec hoc",by/with/from this (feminine abl)
+hī,"hic haec hoc",these (masculine nom)
+hae,"hic haec hoc",these (feminine nom)
+hōrum,"hic haec hoc",of these (masc/neut gen)
+hārum,"hic haec hoc",of these (feminine gen)
+hōs,"hic haec hoc",these (masculine acc)
+hās,"hic haec hoc",these (feminine acc)
+hīs,"hic haec hoc",to/for/by/with/from these (dat/abl)
+cuius,"quī quae quod",whose / of whom / of which
+cui,"quī quae quod",to/for whom / to/for which
+quem,"quī quae quod",whom / which (masc acc)
+quam,"quī quae quod",whom / which (fem acc)
+quō,"quī quae quod",by/with/from whom/which (masc/neut abl)
+quā,"quī quae quod",by/with/from whom/which (fem abl)
+quōrum,"quī quae quod",whose / of whom/which (masc/neut gen pl)
+quārum,"quī quae quod",whose / of whom/which (fem gen pl)
+quibus,"quī quae quod",to/for/by/with/from whom/which (dat/abl)
+quōs,"quī quae quod",whom / which (masc acc pl)
+quās,"quī quae quod",whom / which (fem acc pl)
+cuius,"quis quid",whose? / of whom? / of what?
+cui,"quis quid",to/for whom? / to/for what?
+quem,"quis quid",whom? (masc/fem acc)
+quō,"quis quid",by/with/from whom/what? (ablative)
+eius,"is ea id",his / her / its / of that
+eī,"is ea id",to/for him/her/it/that (dat) OR they (masc nom pl)
+eum,"is ea id",him / that (masc acc)
+eam,"is ea id",her / that (fem acc)
+eō,"is ea id",by/with/from him/it/that (masc/neut abl)
+eā,"is ea id",by/with/from her/that (fem abl)
+iī,"is ea id",they / those (masc nom pl)
+eae,"is ea id",they / those (fem nom pl)
+eōrum,"is ea id",their / of those (masc/neut gen)
+eārum,"is ea id",their / of those (fem gen)
+eōs,"is ea id",them / those (masc acc pl)
+eās,"is ea id",them / those (fem acc pl)
+eīs,"is ea id",to/for/by/with/from them/those (dat/abl)
+iīs,"is ea id",to/for/by/with/from them/those (dat/abl)
+sum,"sum esse fuī futūrus",I am
+es,"sum esse fuī futūrus",you are
+est,"sum esse fuī futūrus",he/she/it is
+sumus,"sum esse fuī futūrus",we are
+estis,"sum esse fuī futūrus",y'all are
+sunt,"sum esse fuī futūrus",they are
+eram,"sum esse fuī futūrus",I was
+erās,"sum esse fuī futūrus",you were
+erat,"sum esse fuī futūrus",he/she/it was
+erāmus,"sum esse fuī futūrus",we were
+erātis,"sum esse fuī futūrus",y'all were
+erant,"sum esse fuī futūrus",they were
+erō,"sum esse fuī futūrus",I will be
+eris,"sum esse fuī futūrus",you will be
+erit,"sum esse fuī futūrus",he/she/it will be
+erimus,"sum esse fuī futūrus",we will be
+eritis,"sum esse fuī futūrus",y'all will be
+erunt,"sum esse fuī futūrus",they will be
+fuī,"sum esse fuī futūrus",I have been / I was
+fuistī,"sum esse fuī futūrus",you have been / you were
+fuit,"sum esse fuī futūrus",he/she/it has been / was
+fuimus,"sum esse fuī futūrus",we have been / were
+fuistis,"sum esse fuī futūrus",y'all have been / were
+fuērunt,"sum esse fuī futūrus",they have been / were
+fueram,"sum esse fuī futūrus",I had been
+fuerās,"sum esse fuī futūrus",you had been
+fuerat,"sum esse fuī futūrus",he/she/it had been
+fuerāmus,"sum esse fuī futūrus",we had been
+fuerātis,"sum esse fuī futūrus",y'all had been
+fuerant,"sum esse fuī futūrus",they had been
+fuerō,"sum esse fuī futūrus",I will have been
+fueris,"sum esse fuī futūrus",you will have been
+fuerit,"sum esse fuī futūrus",he/she/it will have been
+fuerimus,"sum esse fuī futūrus",we will have been
+fueritis,"sum esse fuī futūrus",y'all will have been
+fuerint,"sum esse fuī futūrus",they will have been (or perf subj)
+sim,"sum esse fuī futūrus",I may be (pres subj)
+sīs,"sum esse fuī futūrus",you may be (pres subj)
+sit,"sum esse fuī futūrus",he/she/it may be (pres subj)
+sīmus,"sum esse fuī futūrus",we may be (pres subj)
+sītis,"sum esse fuī futūrus",y'all may be (pres subj)
+sint,"sum esse fuī futūrus",they may be (pres subj)
+essem,"sum esse fuī futūrus",I might be (impf subj)
+essēs,"sum esse fuī futūrus",you might be (impf subj)
+esset,"sum esse fuī futūrus",he/she/it might be (impf subj)
+essēmus,"sum esse fuī futūrus",we might be (impf subj)
+essētis,"sum esse fuī futūrus",y'all might be (impf subj)
+essent,"sum esse fuī futūrus",they might be (impf subj)
+fuissem,"sum esse fuī futūrus",I might have been (plupf subj)
+fuissēs,"sum esse fuī futūrus",you might have been (plupf subj)
+fuisset,"sum esse fuī futūrus",he/she/it might have been (plupf subj)
+fuissēmus,"sum esse fuī futūrus",we might have been (plupf subj)
+fuissētis,"sum esse fuī futūrus",y'all might have been (plupf subj)
+fuissent,"sum esse fuī futūrus",they might have been (plupf subj)
+esse,"sum esse fuī futūrus",to be
+fuisse,"sum esse fuī futūrus",to have been
+fore,"sum esse fuī futūrus",to be about to be (fut infin)
+futūrus,"sum esse fuī futūrus",about to be
