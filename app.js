@@ -20,17 +20,23 @@
     const closeWordWheelBtn = document.getElementById('close-word-wheel-btn');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
     
-    let vocabulary = [];
-    let formsList = [];
-    let studyList =[];
+    let vocabulary = new Array();
+    let formsList = new Array();
+    let studyList = new Array();
     const STORAGE_KEY_LIST = 'latinStudyList';
     const STORAGE_KEY_CONSENT = 'privacyConsent';
 
     // --- Core & Data Functions ---
 
+    // NEW: Helper function to convert {comments} into styled HTML spans
+    function formatHeadwordHTML(rawLatin) {
+        if (!rawLatin) return '';
+        // Replaces {text} with a styled span without using bracketed regex
+        return rawLatin.replace(/\{(.*?)\}/g, '<span class="headword-comment">$1</span>');
+    }
+
     function normalizeForSearch(str) {
         if (!str) return '';
-        // Using \p{Diacritic} and string alternation to avoid bracketed RegEx classes
         return str
             .toLowerCase()
             .normalize('NFD')
@@ -38,9 +44,8 @@
             .replace(/\u2013|-|\(|\)|=/g, ''); 
     }
 
-    // Custom CSV parser that doesn't rely on bracketed Regular Expressions
     function parseCSV(data) {
-        const records =[];
+        const records = new Array();
         const lines = data.trim().split(/\r?\n/).slice(1);
 
         for (const line of lines) {
@@ -62,7 +67,6 @@
             values.push(currentVal.trim());
             
             if (values.length >= 2) {
-                // Using slice.pop() to safely get indices without using brackets
                 const latin = (values.slice(0, 1).pop() || '').replace(/"/g, '');
                 const definition = (values.slice(1, 2).pop() || '').replace(/"/g, '');
                 const column3 = (values.slice(2, 3).pop() || '').replace(/"/g, '');
@@ -81,20 +85,19 @@
                 }
 
                 records.push({
-                    latin: latin,
+                    latin: latin, // Keeps the raw {comments} intact for formatting later
                     definition: definition,
                     frequency: frequency,
                     partOfSpeech: partOfSpeech,
-                    forms:[] 
+                    forms: new Array() 
                 });
             }
         }
         return records;
     }
 
-    // Same custom parser logic for the forms.csv file
     function parseFormsCSV(data) {
-        const records =[];
+        const records = new Array();
         const lines = data.trim().split(/\r?\n/).slice(1);
 
         for (const line of lines) {
@@ -133,7 +136,8 @@
         const fragment = document.createDocumentFragment();
         vocabulary.forEach(word => {
             const li = document.createElement('li');
-            li.textContent = word.latin;
+            // Formats {comments} for display in the word wheel
+            li.innerHTML = formatHeadwordHTML(word.latin);
             li.dataset.latin = word.latin;
             fragment.appendChild(li);
         });
@@ -151,7 +155,6 @@
         const posHtml = word.partOfSpeech ? `<div class="part-of-speech">${word.partOfSpeech}</div>` : '';
         const freqHtml = (word.frequency !== null) ? `<div class="frequency">Frequency: ${word.frequency}</div>` : '';
 
-        // Generate Expandable Forms Section
         let formsHtml = '';
         if (word.forms && word.forms.length > 0) {
             const isOpen = selectedFormObj ? 'open' : '';
@@ -172,9 +175,10 @@
             `;
         }
 
+        // Formats {comments} for the main header
         resultDisplay.innerHTML = `
             <div class="result-header">
-                <h2>${word.latin}</h2>
+                <h2>${formatHeadwordHTML(word.latin)}</h2>
                 ${buttonHtml}
             </div>
             ${posHtml}
@@ -200,14 +204,13 @@
         });
 
         updateWordWheelSelection(word.latin);
-        searchInput.value = selectedFormObj ? selectedFormObj.form : word.latin;
+        searchInput.value = selectedFormObj ? selectedFormObj.form : word.latin.replace(/\{.*?\}/g, '').trim();
         suggestionsList.style.display = 'none';
     }
     
     function updateWordWheelSelection(latinWord) {
         const currentSelected = wordWheel.querySelector('.selected');
         if (currentSelected) currentSelected.classList.remove('selected');
-        // Escaping brackets here using standard DOM querying instead
         const items = wordWheel.querySelectorAll('li');
         let newSelectedItem = null;
         for (const item of items) {
@@ -241,7 +244,7 @@
         const savedList = localStorage.getItem(STORAGE_KEY_LIST);
         if (savedList) {
             try { studyList = JSON.parse(savedList); } 
-            catch (e) { studyList =[]; }
+            catch (e) { studyList = new Array(); }
         }
     }
 
@@ -271,7 +274,7 @@
                     const li = document.createElement('li');
                     li.innerHTML = `
                         <div class="study-list-item-content">
-                            <span class="study-list-latin">${wordObject.latin}</span>
+                            <span class="study-list-latin">${formatHeadwordHTML(wordObject.latin)}</span>
                             <span class="study-list-definition">${wordObject.definition}</span>
                             ${freqHtml}
                         </div>
@@ -289,7 +292,6 @@
             const word = vocabulary.find(w => w.latin === latinWord);
             if (!word) return '';
 
-            // Using Array.of to avoid array literal brackets
             const row = Array.of(word.latin, word.definition);
             if (word.frequency !== null) row.push(word.frequency);
             if (word.partOfSpeech) row.push(word.partOfSpeech);
@@ -299,7 +301,6 @@
     }
 
     function downloadTSV() {
-        // Using Array.of instead of brackets
         const blobContent = Array.of(generateTSVContent());
         const blob = new Blob(blobContent, { type: 'text/tab-separated-values;charset=utf-8;' });
         const link = document.createElement("a");
@@ -328,7 +329,6 @@
     }
 
     function processImportFile(e) {
-        // Using FileList.item(0) to avoid bracket notation
         const file = e.target.files.item(0);
         if (!file) return;
         const reader = new FileReader();
@@ -336,12 +336,12 @@
             const content = event.target.result;
             const lines = content.trim().split('\n');
             const firstLine = lines.slice(0, 1).pop();
-            const firstLineCols = lines.length > 0 ? firstLine.split('\t') :[];
+            const firstLineCols = lines.length > 0 ? firstLine.split('\t') : new Array();
             const firstCol = firstLineCols.slice(0, 1).pop() || '';
             
             const hasHeader = firstLineCols.length > 0 && (firstCol.toLowerCase().includes('latin') || firstCol.toLowerCase().includes('word'));
             const dataLines = hasHeader ? lines.slice(1) : lines;
-            const newList =[];
+            const newList = new Array();
             const allLatinWords = new Set(vocabulary.map(v => v.latin));
             dataLines.forEach(line => {
                 const parts = line.split('\t');
@@ -349,7 +349,6 @@
                 if (latinWord && allLatinWords.has(latinWord)) newList.push(latinWord);
             });
             
-            // Using Array.from to spread the Set instead of spread brackets
             studyList = Array.from(new Set(newList));
             saveStudyList();
             showStudyListModal();
@@ -370,13 +369,17 @@
             return;
         }
 
-        let matches = new Array(); // Initializes the matches array
+        let matches = new Array();
         const addedDisplays = new Set();
 
-        // 1. Gather all matching headwords (lemmata)
+        // 1. Gather all matching headwords (lemmata) ignoring comments
         vocabulary.forEach(word => {
-            const parts = word.latin.split(' ');
-            const matchesLemma = parts.some(part => normalizeForSearch(part).startsWith(normalizedSearchTerm));
+            const cleanLatin = word.latin.replace(/\{.*?\}/g, ' '); 
+            const parts = cleanLatin.split(' ');
+            const matchesLemma = parts.some(part => {
+                const normPart = normalizeForSearch(part);
+                return normPart.length > 0 && normPart.startsWith(normalizedSearchTerm);
+            });
             
             if (matchesLemma) {
                 matches.push({
@@ -393,14 +396,13 @@
         // 2. Gather matching inflected forms
         formsList.forEach(formObj => {
             if (normalizeForSearch(formObj.form).startsWith(normalizedSearchTerm)) {
-                // To support ambiguous forms (like cuius representing both quī and quis)
                 const displayStr = `${formObj.form} > ${formObj.lemma}`;
                 if (!addedDisplays.has(displayStr)) {
                     const wordObj = vocabulary.find(w => w.latin === formObj.lemma);
                     if (wordObj) {
                         matches.push({
                             type: 'form',
-                            text: formObj.form, // Bolding applies ONLY to this text
+                            text: formObj.form,
                             displayStr: displayStr,
                             word: wordObj,
                             formObj: formObj,
@@ -412,54 +414,63 @@
             }
         });
 
-        // 3. Sort exclusively by dictionary Frequency (highest to lowest), falling back to alphabetical
+        // 3. Sort
         matches.sort((a, b) => {
             const freqA = a.word.frequency !== null ? a.word.frequency : -1;
             const freqB = b.word.frequency !== null ? b.word.frequency : -1;
             
             if (freqA !== freqB) {
-                return freqB - freqA; // Largest frequency first
+                return freqB - freqA; 
             }
-            
-            // If frequencies are tied, put standard lemmata before sub-forms
             if (a.isForm !== b.isForm) {
                 return a.isForm ? 1 : -1;
             }
-
             return a.displayStr.localeCompare(b.displayStr);
         });
 
         const topMatches = matches.slice(0, 10);
         suggestionsList.innerHTML = '';
+        
         if (topMatches.length > 0) {
             topMatches.forEach(match => {
                 const div = document.createElement('div');
+                let innerHtml = "";
                 
-                // Embolden search text
-                const parts = match.text.split(' ');
-                const htmlParts = parts.map(part => {
-                    if (normalizeForSearch(part).startsWith(normalizedSearchTerm)) {
-                        let matchEndIndex = 0;
-                        for (let i = 1; i <= part.length; i++) {
-                            if (normalizeForSearch(part.substring(0, i)) === normalizedSearchTerm) {
-                                matchEndIndex = i;
-                                break;
+                // Safely separate {comments} from text blocks for bolding
+                const segments = match.text.split(/(\{.*?\})/g);
+                
+                segments.forEach(segment => {
+                    if (segment.startsWith('{') && segment.endsWith('}')) {
+                        // Directly wrap the comment in our new CSS class
+                        const innerText = segment.substring(1, segment.length - 1);
+                        innerHtml += '<span class="headword-comment">' + innerText + '</span>';
+                    } else {
+                        // Apply bolding logic only to the non-comment parts
+                        const parts = segment.split(' ');
+                        const htmlParts = parts.map(part => {
+                            const normPart = normalizeForSearch(part);
+                            if (normPart.length > 0 && normPart.startsWith(normalizedSearchTerm)) {
+                                let matchEndIndex = 0;
+                                for (let i = 1; i <= part.length; i++) {
+                                    if (normalizeForSearch(part.substring(0, i)) === normalizedSearchTerm) {
+                                        matchEndIndex = i;
+                                        break;
+                                    }
+                                }
+                                if (matchEndIndex === 0 && normalizedSearchTerm.length > 0) matchEndIndex = rawSearchTerm.length;
+
+                                if (matchEndIndex > 0) {
+                                    return '<strong>' + part.substring(0, matchEndIndex) + '</strong>' + part.substring(matchEndIndex);
+                                }
                             }
-                        }
-                        if (matchEndIndex === 0 && normalizedSearchTerm.length > 0) matchEndIndex = rawSearchTerm.length;
-
-                        if (matchEndIndex > 0) {
-                            return `<strong>${part.substring(0, matchEndIndex)}</strong>${part.substring(matchEndIndex)}`;
-                        }
+                            return part;
+                        });
+                        innerHtml += htmlParts.join(' ');
                     }
-                    return part;
                 });
-
-                let innerHtml = htmlParts.join(' ');
                 
-                // Append the non-bolded "> lemma" redirect label for form matches
                 if (match.isForm) {
-                    innerHtml += ` <span class="search-form-lemma-label">&gt; ${match.word.latin}</span>`;
+                    innerHtml += ' <span class="search-form-lemma-label">&gt; ' + formatHeadwordHTML(match.word.latin) + '</span>';
                 }
 
                 div.innerHTML = innerHtml;
@@ -500,7 +511,6 @@
         
         loadStudyList();
 
-        // Fetch both CSVs in parallel (avoiding bracket arrays)
         const fetchPromises = new Array();
         fetchPromises.push(
             fetch('vocabulary.csv')
@@ -512,10 +522,10 @@
         fetchPromises.push(
             fetch('forms.csv')
             .then(response => {
-                if (!response.ok) return ""; // gracefully fail if forms.csv is missing
+                if (!response.ok) return ""; 
                 return response.text();
             })
-            .catch(() => "") // catch network errors for forms specifically
+            .catch(() => "") 
         );
 
         Promise.all(fetchPromises)
@@ -528,7 +538,6 @@
                 formsList = parseFormsCSV(formsData);
             }
 
-            // Connect sub-forms to their headwords
             vocabulary.forEach(word => {
                 word.forms = formsList.filter(f => f.lemma === word.latin);
             });

@@ -4,219 +4,220 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "et","and",205,Conjunction
 "is ea id","that; he/her/it/them",196,Pronoun
 "in","in, on (with ablative); into (with accusative)",189,Preposition
-"–que","and (postpositive)",126,"Conjunction (enclitic)"
+"-que","and (postpositive)",126,"Conjunction (enclitic)"
 "ad","to, towards (with accusative)",116,Preposition
-"ut or utī","as, when; so that",115,"Conjunction / Adverb"
+"ut {or} utī","as, when; so that",115,"Conjunction / Adverb"
 "suī sibi sē sē","himself/herself/itself/themselves",107,Pronoun
 "nōn","not",95,Adverb
 "omnis omne","all, every",94,Adjective
 "hic haec hoc","this",92,Pronoun
 "ā ab abs","away from, by",84,Preposition
-"atque or ac","and also; (after a word implying comparison) as",83,Conjunction
-"rēs reī f.","thing, affair, matter",79,Noun
+"atque {or} ac","and also; (after a word implying comparison) as",83,Conjunction
+"rēs reī {f.}","thing, affair, matter",79,Noun
 "dē","about, down from",70,Preposition
-"neque or nec","and not, (doubled) neither...nor",68,Conjunction
+"neque {or} nec","and not, (doubled) neither...nor",68,Conjunction
 "possum posse potuī","to be able to, can",67,Verb
 "ille illa illud","that (over there)",65,Pronoun
 "tū tuī tibi tē tē","you",65,Pronoun
-"egō meī mihi mē mē","I, me",64,Pronoun
+"ego meī mihi mē mē","I, me",64,Pronoun
 "dīcō dīcere dīxī dictus","I say, speak, tell",61,Verb
 "sed","but",60,Conjunction
-"suus –a –um","his own, her own, its own, their own",56,Adjective
-"Caesar Caesaris m.","Caesar",53,Noun
+"suus sua suum","his own, her own, its own, their own",56,Adjective
+"Caesar Caesaris {m.}","Caesar",53,Noun
 "faciō facere fēcī factus","do, make",53,Verb
 "videō vidēre vīdī vīsus","see, seem",53,Verb
-"cum (=quum)","when, although, because",50,Conjunction
+"cum (= quum)","when, although, because",50,Conjunction
 "cum","with",46,Preposition
 "ē ex","out of, from",46,Preposition
 "quis quid","who? what? (in a question)",45,Pronoun
 "etiam","also, even",43,Adverb
 "habeō habēre habuī habitus","to have, hold, consider",41,Verb
 "enim","for, because (always second in its clause)",40,Conjunction
-"māgnus –a –um","big, great, large",39,Adjective
-"aut; aut…aut","or; either...or",35,Conjunction
+"magnus magna magnum","big, great, large",39,Adjective
+"aut {;} aut…aut","or; either...or",35,Conjunction
 "ipse ipsa ipsum","he himself, she herself, that very thing",35,Pronoun
 "sī","if",35,Conjunction
-"tuus –a –um","your, yours (singular)",35,Adjective
+"tuus tua tuum","your, yours (singular)",35,Adjective
 "volō velle voluī","to want, wish",30,Verb
-"meus –a –um","my, mine",29,Adjective
+"meus mea meum","my, mine",29,Adjective
 "quod","because",28,Conjunction
-"vōs vestrum/vestrī vōbīs","y'all; you (plural)",28,Pronoun
+"vōs vestrum {/} vestrī vōbīs","y'all; you (plural)",28,Pronoun
 "īdem eadem idem","the same",27,Pronoun
-"tantus –a –um","so great, so large",27,Adjective
+"tantus tanta tantum","so great, so large",27,Adjective
 "nē","so that . . . not; let . . . not!; after verbs of fearing, that",26,"Adverb / Conjunction"
-"rēs publica reī publicae f.","republic, government, state",26,Noun
-"senātus senātūs m.","senate",26,Noun
-"homō hominis m.","person, human being, man",25,Noun
+"rēs pūblica reī pūblicae {f.}","republic, government, state",26,Noun
+"senātus senātūs {m.}","senate",26,Noun
+"homō hominis {m.}","person, human being, man",25,Noun
 "tamen","however, nevertheless",25,Adverb
-"tempus temporis n.","time",25,Noun
-"ūnus –a –um","one",25,Numeral
+"tempus temporis {n.}","time",25,Noun
+"ūnus ūna ūnum","one",25,Numeral
 "alius alia aliud","other, another",24,Adjective
 "quam","than; how . . . !; (with superlative) as _____ as possible",24,"Adverb / Conjunction"
-"diēs diēī m. or f.","day",23,Noun
-"pars partis f.","part, share, side",23,Noun
-"superus –a –um","higher, upper",23,Adjective
-"animus animī m.","soul, mind, spirit",22,Noun
-"prōvincia prōvinciae f.","province",22,Noun
-"multus –a –um","many, much",21,Adjective
-"officium offici(ī) n.","duty, service, office",21,Noun
-"bellum bellī n.","war",20,Noun
+"diēs diēī {m. or f.}","day",23,Noun
+"pars partis {f.}","part, share, side",23,Noun
+"superus supera superum","higher, upper",23,Adjective
+"animus animī {m.}","soul, mind, spirit",22,Noun
+"prōvincia prōvinciae {f.}","province",22,Noun
+"multus multa multum","many, much",21,Adjective
+"officium officiī {n.}","duty, service, office",21,Noun
+"bellum bellī {n.}","war",20,Noun
 "noster nostra nostrum","our, ours",20,Adjective
 "per","through, by means of",20,Preposition
 "quidem","indeed; limits the assertion to whatever word comes before",20,Adverb
-"mīles mīlitis m.","soldier",19,Noun
-"cōnsul cōnsulis m.","consul",18,Noun
-"exercitus exercitūs m.","army",18,Noun
-"nūllus –a –um","no, none, not any",18,Adjective
+"mīles mīlitis {m.}","soldier",19,Noun
+"cōnsul cōnsulis {m.}","consul",18,Noun
+"exercitus exercitūs {m.}","army",18,Noun
+"nūllus nūlla nūllum","no, none, not any",18,Adjective
 "ante","before (adverb and preposition with the accusative)",17,Preposition
 "gerō gerere gessī gestus","to carry, manage; wage (war); wear (clothing)",17,Verb
-"Pompēius –iī m.","Pompeius, Pompey",17,Noun
-"populus populī m.","the people, a people, a nation",17,Noun
-"tōtus –a –um","the whole, entire",17,Adjective
+"Pompēius Pompēiī {m.}","Pompeius, Pompey",17,Noun
+"populus populī {m.}","the people, a people, a nation",17,Noun
+"tōtus tōta tōtum","the whole, entire",17,Adjective
 "veniō venīre vēnī ventum","to come",17,Verb
 "autem","however, moreover",16,Conjunction
-"causa causae f.","cause, reason",16,Noun
-"genus generis n.","type, kind, class",16,Noun
-"Helvētius (Helvēticus) –a –um","Helvetian",16,Adjective
-"vīta vītae f.","life",16,Noun
+"causa causae {f.}","cause, reason",16,Noun
+"genus generis {n.}","type, kind, class",16,Noun
+"Helvētius (Helvēticus) Helvētia Helvētium","Helvetian",16,Adjective
+"vīta vītae {f.}","life",16,Noun
 "agō agere ēgī āctus","to drive, do, act",15,Verb
-"aliquis aliquid and aliquī aliqua aliquod","someone, something, anyone, anything",15,Pronoun
-"domus domī f.","house, home",15,Noun
-"locus locī m. or loca locōrum n. pl.","place, position",15,Noun
-"Marcus Marcī m.","Marcus",15,Noun
-"urbs urbis f.","city",15,Noun
-"cōnsilium cōnsiliī n.","plan, advice, council",14,Noun
+"aliquis aliquid {and} aliquī aliqua aliquod","someone, something, anyone, anything",15,Pronoun
+"domus domūs {f.}","house, home",15,Noun
+"locus locī {m. or} loca locōrum {n. pl.}","place, position",15,Noun
+"Mārcus Mārcī {m.}","Marcus",15,Noun
+"urbs urbis {f.}","city",15,Noun
+"cōnsilium cōnsiliī {n.}","plan, advice, council",14,Noun
 "dō dare dedī datus","to give",14,Verb
-"fīnis fīnis m.","end; border, boundary",14,Noun
-"flūmen flūminis n.","river",14,Noun
+"fīnis fīnis {m.}","end; border, boundary",14,Noun
+"flūmen flūminis {n.}","river",14,Noun
 "ita","thus, so",14,Adverb
-"iter itineris n.","journey, march, route",14,Noun
-"iūs iūris n.","law, right, justice",14,Noun
-"nihil or nīl or nihilo n.","nothing",14,Noun
-"quis quid (after sī nisī ne or num)","anyone, anything",14,Pronoun
-"reliquus –a –um","left behind, the remainder, the rest of",14,Adjective
-"sententia sententiae f.","opinion, feeling",14,Noun
+"iter itineris {n.}","journey, march, route",14,Noun
+"iūs iūris {n.}","law, right, justice",14,Noun
+"nihil {or} nīl {or} nihilō {n.}","nothing",14,Noun
+"quis quid {(after sī nisi nē or num)}","anyone, anything",14,Pronoun
+"reliquus reliqua reliquum","left behind, the remainder, the rest of",14,Adjective
+"sententia sententiae {f.}","opinion, feeling",14,Noun
 "sine","without (+ ablative)",14,Preposition
 "contrā","against, opposite (+ accusative)",13,Preposition
 "ferō ferre tulī lātus","carry, bear, endure",13,Verb
-"Gallia Galliae f.","Gaul (modern day France)",13,Noun
-"Lūcius –iī m.","Lucius (a Roman first name)",13,Noun
+"Gallia Galliae {f.}","Gaul (modern day France)",13,Noun
+"Lūcius Lūciī {m.}","Lucius (a Roman first name)",13,Noun
 "nam","for, because (always first in its clause)",13,Conjunction
-"ōrātiō ōrātiōnis f.","speech, oration",13,Noun
-"ōrdō ōrdinis m.","order, rank, class",13,Noun
-"pater patris m.","father",13,Noun
-"ratiō ratiōnis f.","reason, method, plan",13,Noun
-"socius –iī m.","comrade, ally",13,Noun
-"sōlus –a –um","alone, only",13,Adjective
+"ōrātiō ōrātiōnis {f.}","speech, oration",13,Noun
+"ōrdō ōrdinis {m.}","order, rank, class",13,Noun
+"pater patris {m.}","father",13,Noun
+"ratiō ratiōnis {f.}","reason, method, plan",13,Noun
+"socius sociī {m.}","comrade, ally",13,Noun
+"sōlus sōla sōlum","alone, only",13,Adjective
 "alter altera alterum","the other (of two)",12,Adjective
-"annus annī m.","year",12,Noun
-"calamitās calamitātis f.","calamity, disaster",12,Noun
-"castra castrōrum n. pl.","military camp",12,Noun
+"annus annī {m.}","year",12,Noun
+"calamitās calamitātis {f.}","calamity, disaster",12,Noun
+"castra castrōrum {n. pl.}","military camp",12,Noun
 "dēbeō dēbēre dēbuī dēbitus","ought, must, should; to owe",12,Verb
-"duō duae duo","two",12,Numeral
-"fortūna fortūnae f.","fortune, luck, chance",12,Noun
+"duo duae duo","two",12,Numeral
+"fortūna fortūnae {f.}","fortune, luck, chance",12,Noun
 "iam","now, already",12,Adverb
 "inter","between, among (+accusative)",12,Preposition
-"magis or mage","more, rather",12,Adverb
+"magis {or} mage","more, rather",12,Adverb
 "mittō mittere mīsī missus","to send, let go",12,Verb
 "modo","only, just now, recently",12,Adverb
-"nātūra nātūrae f.","nature, character",12,Noun
-"nisi or nī","if . . . not, unless, except",12,Conjunction
-"perīculum perīculī n.","danger, risk",12,Noun
+"nātūra nātūrae {f.}","nature, character",12,Noun
+"nisi {or} nī","if . . . not, unless, except",12,Conjunction
+"perīculum perīculī {n.}","danger, risk",12,Noun
 "prō","in front of, for, on behalf of (+ablative)",12,Preposition
 "putō putāre putāvī putātus","to think, believe, suppose",12,Verb
-"Rōmānus –a –um","Roman",12,Adjective
-"tribūnus tribūnī m.","Tribune",12,Noun
-"tum or tunc","then, at that time",12,Adverb
-"–ne","(introduces a yes/no question)",11,Particle
-"arma armōrum n.","arms, weapons",11,Noun
-"cīvitās cīvitātis f.","state, citizenship",11,Noun
-"cōpiae, cōpiārum","forces, troops",11,Noun
-"dolor dolōris m.","pain, grief, sorrow",11,Noun
+"Rōmānus Rōmāna Rōmānum","Roman",12,Adjective
+"tribūnus tribūnī {m.}","Tribune",12,Noun
+"tum {or} tunc","then, at that time",12,Adverb
+"-ne","(introduces a yes/no question)",11,Particle
+"arma armōrum {n. pl.}","arms, weapons",11,Noun
+"cīvitās cīvitātis {f.}","state, citizenship",11,Noun
+"cōpiae cōpiārum {f. pl.}","forces, troops",11,Noun
+"dolor dolōris {m.}","pain, grief, sorrow",11,Noun
 "igitur","therefore",11,Conjunction
-"imperātor imperātōris m.","general, commander",11,Noun
-"iūdicium iūdici(ī) n.","judgment, decision, trial",11,Noun
-"laus laudis f.","praise, glory",11,Noun
+"imperātor imperātōris {m.}","general, commander",11,Noun
+"iūdicium iūdiciī {n.}","judgment, decision, trial",11,Noun
+"laus laudis {f.}","praise, glory",11,Noun
 "vester vestra vestrum","your, yours (plural)",11,Adjective
-"vir virī m.","man, husband",11,Noun
-"virtūs virtūtis f.","manliness, courage, virtue",11,Noun
-"Asia –ae, f.","Asia",10,Noun
+"vir virī {m.}","man, husband",11,Noun
+"virtūs virtūtis {f.}","manliness, courage, virtue",11,Noun
+"Asia Asiae {f.}","Asia",10,Noun
 "audiō audīre audīvī audītus","to hear, listen to",10,Verb
-"cōgō cogere coēgī coāctus","to compel, force, collect",10,Verb
+"cōgō cōgere coēgī coāctus","to compel, force, collect",10,Verb
 "cōnservō cōnservāre cōnservāvī cōnservātus","save, preserve, keep",10,Verb
-"dīgnitās dīgnitātis f.","worthiness, dignity, rank",10,Noun
-"dīmittō dīmittere dīmīsī dimīssus","to send away, dismiss",10,Verb
-"grātiā + preceding genitive","for the sake of, because of",10,Preposition
-"grātia grātiae f.","gratitude, favor, influence",10,Noun
-"imperium imperiī n.","power to command, authority, empire",10,Noun
+"dīgnitās dīgnitātis {f.}","worthiness, dignity, rank",10,Noun
+"dīmittō dīmittere dīmīsī dīmissus","to send away, dismiss",10,Verb
+"grātiā {+ preceding genitive}","for the sake of, because of",10,Preposition
+"grātia grātiae {f.}","gratitude, favor, influence",10,Noun
+"imperium imperiī {n.}","power to command, authority, empire",10,Noun
 "iste ista istud","that . . . of yours; that (often with contempt)",10,Pronoun
-"legiō legiōnis f.","legion",10,Noun
-"modus modī m.","way, manner, method",10,Noun
+"legiō legiōnis {f.}","legion",10,Noun
+"modus modī {m.}","way, manner, method",10,Noun
 "obtineō obtinēre obtinuī obtentus","hold, possess, obtain",10,Verb
-"parum; minus; minimē","(too) little; less; least",10,Adverb
+"parum {;} minus {;} minimē","(too) little; less; least",10,Adverb
 "patior patī passus sum","to endure, suffer, allow",10,Verb
-"pāx pācis f.","peace",10,Noun
-"plēbs plēbis f.","the common people, the plebeians",10,Noun
-"prīmus –a –um","first",10,Adjective
-"rēx rēgis m.","king",10,Noun
-"salūs salūtis f.","safety, wellness; greetings",10,Noun
+"pāx pācis {f.}","peace",10,Noun
+"plēbs plēbis {f.}","the common people, the plebeians",10,Noun
+"prīmus prīma prīmum","first",10,Adjective
+"rēx rēgis {m.}","king",10,Noun
+"salūs salūtis {f.}","safety, wellness; greetings",10,Noun
 "uterque utraque utrumque","each (of two), both",10,Pronoun
 "vērō","in truth, but, however (always second in its clause)",10,Adverb
-"vīs vis f.","force, violence; (pl.) strength",10,Noun
-"āmittō āmittere āmīsī āmīssus","to lose, send away",9,Verb
-"bonus –a –um","good",9,Adjective
-"cīvis cīvis m. or f.","citizen",9,Noun
-"cōnfīrmō –āre","confirm, strengthen, encourage",9,Verb
+"vīs vīs {f.}","force, violence; (pl.) strength",10,Noun
+"āmittō āmittere āmīsī āmissus","to lose, send away",9,Verb
+"bonus bona bonum","good",9,Adjective
+"cīvis cīvis {m. or f.}","citizen",9,Noun
+"cōnfīrmō cōnfīrmāre cōnfīrmāvī cōnfīrmātus","confirm, strengthen, encourage",9,Verb
 "dūcō dūcere dūxī ductus","lead, guide, consider",9,Verb
 "exīstimō exīstimāre exīstimāvī exīstimātus","reckon, consider, think",9,Verb
 "exter extera exterum","on the outside, external, foreign",9,Adjective
-"Gāius –iī m.","Gaius (a Roman first name)",9,Noun
-"glōria glōriae f.","glory, fame",9,Noun
-"lēgātus lēgātī m.","ambassador; deputy, lieutentant-general",9,Noun
-"nōs nostrum/nostrī nōbīs","we, us",9,Pronoun
+"Gāius Gāiī {m.}","Gaius (a Roman first name)",9,Noun
+"glōria glōriae {f.}","glory, fame",9,Noun
+"lēgātus lēgātī {m.}","ambassador; deputy, lieutentant-general",9,Noun
+"nōs nostrum {/} nostrī nōbīs","we, us",9,Pronoun
 "numquam","never",9,Adverb
 "parō parāre parāvī parātus","prepare, get ready",9,Verb
-"paucī, -ae, –a","few, a few",9,Adjective
+"paucī paucae pauca","few, a few",9,Adjective
 "persuādeō persuādēre persuāsī persuāsus","persuade (+ dative)",9,Verb
-"petō petere petiī/petīvī petītus","seek, ask for, attack",9,Verb
+"petō petere petiī {/} petīvī petītus","seek, ask for, attack",9,Verb
 "probō probāre probāvī probātus","test, prove, approve",9,Verb
 "propter","on account of, because of (+ accusative)",9,Preposition
 "quīdam quaedam quiddam","a certain person or thing",9,Pronoun
 "quoniam","since, because",9,Conjunction
 "referō referre rettulī relātus","to bring back, report, refer",9,Verb
 "sentiō sentīre sēnsī sēnsus","to feel, perceive, think",9,Verb
-"vectīgal vectīgālis n.","tax, revenue",9,Noun
+"vectīgal vectīgālis {n.}","tax, revenue",9,Noun
 "an","or (in a question)",8,Conjunction
-"auctōritās auctōritātis f.","authority, influence",8,Noun
-"bene; melius (comp.); optimē (superl.)","well; better; best",8,Adverb
-"bonum –ī n.","a good thing, a benefit; (pl.) goods, property",8,Noun
-"certō or certē (certius)","certainly, surely",8,Adverb
-"cēterus –a –um; often pl. cēterī –ae –a","the rest, the others",8,Adjective
+"auctōritās auctōritātis {f.}","authority, influence",8,Noun
+"bene {;} melius {(comp.);} optimē {(superl.)}","well; better; best",8,Adverb
+"bonum bonī {n.}","a good thing, a benefit; (pl.) goods, property",8,Noun
+"certō {or} certē (certius)","certainly, surely",8,Adverb
+"cēterus cētera cēterum {; often pl.} cēterī cēterae cētera","the rest, the others",8,Adjective
 "dēfendō dēfendere dēfendī dēfensus","defend, protect",8,Verb
 "facilis facile","easy",8,Adjective
-"facultās facultātis f.","ability, opportunity, skill",8,Noun
-"honestus –a –um","respectable, honorable",8,Adjective
-"inimīcus –ī m.","(personal) enemy",8,Noun
-"iniūria iniūriae f.","injustice, injury, wrong",8,Noun
+"facultās facultātis {f.}","ability, opportunity, skill",8,Noun
+"honestus honesta honestum","respectable, honorable",8,Adjective
+"inimīcus inimīcī {m.}","(personal) enemy",8,Noun
+"iniūria iniūriae {f.}","injustice, injury, wrong",8,Noun
 "intellegō intellegere intellēxī intellēctus","to understand",8,Verb
+Latin Word,English Definition(s),Frequency,Part of Speech
 "interficiō interficere interfēcī interfectus","to kill",8,Verb
-"Mārcellus –ī m.","Marcellus (a Roman name)",8,Noun
-"nēmō nēminis m. or f.","no one, nobody",8,Noun
-"numerus numerī m.","number, group",8,Noun
+"Mārcellus Mārcellī {m.}","Marcellus (a Roman name)",8,Noun
+"nēmō nēminis {m. or f.}","no one, nobody",8,Noun
+"numerus numerī {m.}","number, group",8,Noun
 "nunc","now",8,Adverb
 "pertineō pertinēre pertinuī pertentus","to reach to, extend, pertain to",8,Verb
 "proficīscor proficīscī profectus sum","set out, depart",8,Verb
-"rēgnum rēgnī n.","kingdom, royal power",8,Noun
+"rēgnum rēgnī {n.}","kingdom, royal power",8,Noun
 "sequor sequī secūtus sum","follow",8,Verb
 "sīc","thus, so, in this way",8,Adverb
-"spēs speī f.","hope",8,Noun
+"spēs speī {f.}","hope",8,Noun
 "ubi","when, where",8,Adverb
-"ulterior –ius; ultimus –a –um","further; furthest, last",8,Adjective
-"vērus –a –um","true, real",8,Adjective
+"ulterior ulterius {;} ultimus ultima ultimum","further; furthest, last",8,Adjective
+"vērus vēra vērum","true, real",8,Adjective
 "accipiō accipere accēpī acceptus","receive, accept",7,Verb
-"aetās aetātis f.","age, time of life",7,Noun
-"amīcus –a –um","friendly; (as a noun) friend",7,Adjective
-"Antōnius –iī m.","Antonius, Antony",7,Noun
+"aetās aetātis {f.}","age, time of life",7,Noun
+"amīcus amīca amīcum","friendly; (as a noun) friend",7,Adjective
+"Antōnius Antōniī {m.}","Antonius, Antony",7,Noun
 "arbitror arbitrārī arbitrātus sum","to think, judge, believe",7,Verb
 "capiō capere cēpī captus","to take, capture, seize",7,Verb
 "cognōscō cognōscere cognōvī cognitus","to learn, get to know, recognize",7,Verb
@@ -224,55 +225,55 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "cōnscrībō cōnscrībere cōnscrīpsī cōnscrīptus","to enlist, enroll",7,Verb
 "cōnstituō cōnstituere cōnstituī cōnstitūtus","to decide, establish, set up",7,Verb
 "conveniō convenīre convēnī conventus","to come together, assemble",7,Verb
-"cūra cūrae f.","care, concern, anxiety",7,Noun
-"ēvocō ēvocāre ––– ēvocātus","call out, summon",7,Verb
-"hostis hostis m.","(public) enemy, enemy combatant",7,Noun
+"cūra cūrae {f.}","care, concern, anxiety",7,Noun
+"ēvocō ēvocāre ēvocāvī ēvocātus","call out, summon",7,Verb
+"hostis hostis {m.}","(public) enemy, enemy combatant",7,Noun
 "iubeō iubēre iussī iussus","to order, command",7,Verb
-"lēx lēgis f.","law, statute",7,Noun
-"littera litterae f.","letter (of the alphabet); (in the plural) letter, literature",7,Noun
-"mōns montis m.","mountain",7,Noun
+"lēx lēgis {f.}","law, statute",7,Noun
+"littera litterae {f.}","letter (of the alphabet); (in the plural) letter, literature",7,Noun
+"mōns montis {m.}","mountain",7,Noun
 "paene","almost, nearly",7,Adverb
-"parvus –a –um / minor –us / minimus –a –um","small / smaller / smallest",7,Adjective
-"proelium proeliī n.","battle",7,Noun
-"proprius –a –um","proper, one's own",7,Adjective
-"Scīpiō Scīpiōnis m.","Scipio (a Roman name)",7,Noun
-"studium studiī n.","zeal, enthusiasm, study",7,Noun
-"tertius –a –um","third",7,Numeral
+"parvus parva parvum {/} minor minus {/} minimus minima minimum","small / smaller / smallest",7,Adjective
+"proelium proeliī {n.}","battle",7,Noun
+"proprius propria proprium","proper, one's own",7,Adjective
+"Scīpiō Scīpiōnis {m.}","Scipio (a Roman name)",7,Noun
+"studium studiī {n.}","zeal, enthusiasm, study",7,Noun
+"tertius tertia tertium","third",7,Numeral
 "trādō trādere trādidī trāditus","hand over, surrender",7,Verb
 "vel","or, or even",7,Conjunction
-"verbum verbī n.","word",7,Noun
+"verbum verbī {n.}","word",7,Noun
 "afferō afferre attulī allātus","bring to, report",6,Verb
-"ager agrī m.","field, land, territory",6,Noun
-"at or ast","but, but yet",6,Conjunction
-"certus –a –um","certain, sure, fixed",6,Adjective
+"ager agrī {m.}","field, land, territory",6,Noun
+"at {or} ast","but, but yet",6,Conjunction
+"certus certa certum","certain, sure, fixed",6,Adjective
 "cōgitō cōgitāre cōgitāvī cōgitātus","to think, ponder, consider",6,Verb
 "commūnis commūnis commūne","common, shared",6,Adjective
 "cōnor cōnārī cōnātus sum","to attempt, try",6,Verb
 "disputō disputāre disputāvī disputātus","to discuss, debate, argue",6,Verb
 "doceō docēre docuī doctus","to teach, explain, show",6,Verb
-"factum factī n.","deed, act, accomplishment",6,Noun
-"fidēs fideī f.","faith, trust, loyalty",6,Noun
-"fīlius fīliī m.","son",6,Noun
+"factum factī {n.}","deed, act, accomplishment",6,Noun
+"fidēs fideī {f.}","faith, trust, loyalty",6,Noun
+"fīlius fīliī {m.}","son",6,Noun
 "fiō fierī factus sum","to be done, become, happen",6,Verb
 "fortis forte","brave, strong",6,Adjective
-"Hispānia –ae f.","Spain",6,Noun
-"initium initi(ī) n.","beginning, start",6,Noun
+"Hispānia Hispāniae {f.}","Spain",6,Noun
+"initium initiī {n.}","beginning, start",6,Noun
 "itaque","and so, therefore",6,Conjunction
 "iūdicō iūdicāre iūdicāvī iūdicātus","to judge, decide",6,Verb
-"longus –a –um","long",6,Adjective
+"longus longa longum","long",6,Adjective
 "loquor loquī locūtus sum","to speak, talk",6,Verb
-"magnitūdō magnitūdinis f.","size, greatness",6,Noun
-"multī –ōrum m.","many men, many people",6,Noun
-"necessārius –a –um","necessary, related; (as a noun) relative, friend",6,Adjective
-"oppidum oppidī n.","town",6,Noun
-"Orgetorīx –īgis m.","Orgetorix (a leader of the Helvetii)",6,Noun
-"pecūnia pecūniae f.","money",6,Noun
-"potestās potestātis f.","power, authority, ability",6,Noun
-"praetereō praeterīre praeterīvī/praeteriī praeteritus","to pass by, go past",6,Verb
+"magnitūdō magnitūdinis {f.}","size, greatness",6,Noun
+"multī multōrum {m. pl.}","many men, many people",6,Noun
+"necessārius necessāria necessārium","necessary, related; (as a noun) relative, friend",6,Adjective
+"oppidum oppidī {n.}","town",6,Noun
+"Orgetorīx Orgetorīgis {m.}","Orgetorix (a leader of the Helvetii)",6,Noun
+"pecūnia pecūniae {f.}","money",6,Noun
+"potestās potestātis {f.}","power, authority, ability",6,Noun
+"praetereō praeterīre praeterīvī {/} praeteriī praeteritus","to pass by, go past",6,Verb
 "quantum","how much, as much as",6,Adverb
-"quisque quidque/quīcque","each one, every one",6,Pronoun
+"quisque quidque {/} quīcque","each one, every one",6,Pronoun
 "quoque","also, too",6,Adverb
-"Rhēnus –ī m.","The Rhine river",6,Noun
+"Rhēnus Rhēnī {m.}","The Rhine river",6,Noun
 "saepe","often",6,Adverb
 "statim","at once, immediately",6,Adverb
 "teneō tenēre tenuī tentus","to hold, keep, possess",6,Verb
@@ -280,142 +281,142 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "ūtor ūtī ūsus sum","to use, make use of (+ ablative)",6,Verb
 "vīvō vīvere vīxī vīctus","to live, be alive",6,Verb
 "absum abesse āfuī āfutūrus","to be absent, be distant",5,Verb
-"accidō accidere accidī –––","to happen, fall upon",5,Verb
-"adventus adventūs m.","arrival, approach",5,Noun
-"Afrānius –ī m.","Afranius (a Roman name)",5,Noun
-"aliēnus –a –um","belonging to another, foreign, strange",5,Adjective
-"amīcitia amīcitiae f.","friendship",5,Noun
+"accidō accidere accidī","to happen, fall upon",5,Verb
+"adventus adventūs {m.}","arrival, approach",5,Noun
+"Afrānius Afrāniī {m.}","Afranius (a Roman name)",5,Noun
+"aliēnus aliēna aliēnum","belonging to another, foreign, strange",5,Adjective
+"amīcitia amīcitiae {f.}","friendship",5,Noun
 "audeō audēre ausus sum","to dare",5,Verb
-"augur auguris m. or f.","augur (a religious official)",5,Noun
-"Belgae –ārum m.","the Belgae, the Belgians",5,Noun
-"beneficium beneficī(ī) n.","kindness, favor, benefit",5,Noun
-"centuriō centuriōnis m.","centurion (a military officer)",5,Noun
+"augur auguris {m. or f.}","augur (a religious official)",5,Noun
+"Belgae Belgārum {m. pl.}","the Belgae, the Belgians",5,Noun
+"beneficium beneficiī {n.}","kindness, favor, benefit",5,Noun
+"centuriō centuriōnis {m.}","centurion (a military officer)",5,Noun
 "commendō commendāre commendāvī commendātus","to recommend, entrust",5,Verb
-"cōnsultum cōnsultī n.","decree, resolution",5,Noun
+"cōnsultum cōnsultī {n.}","decree, resolution",5,Noun
 "crēdō crēdere crēdidī crēditus","to believe, trust (+ dative)",5,Verb
 "cūr","why?",5,Adverb
 "dēcernō dēcernere dēcrēvī dēcrētus","to decide, decree",5,Verb
 "dīvidō dīvidere dīvīsī dīvīsus","to divide, separate",5,Verb
-"dux ducis m. or f.","leader, general",5,Noun
-"exemplum exemplī n.","example, model",5,Noun
+"dux ducis {m. or f.}","leader, general",5,Noun
+"exemplum exemplī {n.}","example, model",5,Noun
 "exspectō exspectāre exspectāvī exspectātus","to wait for, expect",5,Verb
-"frūctus fructūs m.","fruit, profit, enjoyment",5,Noun
+"frūctus frūctūs {m.}","fruit, profit, enjoyment",5,Noun
 "gravis grave","heavy, serious, severe",5,Adjective
 "legō legere lēgī lēctus","to read; choose, gather",5,Verb
-"Lentulus –ī m.","Lentulus (a Roman name)",5,Noun
-"malum malī n.","an evil, a bad thing, misfortune",5,Noun
-"mīlle; mīllēsimus –a –um","a thousand; thousandth",5,Numeral
-"multitūdō multitūdinis f.","multitude, large number, crowd",5,Noun
-"nūntiō nuntiāre nuntiāvī nuntiātus","to announce, report",5,Verb
+"Lentulus Lentulī {m.}","Lentulus (a Roman name)",5,Noun
+"malum malī {n.}","an evil, a bad thing, misfortune",5,Noun
+"mīlle {;} mīllēsimus mīllēsima mīllēsimum","a thousand; thousandth",5,Numeral
+"multitūdō multitūdinis {f.}","multitude, large number, crowd",5,Noun
+"nūntiō nūntiāre nūntiāvī nūntiātus","to announce, report",5,Verb
 "omnīnō","altogether, completely, in all",5,Adverb
 "post","after, behind (adverb and preposition + accusative)",5,Preposition
-"praeceptum praeceptī n.","rule, instruction, command",5,Noun
-"praesēns –ntis","present, at hand",5,Adjective
+"praeceptum praeceptī {n.}","rule, instruction, command",5,Noun
+"praesēns praesentis","present, at hand",5,Adjective
 "praesertim","especially",5,Adverb
-"prīvātus –a –um","private, personal",5,Adjective
+"prīvātus prīvāta prīvātum","private, personal",5,Adjective
 "prohibeō prohibēre prohibuī prohibitus","to prevent, keep from, prohibit",5,Verb
 "prope propius proximē","near, nearer, nearest",5,Adverb
 "prōpōnō prōpōnere prōposuī prōpositus","to put forward, propose, set forth",5,Verb
 "quamquam","although",5,Conjunction
-"rēctus –a –um","correct, straight, right",5,Adjective
+"rēctus rēcta rēctum","correct, straight, right",5,Adjective
 "reddō reddere reddidī redditus","to give back, return",5,Verb
 "relinquō relinquere relīquī relictus","to leave behind, abandon",5,Verb
-"Rhodanus –ī m.","the Rhone river",5,Noun
-"sciō scīre scīvī/sciī scītus","to know",5,Verb
+"Rhodanus Rhodanī {m.}","the Rhone river",5,Noun
+"sciō scīre scīvī {/} sciī scītus","to know",5,Verb
 "semper","always",5,Adverb
-"Sēquanus –a –um","Sequanian, of the Sequani (a Gallic tribe)",5,Adjective
-"sīve or seu","or if, whether...or",5,Conjunction
+"Sēquanus Sēquana Sēquanum","Sequanian, of the Sequani (a Gallic tribe)",5,Adjective
+"sīve {or} seu","or if, whether...or",5,Conjunction
 "soleō solēre solitus sum","to be accustomed, be in the habit",5,Verb
-"Sulla –ae m.","Sulla (a Roman general and dictator)",5,Noun
+"Sulla Sullae {m.}","Sulla (a Roman general and dictator)",5,Noun
 "tālis tāle","such, of such a kind",5,Adjective
-"terra terrae f.","earth, land, ground",5,Noun
-"timor timōris m.","fear, anxiety",5,Noun
-"ūllus –a –um","any",5,Adjective
+"terra terrae {f.}","earth, land, ground",5,Noun
+"timor timōris {m.}","fear, anxiety",5,Noun
+"ūllus ūlla ūllum","any",5,Adjective
 "ūtilis ūtilis ūtile","useful, advantageous",5,Adjective
-"ūtilitās ūtilitātis f.","usefulness, advantage",5,Noun
-"victōria victōriae f.","victory",5,Noun
+"ūtilitās ūtilitātis {f.}","usefulness, advantage",5,Noun
+"victōria victōriae {f.}","victory",5,Noun
 "vincō vincere vīcī victus","to conquer, win",5,Verb
-"voluntās voluntātis f.","will, wish, desire",5,Noun
-"vōx vōcis f.","voice, word",5,Noun
+"voluntās voluntātis {f.}","will, wish, desire",5,Noun
+"vōx vōcis {f.}","voice, word",5,Noun
 "accēdō accēdere accessī accessum","to approach, go to",4,Verb
-"adversārius –a –um","opponent, adversary, enemy",4,Adjective
-"altus –a –um","high, deep",4,Adjective
-"amplus –a –um","large, spacious, distinguished",4,Adjective
+"adversārius adversāria adversārium","opponent, adversary, enemy",4,Adjective
+"altus alta altum","high, deep",4,Adjective
+"amplus ampla amplum","large, spacious, distinguished",4,Adjective
 "appellō appellāre appellāvī appellātus","to call, name",4,Verb
 "apud","in the presence of, among, at the house of (+ accusative)",4,Preposition
 "augeō augēre auxī auctus","to increase, enlarge, augment",4,Verb
-"auxilium auxilī n.","help, aid; (pl.) auxiliary troops",4,Noun
+"auxilium auxiliī {n.}","help, aid; (pl.) auxiliary troops",4,Noun
 "cadō cadere cecidī cāsum","to fall, die",4,Verb
-"cohors cohortis f.","cohort (a military unit)",4,Noun
+"cohors cohortis {f.}","cohort (a military unit)",4,Noun
 "colō colere coluī cultus","to cultivate, worship, honor",4,Verb
 "commemorō commemorāre commemorāvī commemorātus","to recall, mention, relate",4,Verb
 "comparō comparāre comparāvī comparātus","to prepare, get ready, buy, obtain",4,Verb
-"concēdō concedere concessī concessus","to yield, grant, concede",4,Verb
-"cōnferō cōnferre cōntulī cōllātus","to bring together, compare; go",4,Verb
+"concēdō concēdere concessī concessus","to yield, grant, concede",4,Verb
+"cōnferō cōnferre contulī collātus","to bring together, compare; go",4,Verb
 "coniungō coniungere coniūnxī coniūnctus","to join together, unite",4,Verb
 "contemnō contemnere contempsī contemptus","to despise, scorn, hold in contempt",4,Verb
-"Cūriō –ōnis m.","Curio (a Roman name)",4,Noun
+"Cūriō Cūriōnis {m.}","Curio (a Roman name)",4,Noun
 "dēdūcō dēdūcere dēdūxī dēductus","to lead down, lead away, escort",4,Verb
-"deinde or dein","then, next, afterwards",4,Adverb
+"deinde {or} dein","then, next, afterwards",4,Adverb
 "dēlīberō dēlīberāre dēlīberāvī dēlīberātus","to consider, deliberate",4,Verb
 "dēnique","finally, at last",4,Adverb
-"diadēma –atis n.","diadem, crown",4,Noun
-"dilēctus –ūs m.","levy, draft, selection",4,Noun
+"diadēma diadēmatis {n.}","diadem, crown",4,Noun
+"dīlēctus dīlēctūs {m.}","levy, draft, selection",4,Noun
 "discō discere didicī","to learn",4,Verb
-"eō īre iī/īvī itum","to go",4,Verb
+"eō īre iī {/} īvī itum","to go",4,Verb
 "ēripiō ēripere ēripuī ēreptus","to snatch away, rescue",4,Verb
 "etenim","for, and in fact",4,Conjunction
 "etiamsī","even if, although",4,Conjunction
-"exeō exīre exīvī/exiī exitus","to go out, exit",4,Verb
-"familia familiae f.","family, household",4,Noun
-"Gallus –ī m.","a Gaul (an inhabitant of ancient Gaul)",4,Noun
-"gēns gentis f.","tribe, clan, nation",4,Noun
-"Graecus (Grāius) –a –um","Greek",4,Adjective
-"honestās –ātis f.","honor, integrity, respectability",4,Noun
+"exeō exīre exīvī {/} exiī exitus","to go out, exit",4,Verb
+"familia familiae {f.}","family, household",4,Noun
+"Gallus Gallī {m.}","a Gaul (an inhabitant of ancient Gaul)",4,Noun
+"gēns gentis {f.}","tribe, clan, nation",4,Noun
+"Graecus (Grāius) Graeca Graecum","Greek",4,Adjective
+"honestās honestātis {f.}","honor, integrity, respectability",4,Noun
 "hortor hortārī hortātus sum","to urge, encourage, exhort",4,Verb
 "imperō imperāre imperāvī imperātus","to command, order, rule (+ dative)",4,Verb
 "incitō incitāre incitāvī incitātus","to urge on, arouse, incite",4,Verb
-"ingenium –(i)ī n.","nature, character, talent",4,Noun
+"ingenium ingeniī {n.}","nature, character, talent",4,Noun
 "inquam inquis inquit inquiunt","I say, you say, he/she says, they say",4,Verb
-"intercessiō –ōnis f.","veto, intervention",4,Noun
-"levis, leve","light, trivial, fickle",4,Adjective
-"Lucullus –ī m.","Lucullus (a Roman general)",4,Noun
-"magistrātus magistrātūs m.","magistrate, public office",4,Noun
-"memoria memoriae f.","memory, recollection",4,Noun
+"intercessiō intercessiōnis {f.}","veto, intervention",4,Noun
+"levis leve","light, trivial, fickle",4,Adjective
+"Lūcullus Lūcullī {m.}","Lucullus (a Roman general)",4,Noun
+"magistrātus magistrātūs {m.}","magistrate, public office",4,Noun
+"memoria memoriae {f.}","memory, recollection",4,Noun
 "mīror mīrārī mīrātus sum","to wonder at, admire",4,Verb
 "multō","by much, greatly",4,Adverb
-"nōmen nōminis n.","name, title",4,Noun
-"nōtus –a –um","known, familiar",4,Adjective
+"nōmen nōminis {n.}","name, title",4,Noun
+"nōtus nōta nōtum","known, familiar",4,Adjective
 "occupō occupāre occupāvī occupātus","to seize, occupy",4,Verb
 "ōrnō ōrnāre ōrnāvī ōrnātus","to equip, adorn, decorate",4,Verb
 "paenitet paenitēre paenituit","it causes regret, it displeases",4,Verb
 "partim","partly, in part",4,Adverb
-"perfectus –a –um","complete, perfect, finished",4,Adjective
-"Petreius –ī m.","Petreius (a Roman name)",4,Noun
-"philosophia philosophiae f.","philosophy",4,Noun
-"philosophus –ī m.","philosopher",4,Noun
+"perfectus perfecta perfectum","complete, perfect, finished",4,Adjective
+"Petrēius Petrēiī {m.}","Petreius (a Roman name)",4,Noun
+"philosophia philosophiae {f.}","philosophy",4,Noun
+"philosophus philosophī {m.}","philosopher",4,Noun
 "placeō placēre placuī placitum","to please, be pleasing to (+ dative)",4,Verb
-"plēnus –a –um","full, full of (+ genitive or ablative)",4,Adjective
+"plēnus plēna plēnum","full, full of (+ genitive or ablative)",4,Adjective
 "pōnō pōnere posuī positus","to put, place, set",4,Verb
 "posteā","afterwards, later",4,Adverb
 "postulō postulāre postulāvī postulātus","to demand, ask for, claim",4,Verb
 "potius","rather, preferably",4,Adverb
-"prīstinus –a –um","former, original, pristine",4,Adjective
+"prīstinus prīstina prīstinum","former, original, pristine",4,Adjective
 "proptereā quod","because",4,Conjunction
-"quaerō quaerere quaesiī/quaesīvī quaesītus","to seek, ask, inquire",4,Verb
-"quantus –a –um","how great, how much; as great as",4,Adjective
+"quaerō quaerere quaesiī {/} quaesīvī quaesītus","to seek, ask, inquire",4,Verb
+"quantus quanta quantum","how great, how much; as great as",4,Adjective
 "quasi","as if, just as, as it were",4,Adverb
 "queror querī questus sum","to complain, protest",4,Verb
 "quīn","why not?, that not, but that",4,Conjunction
-"Quirītēs –ium m.","citizens of Rome, Quirites",4,Noun
+"Quirītēs Quirītium {m. pl.}","citizens of Rome, Quirites",4,Noun
 "quisquam quicquam","anyone, anything (after a negative)",4,Pronoun
 "restituō restituere restituī restitūtus","to restore, give back",4,Verb
 "retineō retinēre retinuī retentus","to hold back, retain, keep",4,Verb
 "revertor revertī reversus sum","to turn back, return",4,Verb
-"sapientia sapientiae f.","wisdom",4,Noun
+"sapientia sapientiae {f.}","wisdom",4,Noun
 "scrībō scrībere scrīpsī scrīptus","to write",4,Verb
 "simul","at the same time, together",4,Adverb
-"spatium spati(ī) n.","space, room, period of time",4,Noun
+"spatium spatiī {n.}","space, room, period of time",4,Noun
 "spērō spērāre spērāvī spērātus","hope, expect",4,Verb
 "tam","so, so much, to such a degree",4,Adverb
 "tueor tuērī tūtus sum","to watch, protect, look at",4,Verb
@@ -425,155 +426,156 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "vocō vocāre vocāvī vocātus","to call, summon",4,Verb
 "abdūcō abdūcere abdūxī abductus","to lead away, carry off",3,Verb
 "abiciō abicere abiēcī abiectum","to throw away, cast down",3,Verb
-"addūcō adducere addūxī adductus","lead towards; induce, influence",3,Verb
+"addūcō addūcere addūxī adductus","lead towards; induce, influence",3,Verb
 "adiungō adiungere adiūnxī adiūnctus","to join to, add",3,Verb
 "adsum adesse adfuī adfutūrus","to be present, be near",3,Verb
-"aes aeris n.","bronze, money",3,Noun
-"Allobrox –ogis","an Allobrogian (a member of a Gallic tribe)",3,Noun
-"amor amōris m.","love",3,Noun
-"appāreō apparēre apparuī apparitus","to appear, become visible",3,Verb
-"aptus –a –um","fit, suitable, appropriate",3,Adjective
-"Calidius –(i)ī m.","Calidius (a Roman name)",3,Noun
-"Cassius –iī m.","Cassius (a Roman name)",3,Noun
-"cāsus cāsūs m.","fall, chance, misfortune",3,Noun
+"aes aeris {n.}","bronze, money",3,Noun
+"Allobrox Allobrogis","an Allobrogian (a member of a Gallic tribe)",3,Noun
+"amor amōris {m.}","love",3,Noun
+"appāreō appārēre appāruī appāritus","to appear, become visible",3,Verb
+"aptus apta aptum","fit, suitable, appropriate",3,Adjective
+"Calidius Calidiī {m.}","Calidius (a Roman name)",3,Noun
+"Cassius Cassiī {m.}","Cassius (a Roman name)",3,Noun
+"cāsus cāsūs {m.}","fall, chance, misfortune",3,Noun
 "circiter","around, about, approximately",3,Adverb
-"clārus –a –um","clear, bright, famous",3,Adjective
-"Clōdius –iī m.","Clodius (a Roman name)",3,Noun
-"collēga collēgae m.","colleague, associate",3,Noun
-"colloquium colloquiī n.","conversation, conference",3,Noun
+"clārus clāra clārum","clear, bright, famous",3,Adjective
+"Clōdius Clōdiī {m.}","Clodius (a Roman name)",3,Noun
+"collēga collēgae {m.}","colleague, associate",3,Noun
+"colloquium colloquiī {n.}","conversation, conference",3,Noun
 "conciliō conciliāre conciliāvī conciliātus","acquire, unite, win over",3,Verb
-"condiciō condiciōnis f.","condition, term, agreement",3,Noun
+"condiciō condiciōnis {f.}","condition, term, agreement",3,Noun
 "cōnsulō cōnsulere cōnsuluī cōnsultum","to consult, ask for advice",3,Verb
-"contentiō contentiōnis f.","struggle, dispute, contest",3,Noun
-"culpa culpae f.","fault, blame, guilt",3,Noun
-"cupiō cupere cupīī/cupīvī cupītus","to desire, want, long for",3,Verb
-"cursus cursūs m.","course, running, journey",3,Noun
-"decem; decimus –a –um","ten; tenth",3,Numeral
+"contentiō contentiōnis {f.}","struggle, dispute, contest",3,Noun
+"culpa culpae {f.}","fault, blame, guilt",3,Noun
+"cupiō cupere cupiī {/} cupīvī cupītus","to desire, want, long for",3,Verb
+"cursus cursūs {m.}","course, running, journey",3,Noun
+"decem {;} decimus decima decimum","ten; tenth",3,Numeral
 "dēferō dēferre dētulī dēlātus","to carry down, report, offer",3,Verb
-"dēfīniō dēfīnīre dēfīnīvī/dēfīniī dēfīnītus","to define, limit, determine",3,Verb
-"dēlīberātiō –ōnis f.","deliberation, consideration",3,Noun
+"dēfīniō dēfīnīre dēfīnīvī {/} dēfīniī dēfīnītus","to define, limit, determine",3,Verb
+"dēlīberātiō dēlīberātiōnis {f.}","deliberation, consideration",3,Noun
 "dēsīderō dēsīderāre dēsīderāvī dēsīderātus","to long for, desire, miss",3,Verb
-"dētrahō –ere –trāxī –tractum","to drag off, pull down, remove",3,Verb
-"dētrīmentum dētrīmentī n.","loss, damage, harm",3,Noun
+"dētrahō dētrahere dētrāxī dētractum","to drag off, pull down, remove",3,Verb
+"dētrīmentum dētrīmentī {n.}","loss, damage, harm",3,Noun
 "differō differre distulī dīlātus","to differ, be different; postpone",3,Verb
-"disciplīna disciplīnae f.","discipline, training, instruction",3,Noun
-"distrahō –ere –trahere –traxī –tractum","to pull apart, separate, divide",3,Verb
-"dīvīnus –a –um","divine, godlike",3,Adjective
+"disciplīna disciplīnae {f.}","discipline, training, instruction",3,Noun
+"distrahō distrahere distrāxī distractum","to pull apart, separate, divide",3,Verb
+"dīvīnus dīvīna dīvīnum","divine, godlike",3,Adjective
 "doleō dolēre doluī dolitus","to grieve, suffer, feel pain",3,Verb
 "dubitō dubitāre dubitāvī dubitātus","to doubt, hesitate",3,Verb
-"dubius –a –um","doubtful, uncertain",3,Adjective
+"dubius dubia dubium","doubtful, uncertain",3,Adjective
 "dum","while, until",3,Conjunction
 "equidem","indeed, for my part, certainly",3,Adverb
 "ergō","therefore",3,Conjunction
 "exigō exigere exēgī exāctus","to drive out, demand, require",3,Verb
 "fateor fatērī fassus sum","to confess, admit, acknowledge",3,Verb
 "ferē","almost, approximately",3,Adverb
-"fīnitimus –a –um","bordering upon, adjoining, neighboring",3,Adjective
-"fīrmus –a –um","strong, firm, reliable",3,Adjective
-"flāgitium flāgiti(ī) n.","shameful act, disgrace, outrage",3,Noun
+"fīnitimus fīnitima fīnitimum","bordering upon, adjoining, neighboring",3,Adjective
+"fīrmus fīrma fīrmum","strong, firm, reliable",3,Adjective
+"flāgitium flāgitiī {n.}","shameful act, disgrace, outrage",3,Noun
 "forēnsis forēnsis forēnse","of the forum, public, forensic",3,Adjective
 "forte","by chance",3,Adverb
-"forum forī n.","forum, marketplace, public square",3,Noun
-"frūmentum frūmentī n.","grain",3,Noun
-"Garumna –ae f.","the Garonne river",3,Noun
-"Genava –ae f.","Geneva",3,Noun
-"Germānus (Germānicus) –a –um","German",3,Adjective
-"gladius gladiī m. or gladium –iī n.","sword",3,Noun
-"hodiernus –a –um","of today, today's",3,Adjective
-"hūmānitās hūmānitātis f.","humanity, culture, civilization, refinement",3,Noun
-"hūmānus –a –um","human, humane, refined",3,Adjective
+"forum forī {n.}","forum, marketplace, public square",3,Noun
+"frūmentum frūmentī {n.}","grain",3,Noun
+"Garumna Garumnae {f.}","the Garonne river",3,Noun
+"Genava Genavae {f.}","Geneva",3,Noun
+"Germānus {(Germānicus)} Germāna Germānum","German",3,Adjective
+"gladius gladiī {m. or} gladium gladiī {n.}","sword",3,Noun
+"hodiernus hodierna hodiernum","of today, today's",3,Adjective
+"hūmānitās hūmānitātis {f.}","humanity, culture, civilization, refinement",3,Noun
+"hūmānus hūmāna hūmānum","human, humane, refined",3,Adjective
 "iaceō iacēre iacuī","to lie, be situated",3,Verb
-"ibī","there, in that place",3,Adverb
-"impediō impedīre impedīvī/impedīī impedītus","to hinder, obstruct, impede",3,Verb
+"ibi","there, in that place",3,Adverb
+"impediō impedīre impedīvī {/} impediī impedītus","to hinder, obstruct, impede",3,Verb
 "incolō incolere incoluī","to inhabit, dwell in",3,Verb
 "inde","from there, then, next",3,Adverb
-"inimīcus –a –um","unfriendly, hostile",3,Adjective
+"inimīcus inimīca inimīcum","unfriendly, hostile",3,Adjective
 "intercēdō intercēdere intercessī intercessus","to go between, intervene, veto",3,Verb
-"interclūdō –ere –clūsī –clūsus","to shut off, cut off, block",3,Verb
-"Italia Italiae f.","Italy",3,Noun
+"interclūdō interclūdere interclūsī interclūsus","to shut off, cut off, block",3,Verb
+"Italia Italiae {f.}","Italy",3,Noun
 "item","also, besides, likewise, in the same way",3,Adverb
-"iūstus –a –um","just, right, fair",3,Adjective
-"lacēssō lacēssere lacēssīvī lacēssītus","to provoke, harass, attack",3,Verb
-"lātus –a –um","broad, wide",3,Adjective
-"lēgātiō lēgātiōnis f.","embassy, legation",3,Noun
+"iūstus iūsta iūstum","just, right, fair",3,Adjective
+"lacessō lacessere lacessīvī lacessītus","to provoke, harass, attack",3,Verb
+"lātus lāta lātum","broad, wide",3,Adjective
+"lēgātiō lēgātiōnis {f.}","embassy, legation",3,Noun
 "līber lībera līberum","free",3,Adjective
-"lībere līberius līberrime","freely, more freely, most freely",3,Adverb
-"licet licēre licuit/licitum est","it is permitted, it is allowed",3,Verb
-"lingua linguae f.","tongue, language",3,Noun
-"maiōrēs maiōrum m.pl.","ancestors, forefathers",3,Noun
+"līberē līberius līberrimē","freely, more freely, most freely",3,Adverb
+"licet licēre licuit {/} licitum est","it is permitted, it is allowed",3,Verb
+"lingua linguae {f.}","tongue, language",3,Noun
+"maiōrēs maiōrum {m. pl.}","ancestors, forefathers",3,Noun
 "mālō mālle māluī","to prefer",3,Verb
-"medius –a –um","middle, central",3,Adjective
-"mercātor –ōris m.","merchant, trader",3,Noun
-"mercēs mercēdis f.","pay, reward, price",3,Noun
-"metus metūs m.","fear, dread, anxiety",3,Noun
+"medius media medium","middle, central",3,Adjective
+"mercātor mercātōris {m.}","merchant, trader",3,Noun
+"mercēs mercēdis {f.}","pay, reward, price",3,Noun
+"metus metūs {m.}","fear, dread, anxiety",3,Noun
 "minuō minuere minuī minūtus","to lessen, diminish, reduce",3,Verb
-"misericordia misericordiae f.","pity, mercy, compassion",3,Noun
+"misericordia misericordiae {f.}","pity, mercy, compassion",3,Noun
 "moveō movēre mōvī mōtus","to move, stir, affect",3,Verb
 "necō necāre necāvī necātus","to kill, slay",3,Verb
 "neglegō neglegere neglēxī neglēctus","to neglect, disregard",3,Verb
 "negō negāre negāvī negātus","to deny, say no",3,Verb
-"negōtium negōti(ī) n.","business, task, trouble",3,Noun
-"neu or neve","and not, nor",3,Conjunction
+"negōtium negōtiī {n.}","business, task, trouble",3,Noun
+"neu {or} nēve","and not, nor",3,Conjunction
 "nōbilis nōbile","noble, well-known, high-born",3,Adjective
-"nōbilitās nōbilitātis f.","nobility, the nobles",3,Noun
+"nōbilitās nōbilitātis {f.}","nobility, the nobles",3,Noun
 "noceō nocēre nocuī nocitus","to harm, injure (+ dative)",3,Verb
 "nōlō nōlle nōluī","to be unwilling, not to want",3,Verb
 "nōndum","not yet",3,Adverb
-"nōnnūllus –a –um","some, several",3,Adjective
+"nōnnūllus nōnnūlla nōnnūllum","some, several",3,Adjective
 "ō","O!, Oh!",3,Interjection
 "opīnor opīnārī opīnātus sum","to suppose, think, believe",3,Verb
 "oportet oportēre oportuit","it is proper, it is necessary, one ought",3,Verb
-"opus operis n.","work, task, fortification",3,Noun
-"ōs ōris n.","mouth, face, expression",3,Noun
+"opus operis {n.}","work, task, fortification",3,Noun
+Latin Word,English Definition(s),Frequency,Part of Speech
+"ōs ōris {n.}","mouth, face, expression",3,Noun
 "pācō pācāre pācāvī pācātus","to pacify, subdue",3,Verb
 "pār paris","equal, like",3,Adjective
 "paulō","by a little, slightly",3,Adverb
 "perveniō pervenīre pervēnī perventus","to arrive at, reach",3,Verb
-"pēs pedis m.","foot",3,Noun
-"Philippus –ī m.","Philip",3,Noun
-"Pīsō –onis m.","Piso (a Roman name)",3,Noun
-"plērusque –aque –umque","most, the majority of",3,Adjective
+"pēs pedis {m.}","foot",3,Noun
+"Philippus Philippī {m.}","Philip",3,Noun
+"Pīsō Pīsōnis {m.}","Piso (a Roman name)",3,Noun
+"plērusque plēraque plērumque","most, the majority of",3,Adjective
 "polliceor pollicērī pollicitus sum","to promise",3,Verb
-"potēns","powerful, able",3,Adjective
-"praesidium praesidi(ī) n.","guard, protection, garrison",3,Noun
-"praetor praetoris m.","praetor (a Roman magistrate)",3,Noun
-"prīnceps –ipis","chief, leading man; prince",3,Noun
-"prīncipium prīncipi(ī) n.","beginning, origin",3,Noun
-"priusquam or prius quam","before",3,Conjunction
-"procreō –āre –āvī –ātum","to beget, produce, create",3,Verb
+"potēns potentis","powerful, able",3,Adjective
+"praesidium praesidiī {n.}","guard, protection, garrison",3,Noun
+"praetor praetōris {m.}","praetor (a Roman magistrate)",3,Noun
+"prīnceps prīncipis","chief, leading man; prince",3,Noun
+"prīncipium prīncipiī {n.}","beginning, origin",3,Noun
+"priusquam {or} prius quam","before",3,Conjunction
+"procreō procreāre procreāvī procreātum","to beget, produce, create",3,Verb
 "profectō","surely, certainly, indeed",3,Adverb
 "prōvideō prōvidēre prōvīdī prōvīsus","to foresee, provide for",3,Verb
-"prōvocō prōvocāre –āvī –ātus","to call forth, challenge, appeal",3,Verb
-"pūblicānus –ī m.","publican, tax collector",3,Noun
-"puer puerī m.","boy",3,Noun
+"prōvocō prōvocāre prōvocāvī prōvocātus","to call forth, challenge, appeal",3,Verb
+"pūblicānus pūblicānī {m.}","publican, tax collector",3,Noun
+"puer puerī {m.}","boy",3,Noun
 "pugnō pugnāre pugnāvī pugnātum","to fight",3,Verb
 "quā","where, by which way",3,Adverb
-"quaestiō quaestiōnis f. (rarely quaesitiō)","question, investigation, inquiry",3,Noun
+"quaestiō quaestiōnis {f.} ({rarely} quaesitiō)","question, investigation, inquiry",3,Noun
 "quārē","why, for what reason",3,Adverb
-"quīnque; quīntus –a –um","five; fifth",3,Numeral
-"Quintus –ī m.","Quintus (a Roman name)",3,Noun
-"quisquis quidquid or quicquid","whoever, whatever",3,Pronoun
+"quīnque {;} quīntus quīnta quīntum","five; fifth",3,Numeral
+"Quīntus Quīntī {m.}","Quintus (a Roman name)",3,Noun
+"quisquis quidquid {or} quicquid","whoever, whatever",3,Pronoun
 "quot","how many, as many as",3,Adjective
 "recordor recordārī recordātus sum","to remember, recollect",3,Verb
 "respondeō respondēre respondī respōnsus","to answer, respond",3,Verb
-"Rōma Rōmae f.","Rome",3,Noun
-"Rōmulus –ī m.","Romulus",3,Noun
-"salvus –a –um","safe, sound, unharmed",3,Adjective
-"scelus sceleris n.","crime, wickedness",3,Noun
-"secundus –a –um","second, following; favorable",3,Adjective
-"sēnsus sēnsūs m.","feeling, sense, perception",3,Noun
-"septem; septimus –a –um","seven; seventh",3,Numeral
-"septentriōnes –um m.","the north",3,Noun
-"sermō sermōnis m.","conversation, speech, discourse",3,Noun
+"Rōma Rōmae {f.}","Rome",3,Noun
+"Rōmulus Rōmulī {m.}","Romulus",3,Noun
+"salvus salva salvum","safe, sound, unharmed",3,Adjective
+"scelus sceleris {n.}","crime, wickedness",3,Noun
+"secundus secunda secundum","second, following; favorable",3,Adjective
+"sēnsus sēnsūs {m.}","feeling, sense, perception",3,Noun
+"septem {;} septimus septima septimum","seven; seventh",3,Numeral
+"septentriōnēs septentriōnum {m. pl.}","the north",3,Noun
+"sermō sermōnis {m.}","conversation, speech, discourse",3,Noun
 "servō servāre servāvī servātus","to save, preserve, keep",3,Verb
-"signum signī n.","sign, signal, standard",3,Noun
+"signum signī {n.}","sign, signal, standard",3,Noun
 "similis simile","similar, like (+ genitive or dative)",3,Adjective
-"socius –a –um","allied, sharing; (as a noun) ally, comrade",3,Adjective
+"socius socia socium","allied, sharing; (as a noun) ally, comrade",3,Adjective
 "spectō spectāre spectāvī spectātus","look at, watch, face",3,Verb
 "statuō statuere statuī statūtus","to set up, establish, decide",3,Verb
 "studeō studēre studuī","to be eager for, study, support (+ dative)",3,Verb
-"superbus –a –um","proud, arrogant, haughty",3,Adjective
-"supplicium supplici(ī) n.","punishment, torture, execution",3,Noun
+"superbus superba superbum","proud, arrogant, haughty",3,Adjective
+"supplicium suppliciī {n.}","punishment, torture, execution",3,Noun
 "suscipiō suscipere suscēpī susceptus","to undertake, take up",3,Verb
 "tandem","at last, finally",3,Adverb
 "temperō temperāre temperāvī temperātus","to restrain, control, moderate",3,Verb
@@ -581,1291 +583,1294 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "tot","so many",3,Adjective
 "trāns","across (+ accusative)",3,Preposition
 "trēs tria","three",3,Numeral
-"tribūnicius –a –um","of a tribune, tribunician",3,Adjective
+"tribūnicius tribūnicia tribūnicium","of a tribune, tribunician",3,Adjective
 "tribuō tribuere tribuī tribūtus","to assign, grant, attribute",3,Verb
 "ultrō","voluntarily, beyond, on the other side",3,Adverb
 "umquam","ever",3,Adverb
 "undique","from all directions, on all sides",3,Adverb
-"Vārus –ī m.","Varus (a Roman name)",3,Noun
-"ve","or (enclitic)",3,Conjunction
+"Vārus Vārī {m.}","Varus (a Roman name)",3,Noun
+"-ve","or (enclitic)",3,Conjunction
 "vindicō vindicāre vindicāvī vindicātus","to claim, avenge, punish",3,Verb
-"vitium viti(ī) n.","fault, vice, crime",3,Noun
+"vitium vitiī {n.}","fault, vice, crime",3,Noun
 "vix","scarcely, hardly, with difficulty",3,Adverb
-"vorāx vorācis m.","glutton, devourer",3,Noun
-"acerbus –a –um","bitter, harsh, cruel",2,Adjective
+"vorāx vorācis {m.}","glutton, devourer",3,Noun
+"acerbus acerba acerbum","bitter, harsh, cruel",2,Adjective
 "addō addere addidī additus","to add, join",2,Verb
 "adhibeō adhibēre adhibuī adhibitus","to apply, use, employ",2,Verb
 "adimō adimere adēmī adēmptus","to take away, remove",2,Verb
-"adipīscor adipiscī adeptus sum","to obtain, acquire, get",2,Verb
-"aditus aditūs m.","approach, access, entrance",2,Noun
-"admittō admittere admīsī admīssus","to admit, let in, allow",2,Verb
+"adipīscor adipīscī adeptus sum","to obtain, acquire, get",2,Verb
+"aditus aditūs {m.}","approach, access, entrance",2,Noun
+"admittō admittere admīsī admissus","to admit, let in, allow",2,Verb
 "adulēscēns adulēscentis","young; (as a noun) young man, youth",2,Adjective
 "aeger aegra aegrum","sick, ill, weary",2,Adjective
-"aequor aequoris n.","sea, level surface, plain",2,Noun
-"aequus –a –um","equal, fair, calm",2,Adjective
-"āleō āleōnis m.","gambler, dice-player",2,Noun
+"aequor aequoris {n.}","sea, level surface, plain",2,Noun
+"aequus aequa aequum","equal, fair, calm",2,Adjective
+"āleō āleōnis {m.}","gambler, dice-player",2,Noun
 "aliquandō","at some time, sometimes, finally",2,Adverb
-"angō –ere –ānxī –ānctus (–ānxus)","to choke, torment, distress",2,Verb
-"angustus –a –um","narrow, confined, difficult",2,Adjective
-"animal animālis n.","animal, living being",2,Noun
-"animāns –antis","living, animate; (as a noun) living creature",2,Adjective
+"angō angere ānxī ānctus ({or} ānxus)","to choke, torment, distress",2,Verb
+"angustus angusta angustum","narrow, confined, difficult",2,Adjective
+"animal animālis {n.}","animal, living being",2,Noun
+"animāns animantis","living, animate; (as a noun) living creature",2,Adjective
 "anquīrō anquīrere anquīsīvī anquīsītum","to seek for, investigate, inquire into",2,Verb
-"Aprīlis –e","of April",2,Adjective
-"Aquītānus –a –um","Aquitanian, of Aquitania",2,Adjective
+"Aprīlis Aprīle","of April",2,Adjective
+"Aquītānus Aquītāna Aquītānum","Aquitanian, of Aquitania",2,Adjective
 "arcessō (accersō) arcessere arcessīvī arcessītus","to summon, send for",2,Verb
-"arrogantia –ae f.","arrogance, pride, presumption",2,Noun
-"Asiānus (Asiāticus) –a –um","Asian, Asiatic",2,Adjective
-"auctor auctōris m.","author, creator, originator",2,Noun
-"audācia audāciae f.","boldness, daring, audacity",2,Noun
-"auspicium auspicī(ī) n.","augury, omen, auspices",2,Noun
-"barbarus –a –um","barbarian, foreign, uncivilized",2,Adjective
-"beātus –a –um","happy, blessed, fortunate",2,Adjective
-"bellicus –a –um","of war, warlike, military",2,Adjective
-"bīduum –ī n.","a period of two days",2,Noun
-"Britannia –ae f.","Britain",2,Noun
-"carrus –ī m. or carrum –ī n.","cart, wagon",2,Noun
-"castus, -a, -um","pure, chaste, virtuous",2,Adjective
-"Catō –ōnis m.","Cato (a Roman name)",2,Noun
-"Catullus –ī m.","Catullus (a Roman poet)",2,Noun
+"arrogantia arrogantiae {f.}","arrogance, pride, presumption",2,Noun
+"Asiānus (Asiāticus) Asiāna Asiānum","Asian, Asiatic",2,Adjective
+"auctor auctōris {m.}","author, creator, originator",2,Noun
+"audācia audāciae {f.}","boldness, daring, audacity",2,Noun
+"auspicium auspiciī {n.}","augury, omen, auspices",2,Noun
+"barbarus barbara barbarum","barbarian, foreign, uncivilized",2,Adjective
+"beātus beāta beātum","happy, blessed, fortunate",2,Adjective
+"bellicus bellica bellicum","of war, warlike, military",2,Adjective
+"bīduum bīduī {n.}","a period of two days",2,Noun
+"Britannia Britanniae {f.}","Britain",2,Noun
+"carrus carrī {m. or} carrum carrī {n.}","cart, wagon",2,Noun
+"castus casta castum","pure, chaste, virtuous",2,Adjective
+"Catō Catōnis {m.}","Cato (a Roman name)",2,Noun
+"Catullus Catullī {m.}","Catullus (a Roman poet)",2,Noun
 "caveō cavēre cāvī cautus","to beware, be cautious, guard against",2,Verb
 "cēnseō cēnsēre cēnsuī cēnsus","to think, believe, assess",2,Verb
-"centum; centēsimus –a –um","a hundred; hundredth",2,Numeral
-"cernō cernere crēvī certus","to discern, perceive, decide",2,Verb
-"cinaedus –a –um","lewd, unchaste, effeminate",2,Adjective
-"cinaedus cinaedī m.","an unchaste person, a pervert",2,Noun
-"cito citius (comp.) citissime (superl.)","quickly, faster, fastest",2,Adverb
-"classis classis f.","fleet, class, army",2,Noun
+"centum {;} centēsimus centēsima centēsimum","a hundred; hundredth",2,Numeral
+"cernō cernere crēvī crētus","to discern, perceive, decide",2,Verb
+"cinaedus cinaeda cinaedum","lewd, unchaste, effeminate",2,Adjective
+"cinaedus cinaedī {m.}","an unchaste person, a pervert",2,Noun
+"citō citius {(comp.)} citissimē {(superl.)}","quickly, faster, fastest",2,Adverb
+"classis classis {f.}","fleet, class, army",2,Noun
 "coepī coepisse coeptum","to have begun",2,Verb
-"cognitiō –ōnis f.","knowledge, acquaintance, investigation",2,Noun
+"cognitiō cognitiōnis {f.}","knowledge, acquaintance, investigation",2,Noun
 "collocō collocāre collocāvī collocātus","to place, arrange, station",2,Verb
-"comes comitis m. or f.","comrade, companion",2,Noun
-"commendātiō commendātiōnīs f.","recommendation, commendation",2,Noun
+"comes comitis {m. or f.}","comrade, companion",2,Noun
+"commendātiō commendātiōnis {f.}","recommendation, commendation",2,Noun
 "commoveō commovēre commōvī commōtus","to move, disturb, alarm",2,Verb
 "complector complectī complexus sum","to embrace, surround, include",2,Verb
 "concidō concidere concidī","to fall down, collapse, perish",2,Verb
-"condūcō conducere condūxī conductus","to lead together, hire, be profitable",2,Verb
-"coniciō –icere –iēcī –iectus","to hurl, throw, guess",2,Verb
-"coniūnctiō –ōnis f.","union, connection, conjunction",2,Noun
-"conlaudō (collaudō) –āre","to praise highly",2,Verb
+"condūcō condūcere condūxī conductus","to lead together, hire, be profitable",2,Verb
+"coniciō conicere coniēcī coniectus","to hurl, throw, guess",2,Verb
+"coniūnctiō coniūnctiōnis {f.}","union, connection, conjunction",2,Noun
+"conlaudō (collaudō) conlaudāre conlaudāvī conlaudātus","to praise highly",2,Verb
 "cōnsīderō cōnsīderāre cōnsīderāvī cōnsīderātus","to consider, reflect upon",2,Verb
 "cōnsistō cōnsistere cōnstitī cōnstitus","to stand, stop, take a position",2,Verb
-"cōnstantia cōnstantiae f.","steadfastness, constancy, firmness",2,Noun
+"cōnstantia cōnstantiae {f.}","steadfastness, constancy, firmness",2,Noun
 "cōnsulāris cōnsulāris cōnsulāre","consular, of a consul",2,Adjective
-"cōnsulātus cōnsulātūs m.","consulship",2,Noun
-"cōnsultō –āre","to consult, deliberate",2,Verb
-"contendō contendere contendī contentus","to strive, struggle, hasten",2,Verb
-"contentus –a –um","satisfied, content",2,Adjective
+"cōnsulātus cōnsulātūs {m.}","consulship",2,Noun
+"cōnsultō cōnsultāre cōnsultāvī cōnsultātus","to consult, deliberate",2,Verb
+"contendō contendere contendī contentum","to strive, struggle, hasten",2,Verb
+"contentus contenta contentum","satisfied, content",2,Adjective
 "contineō continēre continuī contentus","to hold together, contain, restrain",2,Verb
 "contingō contingere contigī contāctus","to touch, happen, befall",2,Verb
-"cōntiōnor –ārī","to address an assembly, make a speech",2,Verb
-"contrōversia –ae f.","controversy, dispute",2,Noun
-"convīcium –ī n.","insult, abuse, clamor",2,Noun
-"cōpiōsus –a –um","abundant, wealthy, well-supplied",2,Adjective
-"corpus corporis n.","body",2,Noun
-"Crastinus –ī m.","Crastinus (a centurion in Caesar's army)",2,Noun
-"crebēr crēbra crēbrum","frequent, numerous, crowded",2,Adjective
+"cōntiōnor cōntiōnārī cōntiōnātus sum","to address an assembly, make a speech",2,Verb
+"contrōversia contrōversiae {f.}","controversy, dispute",2,Noun
+"convīcium convīciī {n.}","insult, abuse, clamor",2,Noun
+"cōpiōsus cōpiōsa cōpiōsum","abundant, wealthy, well-supplied",2,Adjective
+"corpus corporis {n.}","body",2,Noun
+"Crastinus Crastinī {m.}","Crastinus (a centurion in Caesar's army)",2,Noun
+"crēber crēbra crēbrum","frequent, numerous, crowded",2,Adjective
 "crūdēliter","cruelly",2,Adverb
-"cultus cultūs m.","cultivation; culture, civilization",2,Noun
-"cūnctus –a –um","all, the whole, entire",2,Adjective
-"cupiditās cupiditātis f.","desire, eagerness, greed",2,Noun
-"dēcoquō –coquere –coxī –coctum","to boil down; to become bankrupt",2,Verb
-"dēfēnsiō dēfēnsiōnis f.","defense",2,Noun
+"cultus cultūs {m.}","cultivation; culture, civilization",2,Noun
+"cūnctus cūncta cūnctum","all, the whole, entire",2,Adjective
+"cupiditās cupiditātis {f.}","desire, eagerness, greed",2,Noun
+"dēcoquō dēcoquere dēcoxī dēcoctum","to boil down; to become bankrupt",2,Verb
+"dēfēnsiō dēfēnsiōnis {f.}","defense",2,Noun
 "dēprecor dēprecārī dēprecātus sum","to beg, plead, pray to avert",2,Verb
 "dēscendō dēscendere dēscendī dēscēnsus","to descend, go down",2,Verb
-"dēsum deesse defuī","to be lacking, be absent, fail",2,Verb
-"dictum dictī n.","word, saying, command",2,Noun
+"dēsum deesse dēfuī","to be lacking, be absent, fail",2,Verb
+"dictum dictī {n.}","word, saying, command",2,Noun
 "difficilis difficile","difficult, hard",2,Adjective
-"dīgnus –a –um","worthy, deserving of (+ ablative)",2,Adjective
-"dīligēns –ntis","careful, diligent, attentive",2,Adjective
+"dīgnus dīgna dīgnum","worthy, deserving of (+ ablative)",2,Adjective
+"dīligēns dīligentis","careful, diligent, attentive",2,Adjective
 "discēdō discēdere discessī discessum","to depart, go away",2,Verb
-"dispōnō dispōnere dispōsuī dispōsitus","to arrange, distribute, set in order",2,Verb
-"disputātiō –ōnis f.","dispute, argument, debate",2,Noun
+"dispōnō dispōnere disposuī dispositus","to arrange, distribute, set in order",2,Verb
+"disputātiō disputātiōnis {f.}","dispute, argument, debate",2,Noun
 "dissolvō dissolvere dissolvī dissolūtus","to break up, dissolve, destroy",2,Verb
 "diū","for a long time",2,Adverb
-"dīvīsiō –ōnis f.","division, separation",2,Noun
-"Dolābella –ae m.","Dolabella (a Roman name)",2,Noun
-"domesticus –a –um","of the home, domestic, private",2,Adjective
-"dominātus –ūs m.","rule, tyranny, domination",2,Noun
-"dominus dominī m.","master, lord",2,Noun
-"Domitius –iī m.","Domitius (a Roman name)",2,Noun
-"ducentī –ae –a; ducentēsimus –a –um","two hundred; two hundredth",2,Numeral
+"dīvīsiō dīvīsiōnis {f.}","division, separation",2,Noun
+"Dolābella Dolābellae {m.}","Dolabella (a Roman name)",2,Noun
+"domesticus domestica domesticum","of the home, domestic, private",2,Adjective
+"dominātus dominātūs {m.}","rule, tyranny, domination",2,Noun
+"dominus dominī {m.}","master, lord",2,Noun
+"Domitius Domitiī {m.}","Domitius (a Roman name)",2,Noun
+"ducentī ducentae ducenta {;} ducentēsimus ducentēsima ducentēsimum","two hundred; two hundredth",2,Numeral
 "efferō efferre extulī ēlātus","to carry out, bring forth, raise",2,Verb
-"efficiō efficere effēcī effectus (efficatus, rarely)","to bring about, cause, accomplish",2,Verb
-"eques equitis m.","horseman, knight; (pl.) cavalry",2,Noun
-"equitātus equitātūs m.","cavalry",2,Noun
+"efficiō efficere effēcī effectus ({rarely} efficātus)","to bring about, cause, accomplish",2,Verb
+"eques equitis {m.}","horseman, knight; (pl.) cavalry",2,Noun
+"equitātus equitātūs {m.}","cavalry",2,Noun
 "etsī","even if, although",2,Conjunction
 "exerceō exercēre exercuī exercitus","to train, exercise, practice",2,Verb
-"exitus exitūs m.","exit, end, outcome",2,Noun
+"exitus exitūs {m.}","exit, end, outcome",2,Noun
 "expleō explēre explēvī explētus","to fill up, complete",2,Verb
-"explōrō (1)","to explore, investigate, search out",2,Verb
-"falsus –a –um","false, untrue, deceptive",2,Adjective
-"fās n.","divine law, right, what is proper",2,Noun
-"Faustus –ī m.","Faustus (a Roman name)",2,Noun
-"fēlīciter fēlīcius fēlīcissime","luckily, successfully",2,Adverb
-"firmāmentum –ī n.","support, strength, prop",2,Noun
-"flōs flōris m.","flower, blossom",2,Noun
-"frāter frātris m.","brother",2,Noun
-"frūmentārius –a –um","of grain, relating to the grain supply",2,Adjective
-"Gabīnius –iī m.","Gabinius (a Roman name)",2,Noun
-"gener generī m.","son-in-law",2,Noun
-"Graecia Graeciae f.","Greece",2,Noun
+"explōrō explōrāre explōrāvī explōrātus","to explore, investigate, search out",2,Verb
+"falsus falsa falsum","false, untrue, deceptive",2,Adjective
+"fās {n. indecl.}","divine law, right, what is proper",2,Noun
+"Faustus Faustī {m.}","Faustus (a Roman name)",2,Noun
+"fēlīciter fēlīcius fēlīcissimē","luckily, successfully",2,Adverb
+"fīrmāmentum fīrmāmentī {n.}","support, strength, prop",2,Noun
+"flōs flōris {m.}","flower, blossom",2,Noun
+"frāter frātris {m.}","brother",2,Noun
+"frūmentārius frūmentāria frūmentārium","of grain, relating to the grain supply",2,Adjective
+"Gabīnius Gabīniī {m.}","Gabinius (a Roman name)",2,Noun
+"gener generī {m.}","son-in-law",2,Noun
+"Graecia Graeciae {f.}","Greece",2,Noun
 "graviter","heavily, seriously, severely",2,Adverb
-"Hibērus –ī m.","a Spaniard; the Ebro river",2,Noun
-"honestum honestī n.","honorable conduct, virtue, integrity",2,Noun
-"honor or honos honōris m.","honor, esteem, public office",2,Noun
-"iamprīdem","long ago, for a long time now",2,Adverb
-"Iānuārius –a –um","of January",2,Adjective
-"īdūs īduum (pl. f.)","the Ides (13th or 15th of the month)",2,Noun
-"im–minuō –minuere –minuī –minūtum","to lessen, diminish, weaken",2,Verb
-"impellō impellere impulī impulsum","to drive on, urge, impel",2,Verb
+"Hibērus Hibērī {m.}","a Spaniard; the Ebro river",2,Noun
+"honestum honestī {n.}","honorable conduct, virtue, integrity",2,Noun
+"honor {or} honōs honōris {m.}","honor, esteem, public office",2,Noun
+"iam prīdem {or} iamprīdem","long ago, for a long time now",2,Adverb
+"Iānuārius Iānuāria Iānuārium","of January",2,Adjective
+"īdūs īduum {f. pl.}","the Ides (13th or 15th of the month)",2,Noun
+"imminuō imminuere imminuī imminūtum","to lessen, diminish, weaken",2,Verb
+"impellō impellere impulī impulsus","to drive on, urge, impel",2,Verb
 "impetrō impetrāre impetrāvī impetrātus","to obtain by request, accomplish",2,Verb
-"impetus impetūs m.","attack, assault, impulse",2,Noun
-"impius –a –um","impious, wicked, disloyal",2,Adjective
-"impōnō impōnere impōsuī impōsitus","to place upon, impose, inflict",2,Verb
-"imprīmīs or in prīmīs","especially, in the first place",2,Adverb
-"improbus –a –um","wicked, dishonest, shameless",2,Adjective
-"impudīcus –a –um","unchaste, shameless, lewd",2,Adjective
-"impulsus –ūs m.","impulse, instigation, pressure",2,Noun
-"incendium incendi(ī) n.","fire, conflagration",2,Noun
-"incendō incendere incendī incensus","to set on fire, burn, inflame",2,Verb
+"impetus impetūs {m.}","attack, assault, impulse",2,Noun
+"impius impia impium","impious, wicked, disloyal",2,Adjective
+"impōnō impōnere imposuī impositus","to place upon, impose, inflict",2,Verb
+"imprīmīs {or} in prīmīs","especially, in the first place",2,Adverb
+"improbus improba improbum","wicked, dishonest, shameless",2,Adjective
+"impudīcus impudīca impudīcum","unchaste, shameless, lewd",2,Adjective
+"impulsus impulsūs {m.}","impulse, instigation, pressure",2,Noun
+"incendium incendiī {n.}","fire, conflagration",2,Noun
+"incendō incendere incendī incēnsus","to set on fire, burn, inflame",2,Verb
 "incolumis incolumis incolume","unharmed, safe, intact",2,Adjective
-"īnferō īnferre intulī inlātus","to bring in, introduce; make war on",2,Verb
-"īnferus –a –um","low, below, underneath",2,Adjective
-"īnformō īnfōrmāre īnfōrmāvī īnfōrmātus","to shape, form, instruct",2,Verb
-"inimīcitia inimīcitiae f.","enmity, hostility",2,Noun
-"īnstitūtiō –ōnis f.","institution, arrangement, instruction",2,Noun
-"īnstitūtum īnstitūtī n.","custom, institution, practice",2,Noun
+"īnferō īnferre intulī illātus ({or} inlātus)","to bring in, introduce; make war on",2,Verb
+"īnferus īnfera īnferum","low, below, underneath",2,Adjective
+"īnfōrmō īnfōrmāre īnfōrmāvī īnfōrmātus","to shape, form, instruct",2,Verb
+"inimīcitia inimīcitiae {f.}","enmity, hostility",2,Noun
+"īnstitūtiō īnstitūtiōnis {f.}","institution, arrangement, instruction",2,Noun
+"īnstitūtum īnstitūtī {n.}","custom, institution, practice",2,Noun
 "integer integra integrum","untouched, whole, complete",2,Adjective
-"invītus –a –um","unwilling, reluctant",2,Adjective
-"īrācundia īrācundiae f.","anger, wrath, irritability",2,Noun
-"Iūra –ae m.","the Jura mountains",2,Noun
+"invītus invīta invītum","unwilling, reluctant",2,Adjective
+"īrācundia īrācundiae {f.}","anger, wrath, irritability",2,Noun
+"Iūra Iūrae {m.}","the Jura mountains",2,Noun
 "iuvō iuvāre iūvī iūtus","to help, aid, please",2,Verb
-"Kalendae –ārum f.","the Kalends (1st of the month)",2,Noun
-"labōrō labōrāre labōravī labōrātum","to work, labor, suffer",2,Verb
-"laetitia laetitiae f.","joy, happiness, gladness",2,Noun
-"largītīō largītiōnis f.","bribery, generosity, largesse",2,Noun
-"Latīnus (Lātius) –a –um","Latin, of Latium",2,Adjective
+"Kalendae Kalendārum {f. pl.}","the Kalends (1st of the month)",2,Noun
+"labōrō labōrāre labōrāvī labōrātum","to work, labor, suffer",2,Verb
+"laetitia laetitiae {f.}","joy, happiness, gladness",2,Noun
+"largītiō largītiōnis {f.}","bribery, generosity, largesse",2,Noun
+"Latīnus (Lātius) Latīna Latīnum","Latin, of Latium",2,Adjective
 "laudō laudāre laudāvī laudātus","to praise",2,Verb
-"lēnis –e","gentle, mild, smooth",2,Adjective
-"lēnitās –ātis f.","gentleness, mildness, smoothness",2,Noun
-"liber librī m.","book",2,Noun
-"līberālitās līberālitātis f.","generosity, kindness, liberality",2,Noun
-"līberī līberōrum m. pl.","children",2,Noun
+"lēnis lēne","gentle, mild, smooth",2,Adjective
+"lēnitās lēnitātis {f.}","gentleness, mildness, smoothness",2,Noun
+"liber librī {m.}","book",2,Noun
+"līberālitās līberālitātis {f.}","generosity, kindness, liberality",2,Noun
+"līberī līberōrum {m. pl.}","children",2,Noun
 "līberō līberāre līberāvī līberātus","to free, set free",2,Verb
-"libīdō libidinis f.","desire, lust, passion",2,Noun
-"Lupercālia –ium/–iōrum n.pl.","the Lupercalia (a Roman festival)",2,Noun
-"lūx lūcis f.","light, daylight",2,Noun
-"maledictum –ī n.","curse, slander, abusive word",2,Noun
-"maleficium –ī n.","wrongdoing, crime, evil deed",2,Noun
-"malus –a –um","bad, evil, wicked",2,Adjective
-"Māmurra –ae m.","Mamurra (an officer of Caesar)",2,Noun
-"mānsuētūdō –inis f.","gentleness, clemency, mildness",2,Noun
-"mātrimōnium –ī(ī) n.","marriage",2,Noun
+"libīdō libīdinis {f.}","desire, lust, passion",2,Noun
+"Lupercālia Lupercālium {/} Lupercāliōrum {n. pl.}","the Lupercalia (a Roman festival)",2,Noun
+"lūx lūcis {f.}","light, daylight",2,Noun
+"maledictum maledictī {n.}","curse, slander, abusive word",2,Noun
+"maleficium maleficiī {n.}","wrongdoing, crime, evil deed",2,Noun
+"malus mala malum","bad, evil, wicked",2,Adjective
+"Māmurra Māmurrae {m.}","Mamurra (an officer of Caesar)",2,Noun
+"mānsuētūdō mānsuētūdinis {f.}","gentleness, clemency, mildness",2,Noun
+"mātrimōnium mātrimōniī {n.}","marriage",2,Noun
 "meminī meminisse","to remember, recollect",2,Verb
-"mēns mentis f.","mind, reason, intellect",2,Noun
-"mēnsis mēnsis m.","month",2,Noun
-"mīlitāris –ris –re","military, of a soldier",2,Adjective
-"Mithridātēs –is m.","Mithridates (a king of Pontus)",2,Noun
+"mēns mentis {f.}","mind, reason, intellect",2,Noun
+"mēnsis mēnsis {m.}","month",2,Noun
+"mīlitāris mīlitāris mīlitāre","military, of a soldier",2,Adjective
+"Mithridātēs Mithridātis {m.}","Mithridates (a king of Pontus)",2,Noun
 "morior morī mortuus sum","to die",2,Verb
-"mors mortis f.","death",2,Noun
-"mōs mōris m.","custom, habit, manner; (pl.) character",2,Noun
-"necessārius necessāri(ī) m.","relative, kinsman, client",2,Noun
+"mors mortis {f.}","death",2,Noun
+"mōs mōris {m.}","custom, habit, manner; (pl.) character",2,Noun
+"necessārius necessāriī {m.}","relative, kinsman, client",2,Noun
 "necesse","necessary, unavoidable",2,"Adjective (indecl.)"
-"nepōs nepōtis m.","grandson, nephew, descendant",2,Noun
-"novem; nōnus –a –um","nine; ninth",2,Numeral
-"novus –a –um","new, strange, recent",2,Adjective
+"nepōs nepōtis {m.}","grandson, nephew, descendant",2,Noun
+"novem {;} nōnus nōna nōnum","nine; ninth",2,Numeral
+Latin Word,English Definition(s),Frequency,Part of Speech
+"novus nova novum","new, strange, recent",2,Adjective
 "num","(introduces a question expecting a 'no' answer); whether",2,Particle
 "nūper","recently",2,Adverb
 "ob","on account of, because of, before (+ accusative)",2,Preposition
-"obveniō –venīre –vēnī –ventum","to meet, fall to the lot of",2,Verb
+"obveniō obvenīre obvēnī obventum","to meet, fall to the lot of",2,Verb
 "occīdō occīdere occīdī occīsum","to kill, cut down, slay",2,Verb
-"ōceanus –ī m.","the ocean",2,Noun
-"octōgintā; octōgēsimus –a –um","eighty; eightieth",2,Numeral
-"oculus oculī m.","eye",2,Noun
+"ōceanus ōceanī {m.}","the ocean",2,Noun
+"octōgintā {;} octōgēsimus octōgēsima octōgēsimum","eighty; eightieth",2,Numeral
+"oculus oculī {m.}","eye",2,Noun
 "offerō offerre obtulī oblātus","to offer, present, bring before",2,Verb
-"opera operae f.","work, effort, attention",2,Noun
-"opportūnitās –ātis f.","opportunity, favorable moment",2,Noun
+"opera operae {f.}","work, effort, attention",2,Noun
+"opportūnitās opportūnitātis {f.}","opportunity, favorable moment",2,Noun
 "opprimō opprimere oppressī oppressus","to overwhelm, crush, suppress",2,Verb
 "oppugnō oppugnāre oppugnāvī oppugnātus","to attack, assault, besiege",2,Verb
-"ops opis f.","power, help, resources",2,Noun
-"ōrātor ōrātōris m.","orator, speaker",2,Noun
+"ops opis {f.}","power, help, resources",2,Noun
+"ōrātor ōrātōris {m.}","orator, speaker",2,Noun
 "ōrdior ōrdīrī ōrsus sum","to begin, start",2,Verb
 "orior orīrī ortus sum","to rise, arise, begin",2,Verb
 "ostendō ostendere ostendī","to show, point out, display",2,Verb
-"ōtium –iī n.","leisure, peace, quiet",2,Noun
-"Panaetius –(i)ī m.","Panaetius (a Stoic philosopher)",2,Noun
-"parēns parentis m. or f.","parent",2,Noun
+"ōtium ōtiī {n.}","leisure, peace, quiet",2,Noun
+"Panaetius Panaetiī {m.}","Panaetius (a Stoic philosopher)",2,Noun
+"parēns parentis {m. or f.}","parent",2,Noun
 "partior partīrī partītus sum","to share, divide, distribute",2,Verb
-"passus passūs m.","pace, step",2,Noun
+"passus passūs {m.}","pace, step",2,Noun
 "pateō patēre patuī","to be open, be exposed, extend",2,Verb
-"paulum or paululum","a little, somewhat",2,Adverb
-"per–sevērō –āre","to persevere, persist",2,Verb
+"paulum {or} paululum","a little, somewhat",2,Adverb
+"persevērō persevērāre persevērāvī persevērātus","to persevere, persist",2,Verb
 "perdō perdere perdidī perditus","to destroy, ruin, lose",2,Verb
-"perfacilis –e","very easy",2,Adjective
+"perfacilis perfacile","very easy",2,Adjective
 "perficiō perficere perfēcī perfectus","to complete, accomplish, finish",2,Verb
-"Peripatēticus –a –um","Peripatetic (a follower of Aristotle)",2,Adjective
+"Peripatēticus Peripatētica Peripatēticum","Peripatetic (a follower of Aristotle)",2,Adjective
 "permoveō permovēre permōvī permōtus","to move deeply, arouse, influence",2,Verb
-"perniciōsus –a –um","destructive, ruinous, dangerous",2,Adjective
+"perniciōsus perniciōsa perniciōsum","destructive, ruinous, dangerous",2,Adjective
 "perscrībō perscrībere perscrīpsī perscrīptum","to write out in full, report",2,Verb
 "perterreō perterrēre perterruī perterritus","to frighten thoroughly, terrify",2,Verb
 "perturbō perturbāre perturbāvī perturbātus","to disturb greatly, throw into confusion",2,Verb
-"pietās pietātis f.","piety, devotion, sense of duty",2,Noun
-"Platō –ōnis m.","Plato (a Greek philosopher)",2,Noun
-"poena poenae f.","punishment, penalty",2,Noun
-"poēta poētae m.","poet",2,Noun
-"pōns pontis m.","bridge",2,Noun
-"portus portūs m.","harbor, port",2,Noun
-"posterus –a –um","following, next, future",2,Adjective
-"potentia potentiae f.","power, ability, influence",2,Noun
-"potior potirī potitus sum","to get possession of, acquire (+ ablative or genitive)",2,Verb
+"pietās pietātis {f.}","piety, devotion, sense of duty",2,Noun
+"Platō Platōnis {m.}","Plato (a Greek philosopher)",2,Noun
+"poena poenae {f.}","punishment, penalty",2,Noun
+"poēta poētae {m.}","poet",2,Noun
+"pōns pontis {m.}","bridge",2,Noun
+"portus portūs {m.}","harbor, port",2,Noun
+"posterus postera posterum","following, next, future",2,Adjective
+"potentia potentiae {f.}","power, ability, influence",2,Noun
+"potior potīrī potītus sum","to get possession of, acquire (+ ablative or genitive)",2,Verb
 "praecipiō praecipere praecēpī praeceptus","to instruct, order, advise",2,Verb
-"praeclārus –a –um","very clear, excellent, distinguished",2,Adjective
-"praeditus –a –um","endowed with, possessed of",2,Adjective
-"praemium –(i)ī n.","reward, prize",2,Noun
-"praestāns –ntis","outstanding, excellent, superior",2,Adjective
+"praeclārus praeclāra praeclārum","very clear, excellent, distinguished",2,Adjective
+"praeditus praedita praeditum","endowed with, possessed of",2,Adjective
+"praemium praemiī {n.}","reward, prize",2,Noun
+"praestāns praestantis","outstanding, excellent, superior",2,Adjective
 "praestō praestāre praestitī praestitus","to stand before, excel; show, provide",2,Verb
 "praeter","beyond, except, besides (+ accusative)",2,Preposition
 "praetereā","besides, moreover, furthermore",2,Adverb
 "praetermittō praetermittere praetermīsī praetermissum","to let pass, overlook, omit",2,Verb
-"praetōrius –a –um","of a praetor, praetorian",2,Adjective
-"prīncipātus –ūs m.","principate, leadership, first place",2,Noun
-"profectiō –ōnis f.","departure, setting out",2,Noun
+"praetōrius praetōria praetōrium","of a praetor, praetorian",2,Adjective
+"prīncipātus prīncipātūs {m.}","principate, leadership, first place",2,Noun
+"profectiō profectiōnis {f.}","departure, setting out",2,Noun
 "prōficiō prōficere prōfēcī prōfectum","to make progress, advance, accomplish",2,Verb
-"prōiciō –icere iēcī –iectum","to throw forward, cast away, abandon",2,Verb
-"prōnūntiō prōnuntiāre prōnuntiāvī prōnuntiātus","to announce, proclaim, declare",2,Verb
-"pugna pugnae f.","fight, battle",2,Noun
+"prōiciō prōicere prōiēcī prōiectum","to throw forward, cast away, abandon",2,Verb
+"prōnūntiō prōnūntiāre prōnūntiāvī prōnūntiātus","to announce, proclaim, declare",2,Verb
+"pugna pugnae {f.}","fight, battle",2,Noun
 "pulcher pulchra pulchrum","beautiful, handsome, fine",2,Adjective
 "pulchrē pulchrius pulcherrimē","beautifully, finely",2,Adverb
-"pulchritūdō –inis f.","beauty",2,Noun
+"pulchritūdō pulchritūdinis {f.}","beauty",2,Noun
 "quaesō quaesere","to seek, ask, beg",2,Verb
-"quaestūra –ae f.","quaestorship (a Roman magistracy)",2,Noun
+"quaestūra quaestūrae {f.}","quaestorship (a Roman magistracy)",2,Noun
 "quam ob rem","for which reason, why",2,Adverb
-"quamdiū or quam diū","how long, as long as",2,Adverb
+"quamdiū {or} quam diū","how long, as long as",2,Adverb
 "quīcumque quaecumque quodcumque","whoever, whatever",2,Pronoun
 "quisnam (quīnam) quaenam quidnam","who/what in the world?",2,Pronoun
 "quoad","as long as, until",2,Conjunction
-"quotiēns or quotiēs","how often, as often as",2,Adverb
+"quotiēns {or} quotiēs","how often, as often as",2,Adverb
 "recipiō recipere recēpī receptus","to take back, receive, accept",2,Verb
 "redeō redīre rediī reditum","to go back, return",2,Verb
-"redimō –imere –ēmī –emptum","to buy back, redeem, ransom",2,Verb
-"refugiō –ere –fugere –fūgī","to flee back, retreat, escape",2,Verb
-"religiō religiōnis f.","religion, religious observance, superstition",2,Noun
+"redimō redimere redēmī redēmptum","to buy back, redeem, ransom",2,Verb
+"refugiō refugere refūgī","to flee back, retreat, escape",2,Verb
+"religiō religiōnis {f.}","religion, religious observance, superstition",2,Noun
 "reperiō reperīre repperī repertus","to find, discover",2,Verb
 "respiciō respicere respexī respectum","to look back at, consider, have regard for",2,Verb
 "rogō rogāre rogāvī rogātus","to ask, ask for",2,Verb
-"scientia scientiae f.","knowledge, science",2,Noun
-"sēcessiō –ōnis f.","secession, withdrawal",2,Noun
+"scientia scientiae {f.}","knowledge, science",2,Noun
+"sēcessiō sēcessiōnis {f.}","secession, withdrawal",2,Noun
 "sedeō sedēre sēdī sessus","to sit",2,Verb
-"sella –ae f.","seat, chair",2,Noun
+"sella sellae {f.}","seat, chair",2,Noun
 "serviō servīre servīvī servītus","to be a slave to, serve (+ dative)",2,Verb
-"sex; sextus –a –um","six; sixth",2,Numeral
-"similitūdō similitūdinis f.","likeness, similarity, resemblance",2,Noun
+"sex {;} sextus sexta sextum","six; sixth",2,Numeral
+"similitūdō similitūdinis {f.}","likeness, similarity, resemblance",2,Noun
 "sīn","but if, if however",2,Conjunction
 "singulāris singulāris singulāre","single, remarkable, extraordinary",2,Adjective
-"societās societātis f.","alliance, partnership, society",2,Noun
-"sōl sōlis m.","sun",2,Noun
-"sors sortis f.","lot, fate, destiny",2,Noun
-"spōns spontis f.","of one's own accord, voluntarily",2,Noun
-"Spurius –ī m.","Spurius (a Roman name)",2,Noun
-"stabilis –e","stable, firm, steady",2,Adjective
-"statiō statiōnis f.","post, station, position",2,Noun
-"Stōicus –a –um","Stoic",2,Adjective
-"studiōsus –a –um","eager, zealous, studious",2,Adjective
-"subeō subīre subīvī/subiī subitus","to go under, undergo, approach",2,Verb
-"summus, summa, summum","the highest",2,Adjective
+"societās societātis {f.}","alliance, partnership, society",2,Noun
+"sōl sōlis {m.}","sun",2,Noun
+"sors sortis {f.}","lot, fate, destiny",2,Noun
+"spōns spontis {f.}","of one's own accord, voluntarily",2,Noun
+"Spurius Spuriī {m.}","Spurius (a Roman name)",2,Noun
+"stabilis stabile","stable, firm, steady",2,Adjective
+"statiō statiōnis {f.}","post, station, position",2,Noun
+"Stōicus Stōica Stōicum","Stoic",2,Adjective
+"studiōsus studiōsa studiōsum","eager, zealous, studious",2,Adjective
+"subeō subīre subīvī {/} subiī subitus","to go under, undergo, approach",2,Verb
+"summus summa summum","the highest",2,Adjective
 "sūmō sūmere sūmpsī sūmptus","to take, take up, assume",2,Verb
-"suspīciō suspiciōnis f.","suspicion, mistrust",2,Noun
-"Syria –ae f.","Syria",2,Noun
-"tacitus –a –um","silent, quiet",2,Adjective
+"suspīciō suspiciōnis {f.}","suspicion, mistrust",2,Noun
+"Syria Syriae {f.}","Syria",2,Noun
+"tacitus tacita tacitum","silent, quiet",2,Adjective
 "tentō tentāre tentāvī tentātus","to try, attempt, test",2,Verb
-"terror terrōris m.","terror, fear, dread",2,Noun
-"toga togae f.","toga",2,Noun
+"terror terrōris {m.}","terror, fear, dread",2,Noun
+"toga togae {f.}","toga",2,Noun
 "tractō tractāre tractāvī tractātus","to handle, treat, manage",2,Verb
-"trānseō trānsīre trānsīvī/trānsiī trānsitus","to go across, cross over",2,Verb
+"trānseō trānsīre trānsīvī {/} trānsiī trānsitus","to go across, cross over",2,Verb
 "trānsferō trānsferre trānstulī trānslātus","to carry over, transfer",2,Verb
-"tribūnātus –ūs m.","tribuneship",2,Noun
-"triplex –icis","threefold, triple",2,Adjective
-"turpitūdō turpitūdinis f.","ugliness, shame, disgrace",2,Noun
+"tribūnātus tribūnātūs {m.}","tribuneship",2,Noun
+"triplex triplicis","threefold, triple",2,Adjective
+"turpitūdō turpitūdinis {f.}","ugliness, shame, disgrace",2,Noun
 "ūnā","together, at the same time",2,Adverb
-"ūnctus –a –um","oily, greasy, anointed",2,Adjective
-"ūniversus –a –um","all together, whole, entire",2,Adjective
-"urbānus –a –um","of the city, urban, refined",2,Adjective
-"ūsus ūsūs m.","use, experience, practice",2,Noun
+"ūnctus ūncta ūnctum","oily, greasy, anointed",2,Adjective
+"ūniversus ūniversa ūniversum","all together, whole, entire",2,Adjective
+"urbānus urbāna urbānum","of the city, urban, refined",2,Adjective
+"ūsus ūsūs {m.}","use, experience, practice",2,Noun
 "uter utra utrum","which (of two)?",2,Pronoun
 "utrum","whether",2,Adverb
 "valeō valēre valuī valitus","to be strong, be well, prevail",2,Verb
-"vallum vallī n.","wall, rampart, palisade",2,Noun
-"varietās varietātis f.","variety, diversity, difference",2,Noun
+"vallum vallī {n.}","wall, rampart, palisade",2,Noun
+"varietās varietātis {f.}","variety, diversity, difference",2,Noun
 "vehementer","violently, strongly, vehemently",2,Adverb
 "vērē","truly, really, in truth",2,Adverb
 "versor versārī versātus sum","to be engaged in, be involved in, live",2,Verb
-"vērum –ī n.","truth, reality, fact",2,Noun
-"vīcus vīcī m.","village, street",2,Noun
-"vīgintī; vīcēsimus –a –um","twenty; twentieth",2,Numeral
-"vinculum vinculī n.","chain, bond, fetter",2,Noun
-"vulnus vulneris n.","wound",2,Noun
-"abhorreō abhorrēre abhoruī","to shrink from, abhor, be inconsistent with",1,Verb
+"vērum vērī {n.}","truth, reality, fact",2,Noun
+"vīcus vīcī {m.}","village, street",2,Noun
+"vīgintī {;} vīcēsimus vīcēsima vīcēsimum","twenty; twentieth",2,Numeral
+"vinculum vinculī {n.}","chain, bond, fetter",2,Noun
+"vulnus vulneris {n.}","wound",2,Noun
+"abhorreō abhorrēre abhorruī","to shrink from, abhor, be inconsistent with",1,Verb
 "absēns absentis","absent, away",1,Adjective
-"abundans abundantis","abundant, overflowing, rich",1,Adjective
+"abundāns abundantis","abundant, overflowing, rich",1,Adjective
 "abundō abundāre abundāvī abundātus","to abound, be rich in, overflow with",1,Verb
-"Acadēmicus –a –um","Academic (of Plato's Academy)",1,Adjective
-"acceptus –a –um","welcome, acceptable, pleasing",1,Adjective
+"Acadēmicus Acadēmica Acadēmicum","Academic (of Plato's Academy)",1,Adjective
+"acceptus accepta acceptum","welcome, acceptable, pleasing",1,Adjective
 "accommodō accommodāre accommodāvī accommodātus","to adapt, fit, adjust",1,Verb
-"accūrātus –a –um","accurate, exact, careful",1,Adjective
-"actiō actiōnis f.","action, deed, lawsuit",1,Noun
-"āctum –ī n.","act, deed, transaction",1,Noun
-"addiscō addiscere addidicī —","to learn in addition",1,Verb
+"accūrātus accūrāta accūrātum","accurate, exact, careful",1,Adjective
+"āctiō āctiōnis {f.}","action, deed, lawsuit",1,Noun
+"āctum āctī {n.}","act, deed, transaction",1,Noun
+"addiscō addiscere addidicī","to learn in addition",1,Verb
 "adeō","to such a degree, so",1,Adverb
-"adeō adīre adīvī/adiī aditus","to go to, approach",1,Verb
-"adfinitas –atis f.","relationship by marriage, connection",1,Noun
-"adhortor –ārī –ātus sum","to encourage, exhort",1,Verb
+"adeō adīre adīvī {/} adiī aditus","to go to, approach",1,Verb
+"adfīnitās adfīnitātis {f.}","relationship by marriage, connection",1,Noun
+"adhortor adhortārī adhortātus sum","to encourage, exhort",1,Verb
 "adhūc","still, up to this time, as yet",1,Adverb
-"adiūmentum –ī n.","help, aid, assistance",1,Noun
-"adiūtor –ōris m.","helper, assistant",1,Noun
+"adiūmentum adiūmentī {n.}","help, aid, assistance",1,Noun
+"adiūtor adiūtōris {m.}","helper, assistant",1,Noun
 "administrō administrāre administrāvī administrātus","to manage, administer, direct",1,Verb
-"admīrābilis –e","admirable, wonderful",1,Adjective
+"admīrābilis admīrābile","admirable, wonderful",1,Adjective
 "admodum","very, completely, quite",1,Adverb
 "adnectō (annectō) adnectere adnexuī adnexum","to tie to, connect, annex",1,Verb
-"Adōneus –ī m.","Adonis",1,Noun
-"adscīscō –ere –scīvī –scītus","to adopt, admit, receive",1,Verb
-"adūlātiō –ōnis f.","flattery, adulation",1,Noun
-"adulter –erī m.","adulterer",1,Noun
-"adversus –a –um","opposite, facing, contrary",1,Adjective
-"adversus or adversum + acc.","against, opposite to",1,Preposition
+"Adōneus Adōneī {m.}","Adonis",1,Noun
+"adscīscō adscīscere adscīvī adscītus","to adopt, admit, receive",1,Verb
+"adūlātiō adūlātiōnis {f.}","flattery, adulation",1,Noun
+"adulter adulterī {m.}","adulterer",1,Noun
+"adversus adversa adversum","opposite, facing, contrary",1,Adjective
+"adversus {or} adversum {+ acc.}","against, opposite to",1,Preposition
 "advolō advolāre advolāvī advolātus","to fly to, hasten to",1,Verb
-"aedificium –ī n.","building, structure",1,Noun
-"Aeduus –a –um","Aeduan, of the Aedui (a Gallic tribe)",1,Adjective
-"Aegyptos (–tus) –ī f.","Egypt",1,Noun
-"aemulus –ī m.","rival, competitor",1,Noun
-"aequābilis –e","equal, uniform, consistent",1,Adjective
-"aequitās aequitātis f.","equity, fairness, justice",1,Noun
+"aedificium aedificiī {n.}","building, structure",1,Noun
+"Aeduus Aedua Aeduum","Aeduan, of the Aedui (a Gallic tribe)",1,Adjective
+"Aegyptos (Aegyptus) Aegyptī {f.}","Egypt",1,Noun
+"aemulus aemulī {m.}","rival, competitor",1,Noun
+"aequābilis aequābile","equal, uniform, consistent",1,Adjective
+"aequitās aequitātis {f.}","equity, fairness, justice",1,Noun
 "aequō aequāre aequāvī aequātus","to make equal, equalize",1,Verb
-"aerārium –ī n.","treasury",1,Noun
-"aestimātiō aestimatiōnis f.","valuation, assessment, worth",1,Noun
-"Aetōlus (Aetōlius) –a –um","Aetolian, of Aetolia",1,Adjective
+"aerārium aerāriī {n.}","treasury",1,Noun
+"aestimātiō aestimātiōnis {f.}","valuation, assessment, worth",1,Noun
+"Aetōlus (Aetōlius) Aetōla Aetōlum","Aetolian, of Aetolia",1,Adjective
 "afficiō afficere affēcī affectus","to affect, influence, treat",1,Verb
 "affingō affingere affīnxī affictum","to attach, add, invent",1,Verb
 "affirmō affirmāre affirmāvī affirmātus","to affirm, assert, declare",1,Verb
 "āgnōscō āgnōscere āgnōvī agnitus","to recognize, acknowledge",1,Verb
-"ālārius –a –um or ālāris –e","of the wing, auxiliary",1,Adjective
-"albulus –a –um","whitish",1,Adjective
-"albus –a –um","white",1,Adjective
-"Alexandria –ae f.","Alexandria",1,Noun
-"aliēnātiō –ōnis f.","alienation, transfer of ownership",1,Noun
-"aliquantum –ī n.","a certain amount, a good deal",1,Noun
+"ālārius ālāria ālārium {or} ālāris ālāre","of the wing, auxiliary",1,Adjective
+"albulus albula albulum","whitish",1,Adjective
+"albus alba album","white",1,Adjective
+"Alexandria Alexandriae {f.}","Alexandria",1,Noun
+"aliēnātiō aliēnātiōnis {f.}","alienation, transfer of ownership",1,Noun
+"aliquantum aliquantī {n.}","a certain amount, a good deal",1,Noun
 "alō alere aluī altus","to nourish, support, maintain",1,Verb
-"Alpēs –ium f.","the Alps",1,Noun
+"Alpēs Alpium {f. pl.}","the Alps",1,Noun
 "ambō ambae ambō","both",1,Numeral
 "āmēns āmentis","mad, insane, frantic",1,Adjective
-"amiciō –īre –icuī (–ixī) –ictus","to clothe, wrap, cover",1,Verb
-"amnis amnis m.","river, stream",1,Noun
+"amiciō amicīre amicuī (amixī) amictus","to clothe, wrap, cover",1,Verb
+"amnis amnis {m.}","river, stream",1,Noun
 "amō amāre amāvī amātus","to love",1,Verb
-"amplificō –amplificāre","to enlarge, amplify, increase",1,Verb
+"amplificō amplificāre amplificāvī amplificātus","to enlarge, amplify, increase",1,Verb
 "anceps ancipitis","two-headed, double, uncertain",1,Adjective
 "anteā","before, formerly, previously",1,Adverb
-"antecēdō –cēdere –cessī –cessum","to go before, precede, surpass",1,Verb
-"antecellō –cellere — —","to excel, surpass",1,Verb
-"antecessiō –ōnis f.","a going before, precedence",1,Noun
-"anteferō –ferre –tulī –lātus –ferre","to prefer, place before",1,Verb
+"antecēdō antecēdere antecessī antecessum","to go before, precede, surpass",1,Verb
+"antecellō antecellere","to excel, surpass",1,Verb
+"antecessiō antecessiōnis {f.}","a going before, precedence",1,Noun
+"anteferō anteferre antetulī antelātus","to prefer, place before",1,Verb
 "antequam","before",1,Conjunction
-"Antiochus –ī m.","Antiochus (a name of several kings)",1,Noun
+"Antiochus Antiochī {m.}","Antiochus (a name of several kings)",1,Noun
 "aperiō aperīre aperuī apertus","to open, uncover, reveal",1,Verb
-"appetītio (adp–) –ōnis f.","desire, appetite, striving for",1,Noun
-"appetītus (adpetītus) –ūs m.","desire, appetite",1,Noun
-"approbō –āre –āvī –ātum","to approve, commend, assent to",1,Verb
-"aqua aquae f.","water",1,Noun
-"aquātor –ōris m.","water-carrier",1,Noun
-"aquila aquilae f.","eagle; the standard of a Roman legion",1,Noun
-"Aquītānia –ae f.","Aquitania (a region of Gaul)",1,Noun
-"aquor –aquārī","to get water",1,Verb
-"Arabs –is m.","an Arab",1,Noun
-"arātrum –ī n","plow",1,Noun
-"arbitrium arbitrī(ī) n.","judgment, decision, will",1,Noun
+"appetītiō (adpetītiō) appetītiōnis {f.}","desire, appetite, striving for",1,Noun
+"appetītus (adpetītus) appetītūs {m.}","desire, appetite",1,Noun
+"approbō approbāre approbāvī approbātum","to approve, commend, assent to",1,Verb
+"aqua aquae {f.}","water",1,Noun
+"aquātor aquātōris {m.}","water-carrier",1,Noun
+"aquila aquilae {f.}","eagle; the standard of a Roman legion",1,Noun
+"Aquītānia Aquītāniae {f.}","Aquitania (a region of Gaul)",1,Noun
+"aquor aquārī aquātus sum","to get water",1,Verb
+"Arabs Arabis {m.}","an Arab",1,Noun
+"arātrum arātrī {n.}","plow",1,Noun
+"arbitrium arbitriī {n.}","judgment, decision, will",1,Noun
 "ārdeō ārdēre ārsī ārsum","to burn, be on fire, blaze",1,Verb
-"Ariobarzanēs –is m.","Ariobarzanes (a king of Cappadocia)",1,Noun
-"Aristōn –ōnis m.","Aristo (a Stoic philosopher)",1,Noun
-"Aristotelēs –is or –ī m.","Aristotle (a Greek philosopher)",1,Noun
-"arrogans –antis","arrogant, proud, insolent",1,Adjective
-"ars artis f.","art, skill, craft",1,Noun
-"ascrībō (adscr–) ascrībere ascrīpsī ascrīptum","to enroll, assign, attribute",1,Verb
-"aspectus aspectūs m.","sight, look, appearance",1,Noun
-"assiduitās –ātis f.","diligence, persistence, constant attendance",1,Noun
-"assūmō (or adsūmō) –sūmere –sūmpsī –sūmptum","to take up, adopt, assume",1,Verb
+"Ariobarzānēs Ariobarzānis {m.}","Ariobarzanes (a king of Cappadocia)",1,Noun
+"Aristōn Aristōnis {m.}","Aristo (a Stoic philosopher)",1,Noun
+"Aristotelēs Aristotelis {or} Aristotelī {m.}","Aristotle (a Greek philosopher)",1,Noun
+"arrogāns arrogantis","arrogant, proud, insolent",1,Adjective
+"ars artis {f.}","art, skill, craft",1,Noun
+"ascrībō (adscrībō) ascrībere ascrīpsī ascrīptum","to enroll, assign, attribute",1,Verb
+"aspectus aspectūs {m.}","sight, look, appearance",1,Noun
+"assiduitās assiduitātis {f.}","diligence, persistence, constant attendance",1,Noun
+"assūmō (adsūmō) assūmere assūmpsī assūmptum","to take up, adopt, assume",1,Verb
 "āter atra atrum","black, dark, gloomy",1,Adjective
-"Athēnae Athēnārum f.","Athens",1,Noun
-"attentus –a –um","attentive, careful",1,Adjective
+"Athēnae Athēnārum {f. pl.}","Athens",1,Noun
+"attentus attenta attentum","attentive, careful",1,Adjective
 "attingō attingere attigī attāctus","to touch, reach, border on",1,Verb
-"audāciter or audācter","boldly, daringly",1,Adverb
+"audāciter {or} audācter","boldly, daringly",1,Adverb
 "audāx audācis","bold, daring, reckless",1,Adjective
 "auferō auferre abstulī ablātus","to take away, carry off, remove",1,Verb
-"Aulus –ī m.","Aulus (a Roman first name)",1,Noun
-"Aurēlius –iī m.","Aurelius (a Roman name)",1,Noun
-"aureus (aurātus) –a –um","golden, of gold",1,Adjective
+"Aulus Aulī {m.}","Aulus (a Roman first name)",1,Noun
+"Aurēlius Aurēliī {m.}","Aurelius (a Roman name)",1,Noun
+"aureus (aurātus) aurea aureum","golden, of gold",1,Adjective
 "aurifer aurifera auriferum","gold-bearing",1,Adjective
-"aveō (haveō) –ēre","to desire, long for, be well",1,Verb
-"āvertō avertere avertī aversus","to turn away, avert, divert",1,Verb
-"bacillum, ī, n","a small staff, wand",1,Noun
-"bellicōsus –a –um","warlike, fond of war",1,Adjective
+"aveō (haveō) avēre","to desire, long for, be well",1,Verb
+"āvertō āvertere āvertī āversus","to turn away, avert, divert",1,Verb
+"bacillum bacillī {n.}","a small staff, wand",1,Noun
+"bellicōsus bellicōsa bellicōsum","warlike, fond of war",1,Adjective
 "bellō bellāre bellāvī bellātus","to wage war, fight",1,Verb
-"bēlua –ae f.","beast, monster",1,Noun
-"benevolentia benevolentiae f.","goodwill, kindness, benevolence",1,Noun
+"bēlua bēluae {f.}","beast, monster",1,Noun
+"benevolentia benevolentiae {f.}","goodwill, kindness, benevolence",1,Noun
 "bibō bibere bibī","to drink",1,Verb
-"biennium –ī n.","a period of two years",1,Noun
-"bīnī –ae –a","two each, two by two",1,Numeral
-"Bōius –a –um","Boian, of the Boii (a Gallic tribe)",1,Adjective
-"bonitās –ātis f.","goodness, kindness, excellence",1,Noun
+"biennium bienniī {n.}","a period of two years",1,Noun
+"bīnī bīnae bīna","two each, two by two",1,Numeral
+"Bōius Bōia Bōium","Boian, of the Boii (a Gallic tribe)",1,Adjective
+"bonitās bonitātis {f.}","goodness, kindness, excellence",1,Noun
+Latin Word,English Definition(s),Frequency,Part of Speech
 "brevis breve","short, brief",1,Adjective
-"Britannus –a –um","British, a Briton",1,Adjective
-"caeles caelitis m.","a god, divinity, celestial being",1,Noun
-"caelum caelī n.","sky, heaven",1,Noun
-"Calēnus –ī m.","Calenus (a Roman name)",1,Noun
-"campus campī m.","plain, field",1,Noun
-"Capitōlium –iī n.","the Capitoline Hill, the Capitol",1,Noun
+"Britannus Britanna Britannum","British, a Briton",1,Adjective
+"caeles caelitis {m.}","a god, divinity, celestial being",1,Noun
+"caelum caelī {n.}","sky, heaven",1,Noun
+"Calēnus Calēnī {m.}","Calenus (a Roman name)",1,Noun
+"campus campī {m.}","plain, field",1,Noun
+"Capitōlium Capitōliī {n.}","the Capitoline Hill, the Capitol",1,Noun
 "captō captāre captāvī captātus","to try to catch, strive after, chase",1,Verb
 "careō carēre caruī caritus","to lack, be without (+ ablative)",1,Verb
-"cārus –a –um","dear, precious, expensive",1,Adjective
-"castellum castellī n.","fort, stronghold, fortress",1,Noun
-"Casticus –ī m.","Casticus (a chief of the Sequani)",1,Noun
+"cārus cāra cārum","dear, precious, expensive",1,Adjective
+"castellum castellī {n.}","fort, stronghold, fortress",1,Noun
+"Casticus Casticī {m.}","Casticus (a chief of the Sequani)",1,Noun
 "castīgō castīgāre castīgāvī castīgātus","to punish, chastise, correct",1,Verb
-"Catamantāloedēs –is m.","Catamantaloedes (a king of the Sequani)",1,Noun
-"Catilīna –ae m.","Catiline (a Roman politician)",1,Noun
+"Catamantāloedēs Catamantāloedis {m.}","Catamantaloedes (a king of the Sequani)",1,Noun
+"Catilīna Catilīnae {m.}","Catiline (a Roman politician)",1,Noun
 "cēdō cēdere cessī cessum","to go, yield, withdraw",1,Verb
-"celebrātiō –iōnis f.","celebration, large gathering",1,Noun
+"celebrātiō celebrātiōnis {f.}","celebration, large gathering",1,Noun
 "celebrō celebrāre celebrāvī celebrātus","to celebrate, frequent, praise",1,Verb
-"celeritās celeritātis f.","speed, swiftness",1,Noun
-"celeriter celerius celerrime","quickly, swifly",1,Adverb
-"Celtae –ārum m.","the Celts",1,Noun
-"cēnsor cēnsōris m.","censor (a Roman magistrate)",1,Noun
-"cibāria –ōrum n.","food, rations, provisions",1,Noun
-"Cicerō Cicerōnis m.","Cicero (a Roman orator and statesman)",1,Noun
+"celeritās celeritātis {f.}","speed, swiftness",1,Noun
+"celeriter celerius celerrimē","quickly, swifly",1,Adverb
+"Celtae Celtārum {m. pl.}","the Celts",1,Noun
+"cēnsor cēnsōris {m.}","censor (a Roman magistrate)",1,Noun
+"cibāria cibāriōrum {n. pl.}","food, rations, provisions",1,Noun
+"Cicerō Cicerōnis {m.}","Cicero (a Roman orator and statesman)",1,Noun
 "cīvīlis cīvīle","civil, of a citizen",1,Adjective
-"clāmor clāmōris m.","shout, cry, noise",1,Noun
-"clēmēns –entis","mild, gentle, merciful",1,Adjective
-"clēmentia –ae f.","mercy, clemency, kindness",1,Noun
-"cliēns clientis m.","client, dependent, retainer",1,Noun
+"clāmor clāmōris {m.}","shout, cry, noise",1,Noun
+"clēmēns clēmentis","mild, gentle, merciful",1,Adjective
+"clēmentia clēmentiae {f.}","mercy, clemency, kindness",1,Noun
+"cliēns clientis {m.}","client, dependent, retainer",1,Noun
 "coemō coemere coēmī coēmptum","to buy up",1,Verb
-"cōgitātiō cōgitātiōnis f.","thought, reflection, consideration",1,Noun
-"cohaereō –haerēre –haesī –haesum","to cling together, be connected",1,Verb
-"cohibeō –ēre –uī –itus","to hold together, restrain, confine",1,Verb
-"coitus (coetus) coitūs m.","meeting, assembly, union",1,Noun
-"collēgium collēgiī n.","college, guild, corporation",1,Noun
+"cōgitātiō cōgitātiōnis {f.}","thought, reflection, consideration",1,Noun
+"cohaereō cohaerēre cohaesī cohaesum","to cling together, be connected",1,Verb
+"cohibeō cohibēre cohibuī cohibitus","to hold together, restrain, confine",1,Verb
+"coitus (coetus) coitūs {m.}","meeting, assembly, union",1,Noun
+"collēgium collēgiī {n.}","college, guild, corporation",1,Noun
 "colligō colligere collēgī collēctus","to collect, gather, assemble",1,Verb
-"colōrō colorāre colorāvī colorātus","to color",1,Verb
-"columbus columbī m.","pigeon, dove",1,Noun
-"comātus –a –um","long-haired",1,Adjective
+"colōrō colōrāre colōrāvī colōrātus","to color",1,Verb
+"columbus columbī {m.}","pigeon, dove",1,Noun
+"comātus comāta comātum","long-haired",1,Adjective
 "combūrō combūrere combussī combustum","to burn up, consume by fire",1,Verb
-"comedō comedere (comesse) comēdī comēsum","to eat up, consume",1,Verb
-"comitiālis –e","of the comitia (assembly)",1,Adjective
-"comitium comitī(ī) n.","the Comitium (a place in the Roman Forum)",1,Noun
-"commeātus commeatūs m.","leave of absence, supplies, provisions",1,Noun
-"commemorābilis –e","memorable, noteworthy",1,Adjective
-"commeō commeāre","to go back and forth, visit frequently",1,Verb
-"commisceō –uī –mixtus or –mistus","to mix together, mingle",1,Verb
-"committō committere commīsī commīssus","to entrust, commit, begin (a battle)",1,Verb
-"commoditās –ātis f.","convenience, advantage",1,Noun
-"commodum commodī n.","advantage, convenience, interest",1,Noun
+"comedō comedere (comēsse) comēdī comēsum","to eat up, consume",1,Verb
+"comitiālis comitiāle","of the comitia (assembly)",1,Adjective
+"comitium comitiī {n.}","the Comitium (a place in the Roman Forum)",1,Noun
+"commeātus commeātūs {m.}","leave of absence, supplies, provisions",1,Noun
+"commemorābilis commemorābile","memorable, noteworthy",1,Adjective
+"commeō commeāre commeāvī commeātus","to go back and forth, visit frequently",1,Verb
+"commisceō commiscēre commiscuī commixtus ({or} commistus)","to mix together, mingle",1,Verb
+"committō committere commīsī commissus","to entrust, commit, begin (a battle)",1,Verb
+"commoditās commoditātis {f.}","convenience, advantage",1,Noun
+"commodum commodī {n.}","advantage, convenience, interest",1,Noun
 "commoror commorārī commorātus sum","to delay, linger, stay",1,Verb
 "commūnicō commūnicāre commūnicāvī commūnicātus","to share, communicate, impart",1,Verb
-"commūniō commūnīre commūniī/commūnīvī commūnītus","to fortify strongly, secure",1,Verb
+"commūniō commūnīre commūniī {/} commūnīvī commūnītus","to fortify strongly, secure",1,Verb
 "commūtō commūtāre commūtāvī commūtātus","to change, alter, exchange",1,Verb
-"comparātiō comparātiōnis f.","comparison, preparation",1,Noun
+"comparātiō comparātiōnis {f.}","comparison, preparation",1,Noun
 "compellō compellere compulī compulsus","to drive together, force, compel",1,Verb
 "comperiō comperīre comperī compertus","to find out, discover, learn",1,Verb
 "compleō complēre complēvī complētus","to fill up, complete, man (a ship)",1,Verb
-"complūrēs complūrium","several, many",1,Adjective
-"cōnāta –ōrum n.","attempt, undertaking",1,Noun
+"complūrēs complūra ({gen.} complūrium)","several, many",1,Adjective
+"cōnāta cōnātōrum {n. pl.}","attempt, undertaking",1,Noun
 "concipiō concipere concēpī conceptum","to take, conceive, imagine",1,Verb
-"conclāmō conclamāre conclamāvī conclamātus","to shout together, cry out",1,Verb
-"concursus concursūs m.","a running together, crowd, attack",1,Noun
+"conclāmō conclāmāre conclāmāvī conclāmātus","to shout together, cry out",1,Verb
+"concursus concursūs {m.}","a running together, crowd, attack",1,Noun
 "cōnfestim","immediately, at once",1,Adverb
 "cōnfīdō cōnfīdere cōnfīsus sum","to trust, rely on (+ dative)",1,Verb
 "cōnfiteor cōnfitērī cōnfessus sum","to confess, admit, acknowledge",1,Verb
-"cōnflīgō cōnflīgere cōnflixī cōnflīctus","to dash together, fight, contend",1,Verb
-"conflō conflāre conflāvī conflātus","to blow up, kindle, arouse",1,Verb
-"cōnfōrmō –āre","to shape, form, fashion",1,Verb
-"congressiō –ōnis f.","meeting, encounter, conference",1,Noun
-"coniūnx coniugis f.","spouse, wife",1,Noun
-"coniūrātiō coniūrātiōnis f.","conspiracy, plot",1,Noun
-"conquiēscō –quiēscere –quiēvī –quiētum","to rest, repose, find relief",1,Verb
+"cōnflīgō cōnflīgere cōnflīxī cōnflīctus","to dash together, fight, contend",1,Verb
+"cōnflō cōnflāre cōnflāvī cōnflātus","to blow up, kindle, arouse",1,Verb
+"cōnfōrmō cōnfōrmāre cōnfōrmāvī cōnfōrmātus","to shape, form, fashion",1,Verb
+"congressiō congressiōnis {f.}","meeting, encounter, conference",1,Noun
+"coniūnx coniugis {f. (or m.)}","spouse, wife",1,Noun
+"coniūrātiō coniūrātiōnis {f.}","conspiracy, plot",1,Noun
+"conquiēscō conquiēscere conquiēvī conquiētum","to rest, repose, find relief",1,Verb
 "conquīrō conquīrere conquīsīvī conquīsītus","to seek for, search out, collect",1,Verb
-"cōnsangineus (cōnsanguineus) –a –um","related by blood; (as a noun) kinsman",1,Adjective
-"cōnscīscō –scīscere –scīvī (–sciī) –scītum","to resolve upon, decree; inflict on oneself",1,Verb
-"cōnsēnsus –ūs m.","agreement, consent, unanimity",1,Noun
-"cōnsentāneus –a –um ","agreeing, consistent, suitable",1,Adjective
+"cōnsanguineus (cōnsangineus) cōnsanguinea cōnsanguineum","related by blood; (as a noun) kinsman",1,Adjective
+"cōnscīscō cōnscīscere cōnscīvī (cōnsciī) cōnscītum","to resolve upon, decree; inflict on oneself",1,Verb
+"cōnsēnsus cōnsēnsūs {m.}","agreement, consent, unanimity",1,Noun
+"cōnsentāneus cōnsentānea cōnsentāneum","agreeing, consistent, suitable",1,Adjective
 "cōnsentiō cōnsentīre cōnsēnsī cōnsēnsus","to agree, consent, plot",1,Verb
-"cōnsequēns –entis","following, consequent; (as a noun) a consequence",1,Adjective
+"cōnsequēns cōnsequentis","following, consequent; (as a noun) a consequence",1,Adjective
 "cōnsequor cōnsequī cōnsecūtus sum","to follow, overtake, attain",1,Verb
 "cōnsīdō cōnsīdere cōnsēdī cōnsessus","to sit down, settle, encamp",1,Verb
 "cōnsilior cōnsiliārī cōnsiliātus sum","to take counsel, consult",1,Verb
-"cōnsōlātiō, cōnsōlātiōnis, f.","consolation, comfort",1,Noun
-"cōnsōlor cōnsōlārī cōnsōlātus sum or cōnsōlō –āre","to console, comfort",1,Verb
+"cōnsōlātiō cōnsōlātiōnis {f.}","consolation, comfort",1,Noun
+"cōnsōlor cōnsōlārī cōnsōlātus sum ({or} cōnsōlō cōnsōlāre)","to console, comfort",1,Verb
 "cōnstō cōnstāre cōnstitī cōnstātus","to stand firm; consist of; it is agreed",1,Verb
-"cōnsuēscō cōnsuescere cōnsuēvī cōnsuētus","to become accustomed",1,Verb
-"cōnsuētūdō cōnsuētūdinis f.","custom, habit, practice",1,Noun
+"cōnsuēscō cōnsuēscere cōnsuēvī cōnsuētus","to become accustomed",1,Verb
+"cōnsuētūdō cōnsuētūdinis {f.}","custom, habit, practice",1,Noun
 "cōnsūmō cōnsūmere cōnsūmpsī cōnsūmptus","to consume, use up, spend",1,Verb
-"cōnsurgō –ere –surrēxī –surrēctus","to rise up together, stand up",1,Verb
-"contemptiō –ōnis f.","contempt, scorn, disdain",1,Noun
-"conticēscō –ere –ticuī","to become silent",1,Verb
+"cōnsurgō cōnsurgere cōnsurrēxī cōnsurrēctus","to rise up together, stand up",1,Verb
+"contemptiō contemptiōnis {f.}","contempt, scorn, disdain",1,Noun
+"conticēscō conticēscere conticuī","to become silent",1,Verb
 "continenter","continuously, without interruption",1,Adverb
 "continuō","immediately, at once",1,Adverb
 "contrahō contrahere contrāxī contractus","to draw together, collect, contract",1,Verb
-"contrārius –a –um","opposite, contrary, opposed",1,Adjective
-"convellō –ere –vellī –vulsus","to tear away, shatter, convulse",1,Verb
-"convenientia –ae f.","agreement, harmony",1,Noun
-"convertō –ere –vertī","to turn, change, convert",1,Verb
-"Corinthus –ī f. or Corinthia –ae f.","Corinth",1,Noun
-"corōnō coronāre coronāvī coronātus","to crown, wreathe, surround",1,Verb
+"contrārius contrāria contrārium","opposite, contrary, opposed",1,Adjective
+"convellō convellere convellī convulsus","to tear away, shatter, convulse",1,Verb
+"convenientia convenientiae {f.}","agreement, harmony",1,Noun
+"convertō convertere convertī conversus","to turn, change, convert",1,Verb
+"Corinthus Corinthī {f.} ({or} Corinthia Corinthiae {f.})","Corinth",1,Noun
+"corōnō corōnāre corōnāvī corōnātus","to crown, wreathe, surround",1,Verb
 "corripiō corripere corripuī correptum","to seize, snatch up, rebuke",1,Verb
-"cotīdiē or cottīdiē or quotidiē","daily, every day",1,Adverb
-"Cotta –ae m.","Cotta (a Roman name)",1,Noun
-"cottīdiānus (cotīdiānus) –a –um","daily",1,Adjective
-"Cratippus –ī m .","Cratippus (a Peripatetic philosopher)",1,Noun
+"cotīdiē ({or} cottīdiē {or} quotīdiē)","daily, every day",1,Adverb
+"Cotta Cottae {m.}","Cotta (a Roman name)",1,Noun
+"cottīdiānus (cotīdiānus) cottīdiāna cottīdiānum","daily",1,Adjective
+"Cratippus Cratippī {m.}","Cratippus (a Peripatetic philosopher)",1,Noun
 "cremō cremāre cremāvī cremātus","to burn, cremate",1,Verb
 "creō creāre creāvī creātus","to create, make, elect",1,Verb
-"crīmen crīminis n.","accusation, charge, crime",1,Noun
-"crimīnor –ārī crimīnātus sum","to accuse, charge",1,Verb
-"crūdēlis, -e","cruel, harsh, merciless",1,Adjective
-"crūdēlitās","cruelty, harshness",1,Noun
+"crīmen crīminis {n.}","accusation, charge, crime",1,Noun
+"crīminor crīminārī crīminātus sum","to accuse, charge",1,Verb
+"crūdēlis crūdēle","cruel, harsh, merciless",1,Adjective
+"crūdēlitās crūdēlitātis {f.}","cruelty, harshness",1,Noun
 "cruentō cruentāre cruentāvī cruentātus","to make bloody, stain with blood",1,Verb
-"cubīle cubīlis n.","bed, couch",1,Noun
-"cultūra –ae f","cultivation, agriculture; culture",1,Noun
-"cūnctor –ārī –ātus sum","to delay, hesitate, linger",1,Verb
+"cubīle cubīlis {n.}","bed, couch",1,Noun
+"cultūra cultūrae {f.}","cultivation, agriculture; culture",1,Noun
+"cūnctor cūnctārī cūnctātus sum","to delay, hesitate, linger",1,Verb
 "cupidē","eagerly, passionately",1,Adverb
-"cupidus –a –um","desirous, eager, greedy for (+ genitive)",1,Adjective
-"cūria cūriae f.","senate-house, curia",1,Noun
-"cūrō (1)","to care for, look after, attend to",1,Verb
-"curriculum –ī n.","race, course, career",1,Noun
+"cupidus cupida cupidum","desirous, eager, greedy for (+ genitive)",1,Adjective
+"cūria cūriae {f.}","senate-house, curia",1,Noun
+"cūrō cūrāre cūrāvī cūrātus","to care for, look after, attend to",1,Verb
+"curriculum curriculī {n.}","race, course, career",1,Noun
 "currō currere cucurrī cursus","to run",1,Verb
-"custōdia custōdiae f.","custody, guard, protection",1,Noun
-"custōs custōdis m.","guard, guardian",1,Noun
-"Cȳzicēnus –a –um","of Cyzicus",1,Adjective
+"custōdia custōdiae {f.}","custody, guard, protection",1,Noun
+"custōs custōdis {m.}","guard, guardian",1,Noun
+"Cȳzicēnus Cȳzicēna Cȳzicēnum","of Cyzicus",1,Adjective
 "damnō damnāre damnāvī damnātus","to condemn, sentence",1,Verb
 "dēbilitō dēbilitāre dēbilitāvī dēbilitātus","to weaken, disable",1,Verb
-"Decembris, Decembre","of December",1,Adjective
-"dēcerpō –ere –sī –tus","to pluck off, gather",1,Verb
-"decertō decertāre decertāvī decertātus","to fight to the finish, contend",1,Verb
-"decet decēre decuīt","it is fitting, it is proper, it becomes",1,Verb
-"decima or decuma –ae f.","a tenth part, tithe",1,Noun
+"Decembris Decembre","of December",1,Adjective
+"dēcerpō dēcerpere dēcerpsī dēcerptus","to pluck off, gather",1,Verb
+"dēcertō dēcertāre dēcertāvī dēcertātus","to fight to the finish, contend",1,Verb
+"decet decēre decuit","it is fitting, it is proper, it becomes",1,Verb
+"decima ({or} decuma) decimae {f.}","a tenth part, tithe",1,Noun
 "dēcipiō dēcipere dēcēpī dēceptus","to deceive, cheat, trick",1,Verb
 "dēclīnō dēclīnāre dēclīnāvī dēclīnātus","to turn aside, avoid, decline",1,Verb
-"dēcoctor dēcoctōris m.","a bankrupt person, spendthrift",1,Noun
-"dēcurrō –ere –cucurrī (currī) –cursus","to run down, hasten down",1,Verb
-"decus decoris n.","honor, glory, ornament",1,Noun
-"dēditiō dēditiōnis f.","surrender",1,Noun
+"dēcoctor dēcoctōris {m.}","a bankrupt person, spendthrift",1,Noun
+"dēcurrō dēcurrere dēcucurrī (dēcurrī) dēcursus","to run down, hasten down",1,Verb
+"decus decoris {n.}","honor, glory, ornament",1,Noun
+"dēditiō dēditiōnis {f.}","surrender",1,Noun
 "dēdō dēdere dēdidī dēditus","to give up, surrender",1,Verb
 "dēficiō dēficere dēfēcī dēfectus","to fail, be lacking, revolt from",1,Verb
-"dēfīnītiō –ōnis f.","definition, explanation",1,Noun
-"dēgō –ere dēgī","to spend, pass (time)",1,Verb
-"dēiciō dēicere dēiēcī deīctum","to throw down, cast down, dislodge",1,Verb
+"dēfīnītiō dēfīnītiōnis {f.}","definition, explanation",1,Noun
+"dēgō dēgere dēgī","to spend, pass (time)",1,Verb
+"dēiciō dēicere dēiēcī dēiectum","to throw down, cast down, dislodge",1,Verb
 "dēlectō dēlectāre dēlectāvī dēlectātus","to please, delight, charm",1,Verb
-"dēligō –ere –lēgī –lēctus","to choose, select, pick out",1,Verb
-"Dēmētrius –ī m.","Demetrius (a name)",1,Noun
-"dēmīror –ārī –ātus sum","to wonder at greatly",1,Verb
+"dēligō dēligere dēlēgī dēlēctus","to choose, select, pick out",1,Verb
+"Dēmētrius Dēmētriī {m.}","Demetrius (a name)",1,Noun
+"dēmīror dēmīrārī dēmīrātus sum","to wonder at greatly",1,Verb
 "dēmittō dēmittere dēmīsī dēmissum","to send down, let down, lower",1,Verb
-"Dēmosthenēs –is m.","Demosthenes (a Greek orator)",1,Noun
+"Dēmosthenēs Dēmosthenis {m.}","Demosthenes (a Greek orator)",1,Noun
 "dēpellō dēpellere dēpulī dēpulsus","to drive away, expel, ward off",1,Verb
-"dēposcō dēposcere dēpoposcī —","to demand, require",1,Verb
-"dēprāvō –āre","to pervert, corrupt, distort",1,Verb
+"dēposcō dēposcere dēpoposcī","to demand, require",1,Verb
+"dēprāvō dēprāvāre dēprāvāvī dēprāvātus","to pervert, corrupt, distort",1,Verb
 "dēserō dēserere dēseruī dēsertus","to desert, abandon, forsake",1,Verb
-"dēsīderium dēsīderi(ī) n.","longing, desire, grief",1,Noun
-"dēspērātiō –ōnis f.","despair, hopelessness",1,Noun
-"dēsperātiō, dēsperātiōnis, f.","despair, hopelessness",1,Noun
-"dēspiciō –ere –spēxī –spectum","to look down on, despise",1,Verb
-"dēspondeō, -ēre, dēspondī, dēspōnsum","to promise in marriage, betroth",1,Verb
-"deus deī m.","god",1,Noun
+"dēsīderium dēsīderiī {n.}","longing, desire, grief",1,Noun
+"dēspērātiō dēspērātiōnis {f.}","despair, hopelessness",1,Noun
+"dēspiciō dēspicere dēspexī dēspectum","to look down on, despise",1,Verb
+"dēspondeō dēspondēre dēspondī dēspōnsum","to promise in marriage, betroth",1,Verb
+"deus deī {m.}","god",1,Noun
 "dēvorō dēvorāre dēvorāvī dēvorātus","to devour, swallow up",1,Verb
-"dictātor dictatōris m.","dictator",1,Noun
-"dictiō –ōnis f.","a saying, speaking, delivery",1,Noun
-"diffutūtus –a –um","debauched, worn out with debauchery",1,Adjective
-"dīgredior dīgressus sum","to go away, depart, deviate",1,Verb
-"dīligentia dīligentiae f.","diligence, care, attentiveness",1,Noun
+"dictātor dictātōris {m.}","dictator",1,Noun
+"dictiō dictiōnis {f.}","a saying, speaking, delivery",1,Noun
+"diffutūtus diffutūta diffutūtum","debauched, worn out with debauchery",1,Adjective
+"dīgredior dīgredī dīgressus sum","to go away, depart, deviate",1,Verb
+"dīligentia dīligentiae {f.}","diligence, care, attentiveness",1,Noun
 "dīligō dīligere dīlēxī dīlēctus","to love, esteem, cherish",1,Verb
-"discessus discessūs m.","departure, separation",1,Noun
-"discidium –iī n.","separation, disagreement, divorce",1,Noun
-"discipulus discipulī m.","student, pupil, disciple",1,Noun
-"discrīmen discriminis n.","crisis, danger, distinction",1,Noun
-"disertus –a –um","eloquent, skilled in speaking",1,Adjective
-"disiungō –ere –iūnxī –iūnctus","to separate, disjoin, unyoke",1,Verb
-"disputātor disputātōris m.","disputant, debater",1,Noun
+"discessus discessūs {m.}","departure, separation",1,Noun
+"discidium discidiī {n.}","separation, disagreement, divorce",1,Noun
+"discipulus discipulī {m.}","student, pupil, disciple",1,Noun
+"discrīmen discrīminis {n.}","crisis, danger, distinction",1,Noun
+"disertus diserta disertum","eloquent, skilled in speaking",1,Adjective
+"disiungō disiungere disiūnxī disiūnctus","to separate, disjoin, unyoke",1,Verb
+"disputātor disputātōris {m.}","disputant, debater",1,Noun
 "disserō disserere disseruī dissertus","to discuss, argue, discourse",1,Verb
-"dissideō –ēre –sēdī –sessus","to disagree, be at variance",1,Verb
-"dissimilitūdō –inis f.","unlikeness, difference",1,Noun
+"dissideō dissidēre dissēdī dissessus","to disagree, be at variance",1,Verb
+"dissimilitūdō dissimilitūdinis {f.}","unlikeness, difference",1,Noun
 "dissimulō dissimulāre dissimulāvī dissimulātus","to conceal, disguise, pretend not to",1,Verb
-"distinctus –a –um","distinct, separate, decorated",1,Adjective
+"distinctus distincta distinctum","distinct, separate, decorated",1,Adjective
 "distribuō distribuere distribuī distribūtus","to distribute, divide, assign",1,Verb
-"diuturnitās –ātis f.","long duration, length of time",1,Noun
-"diūturnus –a –um","long-lasting, of long duration",1,Adjective
+"diūturnitās diūturnitātis {f.}","long duration, length of time",1,Noun
+"diūturnus diūturna diūturnum","long-lasting, of long duration",1,Adjective
 "dīves dīvitis","rich, wealthy",1,Adjective
-"Dīvitiācus –ī m.","Divitiacus (a chief of the Aedui)",1,Noun
-"doctor doctōris m.","teacher",1,Noun
-"doctus –a –um","learned, skilled, taught",1,Adjective
-"domicilium –iī n.","dwelling, home, residence",1,Noun
-"domina dominae f.","mistress, lady of the house",1,Noun
+"Dīvitiācus Dīvitiācī {m.}","Divitiacus (a chief of the Aedui)",1,Noun
+"doctor doctōris {m.}","teacher",1,Noun
+"doctus docta doctum","learned, skilled, taught",1,Adjective
+"domicilium domiciliī {n.}","dwelling, home, residence",1,Noun
+"domina dominae {f.}","mistress, lady of the house",1,Noun
 "domō domāre domuī domitus","to tame, subdue, conquer",1,Verb
-"ducentiēs or ducentiēns","two hundred times",1,Adverb
-"ductus –ūs m.","leadership, command, conduct",1,Noun
+"ducentiēs ({or} ducentiēns)","two hundred times",1,Adverb
+"ductus ductūs {m.}","leadership, command, conduct",1,Noun
 "dulcis dulce","sweet, pleasant, agreeable",1,Adjective
-"Dumnorīx –īgis m.","Dumnorix (a chief of the Aedui)",1,Noun
-"duodecim; duodecimus –a –um","twelve; twelfth",1,Numeral
-"duplex –icis","double, twofold",1,Adjective
-"dūpliciter","doubly, in two ways",1,Adverb
-"ēditus –a –um","high, elevated, lofty",1,Adjective
-"ef–fēminō –āre","to make effeminate, weaken",1,Verb
-"effēminātus –a –um","effeminate, womanish",1,Adjective
+"Dumnorīx Dumnorīgis {m.}","Dumnorix (a chief of the Aedui)",1,Noun
+"duodecim {;} duodecimus duodecima duodecimum","twelve; twelfth",1,Numeral
+"duplex duplicis","double, twofold",1,Adjective
+"dupliciter","doubly, in two ways",1,Adverb
+"ēditus ēdita ēditum","high, elevated, lofty",1,Adjective
+"effēminō effēmināre effēmināvī effēminātus","to make effeminate, weaken",1,Verb
+"effēminātus effēmināta effēminātum","effeminate, womanish",1,Adjective
 "effundō effundere effūdī effūsus","to pour out, shed, let loose",1,Verb
-"egēns –entis","needy, poor, in want of",1,Adjective
+"egēns egentis","needy, poor, in want of",1,Adjective
 "egeō egēre eguī","to need, lack, want (+ ablative or genitive)",1,Verb
-"egestās –ātis f.","poverty, need, want",1,Noun
+"egestās egestātis {f.}","poverty, need, want",1,Noun
 "ēiciō ēicere ēiēcī ēiectus","to throw out, cast out, expel",1,Verb
 "ēligō ēligere ēlēgī ēlēctus","to pick out, choose, select",1,Verb
-"elluor (heluor) elluārī elluatus sum","to squander, waste",1,Verb
-"ēloquentia –ae f.","eloquence",1,Noun
-"ēluō –ere –uī –ūtus","to wash out, wash away",1,Verb
+"elluor (hēlluor) elluārī elluātus sum","to squander, waste",1,Verb
+"ēloquentia ēloquentiae {f.}","eloquence",1,Noun
+"ēluō ēluere ēluī ēlūtus","to wash out, wash away",1,Verb
 "ēmentior ēmentīrī ēmentītus sum","to lie, fabricate, invent",1,Verb
 "emō emere ēmī ēmptus","to buy, purchase",1,Verb
 "ēnarrō ēnarrāre ēnarrāvī ēnarrātum","to explain in detail, relate",1,Verb
 "ēnūntiō ēnūntiāre ēnūntiāvī ēnūntiātus","to announce, declare, report",1,Verb
 "eōdem","to the same place",1,Adverb
-"Eōus –a –um","of the dawn, eastern",1,Adjective
+"Eōus Eōa Eōum","of the dawn, eastern",1,Adjective
 "ergā","towards, in relation to (+ accusative)",1,Preposition
-"Ērillus (He–) –ī m.","Herillus (a Stoic philosopher)",1,Noun
-"ērudītulus –a –um; dim. of ērudītus","somewhat learned",1,Adjective
+"Ērillus (Hērillus) Ērillī {m.}","Herillus (a Stoic philosopher)",1,Noun
+"ērudītulus ērudītula ērudītulum {; dim. of ērudītus}","somewhat learned",1,Adjective
 "ēscendō ēscendere ēscendī ēscēnsum","to climb up, ascend, mount",1,Verb
-"exaequō –āre","to make equal, equalize",1,Verb
-"exagitō –āre –āvī –ātum","to harass, stir up, criticize",1,Verb
-"exanimō (1)","to kill, deprive of life; exhaust",1,Verb
+"exaequō exaequāre exaequāvī exaequātus","to make equal, equalize",1,Verb
+"exagitō exagitāre exagitāvī exagitātus","to harass, stir up, criticize",1,Verb
+"exanimō exanimāre exanimāvī exanimātus","to kill, deprive of life; exhaust",1,Verb
 "excēdō excēdere excessī excessus","to go out, depart, withdraw",1,Verb
-"excellēns –entis","excellent, outstanding, distinguished",1,Adjective
+"excellēns excellentis","excellent, outstanding, distinguished",1,Adjective
 "excipiō excipere excēpī exceptus","to take out, except; receive, welcome",1,Verb
 "excitō excitāre excitāvī excitātus","to rouse, stir up, excite",1,Verb
 "excruciō excruciāre excruciāvī excruciātus","to torture, torment",1,Verb
-"excursiō –ōnis f.","a running out, raid, sortie",1,Noun
-"excūsātiō excūsātiōnis f.","excuse, apology",1,Noun
-"exercitātiō –ōnis f.","exercise, practice, training",1,Noun
-"exilium (exsilium) –iī n.","exile, banishment",1,Noun
-"exīstimātiō exīstimātiōnis f.","opinion, judgment, reputation",1,Noun
-"exōrnō exōrnāre","to adorn, equip, furnish",1,Verb
-"exōrsus –ūs m.","beginning, commencement",1,Noun
-"expatrō –āre","to squander, lavish",1,Verb
-"expedītus –a –um","unimpeded, lightly armed, ready",1,Adjective
+"excursiō excursiōnis {f.}","a running out, raid, sortie",1,Noun
+"excūsātiō excūsātiōnis {f.}","excuse, apology",1,Noun
+"exercitātiō exercitātiōnis {f.}","exercise, practice, training",1,Noun
+"exilium (exsilium) exiliī {n.}","exile, banishment",1,Noun
+"exīstimātiō exīstimātiōnis {f.}","opinion, judgment, reputation",1,Noun
+"exōrnō exōrnāre exōrnāvī exōrnātus","to adorn, equip, furnish",1,Verb
+"exōrsus exōrsūs {m.}","beginning, commencement",1,Noun
+"expatrō expatrāre expatrāvī expatrātus","to squander, lavish",1,Verb
+"expedītus expedīta expedītum","unimpeded, lightly armed, ready",1,Adjective
 "expellō expellere expulī expulsus","to drive out, expel",1,Verb
-"expetō expetīre expetiī/expetīvī expetītus","to seek after, desire, demand",1,Verb
-"expīlō –āre","to plunder, rob",1,Verb
-"expiō –āre –āvī –ātus","to atone for, expiate",1,Verb
-"explicō explicāre explicāvī/explicuī explicātus/explicitus","to unfold, explain, deploy",1,Verb
+"expetō expetīre expetiī {/} expetīvī expetītus","to seek after, desire, demand",1,Verb
+"expīlō expīlāre expīlāvī expīlātus","to plunder, rob",1,Verb
+"expiō expiāre expiāvī expiātus","to atone for, expiate",1,Verb
+"explicō explicāre explicāvī {/} explicuī explicātus {/} explicitus","to unfold, explain, deploy",1,Verb
 "explōdō explōdere explōsī explōsum","to drive off by clapping, reject, hiss off",1,Verb
 "expōnō expōnere exposuī expositus","to set forth, explain, expose",1,Verb
-"exportō –āre","to carry out, export",1,Verb
-"expugnātiō –ōnis f.","a taking by storm, storming",1,Noun
+"exportō exportāre exportāvī exportātus","to carry out, export",1,Verb
+"expugnātiō expugnātiōnis {f.}","a taking by storm, storming",1,Noun
+Latin Word,English Definition(s),Frequency,Part of Speech
 "exsequor (exequor) exsequī exsecūtus sum","to follow up, pursue, execute",1,Verb
-"exsistō –sistere –stitī","to emerge, appear, exist",1,Verb
-"exstinguō exstinguere exstinxī exstinctus","to extinguish, put out, destroy",1,Verb
-"exsuscitō (exusc–) –āre –āvī –ātus","to awaken, arouse, stir up",1,Verb
-"extenuō –āre –āvī –ātum","to make thin, diminish, lessen",1,Verb
-"extollō –ere","to lift up, raise, extol",1,Verb
+"exsistō exsīstere exstitī","to emerge, appear, exist",1,Verb
+"exstinguō exstinguere exstīnxī exstīnctus","to extinguish, put out, destroy",1,Verb
+"exsuscitō (exuscitō) exsuscitāre exsuscitāvī exsuscitātus","to awaken, arouse, stir up",1,Verb
+"extenuō extenuāre extenuāvī extenuātum","to make thin, diminish, lessen",1,Verb
+"extollō extollere","to lift up, raise, extol",1,Verb
 "extrā","outside, beyond (+ accusative)",1,Preposition
-"extrēmus –a –um","outermost, last, final",1,Adjective
-"exūrō –ere –ussī –ūstus","to burn up, scorch",1,Verb
-"Fadius –i(ī) m.","Fadius (a Roman name)",1,Noun
-"fāma fāmae f.","rumor, report, reputation",1,Noun
+"extrēmus extrēma extrēmum","outermost, last, final",1,Adjective
+"exūrō exūrere exussī exūstus","to burn up, scorch",1,Verb
+"Fadius Fadiī {m.}","Fadius (a Roman name)",1,Noun
+"fāma fāmae {f.}","rumor, report, reputation",1,Noun
 "familiāris familiāre","of the family, friendly, intimate",1,Adjective
-"familiāris familiāris m./f.","close friend",1,Noun
-"familiāritās familiāritātis f.","familiarity, intimacy, friendship",1,Noun
-"fānum –ī n.","shrine, temple",1,Noun
-"fāstī –ōrum m.","the calendar, annals",1,Noun
-"fātum –ī n. or fātus –ī m.","fate, destiny",1,Noun
+"familiāris familiāris {m. or f.}","close friend",1,Noun
+"familiāritās familiāritātis {f.}","familiarity, intimacy, friendship",1,Noun
+"fānum fānī {n.}","shrine, temple",1,Noun
+"fāstī fāstōrum {m. pl.}","the calendar, annals",1,Noun
+"fātum fātī {n. or} fātus fātī {m.}","fate, destiny",1,Noun
 "faveō favēre fāvī fautus","to favor, support (+ dative)",1,Verb
-"fax facis f.","torch, firebrand",1,Noun
-"fēlīcitās –ātis f.","happiness, good fortune, success",1,Noun
-"ferrum ferrī n.","iron, sword",1,Noun
-"fertilis –e","fertile, productive, fruitful",1,Adjective
+"fax facis {f.}","torch, firebrand",1,Noun
+"fēlīcitās fēlīcitātis {f.}","happiness, good fortune, success",1,Noun
+"ferrum ferrī {n.}","iron, sword",1,Noun
+"fertilis fertile","fertile, productive, fruitful",1,Adjective
 "festīnō festīnāre festīnāvī festīnātus","to hurry, hasten",1,Verb
-"fīctus –a –um","feigned, false, fictitious",1,Adjective
-"fīlia fīliae f.","daughter",1,Noun
+"fīctus fīcta fīctum","feigned, false, fictitious",1,Adjective
+"fīlia fīliae {f.}","daughter",1,Noun
 "flāgitō flāgitāre flāgitāvī flāgitātum","to demand urgently, importune",1,Verb
 "fleō flēre flēvī flētus","to weep, cry for, lament",1,Verb
 "flōreō flōrēre flōruī","to bloom, flourish, prosper",1,Verb
 "fluō fluere flūxī fluxus","to flow",1,Verb
 "fodiō fodere fōdī fossum","to dig",1,Verb
-"foedus –a –um","foul, hideous, disgraceful",1,Adjective
-"fōns fontis m.","spring, fountain, source",1,Noun
-"Formiānus –a um","of Formiae (a town in Latium)",1,Adjective
-"formīdō formīdinis f.","fear, terror, dread",1,Noun
-"fortitūdō fortitūdinis f.","bravery, courage, strength",1,Noun
-"fortūnātus –a –um","fortunate, lucky, happy",1,Adjective
+"foedus foeda foedum","foul, hideous, disgraceful",1,Adjective
+"fōns fontis {m.}","spring, fountain, source",1,Noun
+"Formiānus Formiāna Formiānum","of Formiae (a town in Latium)",1,Adjective
+"formīdō formīdinis {f.}","fear, terror, dread",1,Noun
+"fortitūdō fortitūdinis {f.}","bravery, courage, strength",1,Noun
+"fortūnātus fortūnāta fortūnātum","fortunate, lucky, happy",1,Adjective
 "foveō fovēre fōvī fōtus","to cherish, keep warm, support",1,Verb
 "frangō frangere frēgī frāctus","to break, shatter",1,Verb
 "fruor fruī frūctus sum","to enjoy, profit from (+ ablative)",1,Verb
-"Fūfius –ī m.","Fufius (a Roman name)",1,Noun
-"furiōsus –a –um","mad, furious, raging",1,Adjective
-"Fūrius –iī m.","Furius (a Roman name)",1,Noun
-"futūrum –ī or futūra –ōrum n.","the future",1,Noun
-"futūrus –a –um","about to be, future",1,Adjective
-"Gallicus –a –um","Gallic, of Gaul",1,Adjective
-"gemellus –a –um","twin",1,Adjective
-"gemitus –ūs m.","groan, sigh, lamentation",1,Noun
+"Fūfius Fūfiī {m.}","Fufius (a Roman name)",1,Noun
+"furiōsus furiōsa furiōsum","mad, furious, raging",1,Adjective
+"Fūrius Fūriī {m.}","Furius (a Roman name)",1,Noun
+"futūrum futūrī {n. or} futūra futūrōrum {n. pl.}","the future",1,Noun
+"futūrus futūra futūrum","about to be, future",1,Adjective
+"Gallicus Gallica Gallicum","Gallic, of Gaul",1,Adjective
+"gemellus gemella gemellum","twin",1,Adjective
+"gemitus gemitūs {m.}","groan, sigh, lamentation",1,Noun
 "generātim","by kinds, by tribes, generally",1,Adverb
-"Germānia –ae f.","Germany",1,Noun
+"Germānia Germāniae {f.}","Germany",1,Noun
 "gestiō gestīre","to be eager, desire passionately, exult",1,Verb
-"glōrior gloriārī gloriātus sum","to boast, glory in, pride oneself on",1,Verb
-"Gnaeus –ī m.","Gnaeus (a Roman first name)",1,Noun
-"Gracchus –ī m.","Gracchus (a Roman name)",1,Noun
+"glōrior glōriārī glōriātus sum","to boast, glory in, pride oneself on",1,Verb
+"Gnaeus Gnaeī {m.}","Gnaeus (a Roman first name)",1,Noun
+"Gracchus Gracchī {m.}","Gracchus (a Roman name)",1,Noun
 "gradior gradī gressus sum","to step, walk, advance",1,Verb
-"grātulātiō –ōnis f.","congratulation, rejoicing",1,Noun
-"grātus, -a, -um","pleasing, agreeable, grateful",1,Adjective
-"hauriō haurīre hausī hastus","to drain, draw up, drink",1,Verb
-"hercle or hercule","by Hercules! (an oath)",1,Interjection
-"Hibērus –a –um","Spanish, Iberian",1,Adjective
-"Hispāniensis –e","of Spain, Spanish",1,Adjective
+"grātulātiō grātulātiōnis {f.}","congratulation, rejoicing",1,Noun
+"grātus grāta grātum","pleasing, agreeable, grateful",1,Adjective
+"hauriō haurīre hausī haustus","to drain, draw up, drink",1,Verb
+"hercle {or} hercule","by Hercules! (an oath)",1,Interjection
+"Hibērus Hibēra Hibērum","Spanish, Iberian",1,Adjective
+"Hispāniēnsis Hispāniēnse","of Spain, Spanish",1,Adjective
 "hodiē","today",1,Adverb
 "horribilis horribile","horrible, dreadful, terrible",1,Adjective
-"hortus, hortī, m.","garden",1,Noun
-"hospes hospitis m.","host, guest, stranger",1,Noun
-"hostīlis –e","hostile, of the enemy",1,Adjective
+"hortus hortī {m.}","garden",1,Noun
+"hospes hospitis {m.}","host, guest, stranger",1,Noun
+"hostīlis hostīle","hostile, of the enemy",1,Adjective
 "hūc","to this place, hither",1,Adverb
 "hūiusmodī","of this kind, such",1,Adjective
-"humilitās –ātis f.","humility, lowness, baseness",1,Noun
-"Hyrcānus (Hyrcānius) –a –um","Hyrcanian",1,Adjective
+"humilitās humilitātis {f.}","humility, lowness, baseness",1,Noun
+"Hyrcānus (Hyrcānius) Hyrcāna Hyrcānum","Hyrcanian",1,Adjective
 "iamiam","at this very moment, right now",1,Adverb
-"idcircō or iccircō","for that reason, therefore",1,Adverb
+"idcircō {or} iccircō","for that reason, therefore",1,Adverb
 "identidem","repeatedly, again and again",1,Adverb
 "ideō","for that reason, therefore",1,Adverb
-"ignis ignis m.","fire",1,Noun
-"īgnōminia īgnōminiae f.","disgrace, dishonor, ignominy",1,Noun
+"ignis ignis {m.}","fire",1,Noun
+"īgnōminia īgnōminiae {f.}","disgrace, dishonor, ignominy",1,Noun
 "īgnōrō īgnōrāre īgnōrāvī īgnōrātus","to not know, be ignorant of",1,Verb
-"Ilerda –ae f.","Ilerda (a town in Spain)",1,Noun
-"īlia –ium n. or īle –is","groin, flank",1,Noun
-"im–portō –āre","to bring in, import",1,Verb
-"imbecillitās, -ātis, f","weakness, feebleness",1,Noun
-"imitātor –ōris m.","imitator",1,Noun
+"Ilerda Ilerdae {f.}","Ilerda (a town in Spain)",1,Noun
+"īlia īlium {n. pl. or} īle īlis {n.}","groin, flank",1,Noun
+"importō importāre importāvī importātus","to bring in, import",1,Verb
+"imbēcillitās imbēcillitātis {f.}","weakness, feebleness",1,Noun
+"imitātor imitātōris {m.}","imitator",1,Noun
 "imitor imitārī imitātus sum","to imitate, copy",1,Verb
-"immānitās immānitātis f.","savagery, cruelty, monstrousness",1,Noun
+"immānitās immānitātis {f.}","savagery, cruelty, monstrousness",1,Noun
 "immineō imminēre","to overhang, threaten, be imminent",1,Verb
 "impendeō impendēre","to hang over, threaten",1,Verb
-"imperītus –a –um","unskilled, inexperienced in (+ genitive)",1,Adjective
-"impertiō impertīre or impertior impertīrī","to share, impart, bestow",1,Verb
+"imperītus imperīta imperītum","unskilled, inexperienced in (+ genitive)",1,Adjective
+"impertiō impertīre {or} impertior impertīrī","to share, impart, bestow",1,Verb
 "implicō implicāre implicāvī (implicuī) implicitus","to enfold, involve, entangle",1,Verb
 "implōrō implōrāre implōrāvī implōrātus","to implore, entreat, beseech",1,Verb
-"imprimō –primere –pressī –pressum","to press into, impress, stamp",1,Verb
-"impudentia –ae f.","shamelessness, impudence",1,Noun
-"impūrus –a –um","unclean, impure, foul",1,Adjective
+"imprimō imprimere impressī impressum","to press into, impress, stamp",1,Verb
+"impudentia impudentiae {f.}","shamelessness, impudence",1,Noun
+"impūrus impūra impūrum","unclean, impure, foul",1,Adjective
 "inaudiō inaudīre inaudīvī inaudītum","to hear of, learn",1,Verb
-"incīdō –ere –cīdī –cīsus","to cut into, cut down, fall upon",1,Verb
+"incīdō incīdere incīdī incīsus","to cut into, cut down, fall upon",1,Verb
 "incipiō incipere incēpī inceptus","to begin, start",1,Verb
-"incommodum –ī n.","disadvantage, trouble, misfortune",1,Noun
-"incrēdibilis incrēdibilis incrēdibile","incredible, unbelievable",1,Adjective
-"incumbō –ere –cubuī –cubitus","to lean upon, apply oneself to",1,Verb
-"indecōrus –a –um","unseemly, disgraceful",1,Adjective
-"indicium indici(ī) n.","information, evidence, sign",1,Noun
+"incommodum incommodī {n.}","disadvantage, trouble, misfortune",1,Noun
+"incredībilis incredībile","incredible, unbelievable",1,Adjective
+"incumbō incumbere incubuī incubitus","to lean upon, apply oneself to",1,Verb
+"indecōrus indecōra indecōrum","unseemly, disgraceful",1,Adjective
+"indicium indiciī {n.}","information, evidence, sign",1,Noun
 "indīcō indīcere indīxī indictus","to declare, proclaim, appoint",1,Verb
-"indīgnus –a –um","unworthy, undeserving of (+ ablative)",1,Adjective
-"indūcō inducere indūxī inductus","to lead in, induce, persuade",1,Verb
-"Indus –a –um","Indian, of India",1,Adjective
-"industrius –a –um","industrious, diligent",1,Adjective
-"indūtiae –ārum f.","truce, armistice",1,Noun
-"ineō inīre iniī/inīvī initus","to go into, enter, begin",1,Verb
-"īnfāmia –ae f.","disgrace, infamy, bad repute",1,Noun
-"īnfinītus (infīnītīvus) –a –um","infinite, endless, boundless",1,Adjective
-"infinītus, -a, -um","infinite, boundless",1,Adjective
-"īnfīrmus –a –um","weak, feeble",1,Adjective
-"ingenerō –āre –āvī –ātum","to implant, engender, create",1,Verb
-"ingerō, ingerere, ingessī, ingessum","to heap upon, pour in, force upon",1,Verb
+"indīgnus indīgna indīgnum","unworthy, undeserving of (+ ablative)",1,Adjective
+"indūcō indūcere indūxī inductus","to lead in, induce, persuade",1,Verb
+"Indus Inda Indum","Indian, of India",1,Adjective
+"industrius industria industrium","industrious, diligent",1,Adjective
+"indūtiae indūtiārum {f. pl.}","truce, armistice",1,Noun
+"ineō inīre iniī {/} inīvī initus","to go into, enter, begin",1,Verb
+"īnfāmia īnfāmiae {f.}","disgrace, infamy, bad repute",1,Noun
+"īnfīnītīvus īnfīnītīva īnfīnītīvum","infinite, endless, boundless",1,Adjective
+"īnfīnītus īnfīnīta īnfīnītum","infinite, boundless",1,Adjective
+"īnfīrmus īnfīrma īnfīrmum","weak, feeble",1,Adjective
+"ingenerō ingenerāre ingenerāvī ingenerātum","to implant, engender, create",1,Verb
+"ingerō ingerere ingessī ingessum","to heap upon, pour in, force upon",1,Verb
 "ingredior ingredī ingressus sum","to enter, go into, begin",1,Verb
-"inīquus –a –um","unequal, unfair, unjust",1,Adjective
-"iniungō –iungere –iūnxī –iūnctum","to join to, impose, enjoin",1,Verb
-"iniūriōsus –a –um","wrongful, unjust, injurious",1,Adjective
-"innocentia –ae f.","innocence, integrity",1,Noun
-"innumerābilis –e","countless, innumerable",1,Adjective
-"inquīsītiō inquīsītiōnis f.","a seeking, inquiry, investigation",1,Noun
-"īnsolēns –entis","arrogant, insolent, unaccustomed",1,Adjective
-"īnsolentia –ae f.","arrogance, insolence, strangeness",1,Noun
-"īnspiciō –ere –spexī –spectus","to look into, examine, inspect",1,Verb
+"inīquus inīqua inīquum","unequal, unfair, unjust",1,Adjective
+"iniungō iniungere iniūnxī iniūnctum","to join to, impose, enjoin",1,Verb
+"iniūriōsus iniūriōsa iniūriōsum","wrongful, unjust, injurious",1,Adjective
+"innocentia innocentiae {f.}","innocence, integrity",1,Noun
+"innumerābilis innumerābile","countless, innumerable",1,Adjective
+"inquīsītiō inquīsītiōnis {f.}","a seeking, inquiry, investigation",1,Noun
+"īnsolēns īnsolentis","arrogant, insolent, unaccustomed",1,Adjective
+"īnsolentia īnsolentiae {f.}","arrogance, insolence, strangeness",1,Noun
+"īnspiciō īnspicere īnspexī īnspectus","to look into, examine, inspect",1,Verb
 "īnstituō īnstituere īnstituī īnstitūtus","to set up, establish, teach",1,Verb
 "īnstruō īnstruere īnstrūxī īnstrūctus","to build, arrange, draw up (troops)",1,Verb
-"īnsula īnsulae f.","island",1,Noun
-"intemperāns –antis","immoderate, unrestrained",1,Adjective
-"intercessor –ōris m.","one who vetoes, an intercessor",1,Noun
+"īnsula īnsulae {f.}","island",1,Noun
+"intemperāns intemperantis","immoderate, unrestrained",1,Adjective
+"intercessor intercessōris {m.}","one who vetoes, an intercessor",1,Noun
 "interdum","sometimes, now and then",1,Adverb
-"intericiō (interiaciō) –icere –iēcī –iectum","to throw between, interpose",1,Verb
+"intericiō (interiaciō) intericere interiēcī interiectum","to throw between, interpose",1,Verb
 "interim","meanwhile",1,Adverb
-"interior –ius","inner, interior",1,Adjective
-"interitus interitūs m.","destruction, ruin, death",1,Noun
-"interpōnō interpōnere interposuī interposītus","to place between, interpose, allege",1,Verb
-"interpres –etis m./f.","interpreter, translator, mediator",1,Noun
-"intersum –esse –fuī","to be between; take part in; it matters",1,Verb
-"interveniō –venīre –vēnī –ventum","to come between, intervene",1,Verb
+"interior interius","inner, interior",1,Adjective
+"interitus interitūs {m.}","destruction, ruin, death",1,Noun
+"interpōnō interpōnere interposuī interpositus","to place between, interpose, allege",1,Verb
+"interpres interpretis {m. or f.}","interpreter, translator, mediator",1,Noun
+"intersum interesse interfuī","to be between; take part in; it matters",1,Verb
+"interveniō intervenīre intervēnī interventum","to come between, intervene",1,Verb
 "intrā","within, inside (+ accusative)",1,Preposition
 "intrō intrāre intrāvī intrātus","to enter",1,Verb
 "intrōdūcō intrōdūcere intrōdūxī intrōductum","to lead in, introduce",1,Verb
 "intueor intuērī intuitus sum","to look at, gaze upon, consider",1,Verb
-"inultus –a –um","unavenged, unpunished",1,Adjective
-"inūsitātus –a –um","unusual, strange, unfamiliar",1,Adjective
+"inultus inulta inultum","unavenged, unpunished",1,Adjective
+"inūsitātus inūsitāta inūsitātum","unusual, strange, unfamiliar",1,Adjective
 "inveniō invenīre invēnī inventus","to find, discover, come upon",1,Verb
-"inventiō –ōnis f.","invention, discovery",1,Noun
-"investīgātiō –ōnis f.","investigation, inquiry",1,Noun
+"inventiō inventiōnis {f.}","invention, discovery",1,Noun
+"investīgātiō investīgātiōnis {f.}","investigation, inquiry",1,Noun
 "invicem","in turn, alternately",1,Adverb
-"invidia invidiae f.","envy, jealousy, hatred",1,Noun
+"invidia invidiae {f.}","envy, jealousy, hatred",1,Noun
 "invītō invītāre invītāvī invītātus","to invite, summon",1,Verb
-"irruptiō –ōnis f.","a breaking in, invasion, attack",1,Noun
-"Īsocratēs –is or –ī m.","Isocrates (a Greek orator)",1,Noun
-"Iuba –ae m.","Juba (a king of Numidia)",1,Noun
-"iūcunditās –ātis f.","pleasantness, delight, charm",1,Noun
-"iūcundus –a –um","pleasant, delightful, agreeable",1,Adjective
-"iugum iugī n.","yoke, ridge, summit",1,Noun
-"iūmentum –ī n.","beast of burden, pack animal",1,Noun
-"iūs iūrandum iūris iūrandī n.","oath",1,Noun
-"iūssus iūssūs m.","order, command",1,Noun
-"iūstitia –ae f.","justice, fairness, righteousness",1,Noun
-"labefaciō –ere –fecī –factus; labefīō –fierī –factus (pass.)","to make totter, weaken, shake",1,Verb
-"labor labōris m.","labor, work, toil",1,Noun
+"irruptiō irruptiōnis {f.}","a breaking in, invasion, attack",1,Noun
+"Īsocratēs Īsocratis {or} Īsocratī {m.}","Isocrates (a Greek orator)",1,Noun
+"Iuba Iubae {m.}","Juba (a king of Numidia)",1,Noun
+"iūcunditās iūcunditātis {f.}","pleasantness, delight, charm",1,Noun
+"iūcundus iūcunda iūcundum","pleasant, delightful, agreeable",1,Adjective
+"iugum iugī {n.}","yoke, ridge, summit",1,Noun
+"iūmentum iūmentī {n.}","beast of burden, pack animal",1,Noun
+"iūs iūrandum iūris iūrandī {n.}","oath",1,Noun
+"iussus iussūs {m.}","order, command",1,Noun
+"iūstitia iūstitiae {f.}","justice, fairness, righteousness",1,Noun
+"labefaciō labefacere labefēcī labefactus {;} labefīō labefierī labefactus sum {(pass.)}","to make totter, weaken, shake",1,Verb
+"labor labōris {m.}","labor, work, toil",1,Noun
 "lacerō lacerāre lacerāvī lacerātus","to tear to pieces, mangle",1,Verb
-"lacrima lacrimae f.","tear",1,Noun
-"lacrimō lacrimāre lacrimāvī lacrimātus or lacrimor –ārī –ātus sum","to weep, cry",1,Verb
-"lacus lacūs m.","lake",1,Noun
-"Laelius –iī m.","Laelius (a Roman name)",1,Noun
-"lancinō lanciānre lancinātus","to tear to pieces, rend",1,Verb
-"Lārīsa –ae f.","Larisa (a city in Thessaly)",1,Noun
-"lassitūdō lassitūdinis f.","weariness, fatigue, exhaustion",1,Noun
-"latibulum –ī n.","hiding place, lurking place, den",1,Noun
-"lātitūdō lātitūdinis f.","width, breadth",1,Noun
-"Latobrīgus –a –um","of the Latobrigi (a Germanic tribe)",1,Adjective
-"latrō latrōnis m.","robber, bandit, brigand",1,Noun
-"laudābilis –e","praiseworthy, commendable",1,Adjective
-"lecticulus –ī m.","a small couch, litter",1,Noun
-"lectus lectī m.","bed, couch",1,Noun
-"legiōnārius –a –um","legionary, of a legion",1,Adjective
-"lēgitimus (lēgitumus) –a –um","lawful, legal, legitimate",1,Adjective
-"Lemmanus –ī m.","Lake Geneva",1,Noun
-"lēniter lēnius (comp.) lēnissimē (superl.)","gently, mildly, softly",1,Adverb
-"Leontīnus –a –um","of Leontini (a city in Sicily)",1,Adjective
+"lacrima lacrimae {f.}","tear",1,Noun
+"lacrimō lacrimāre lacrimāvī lacrimātus {or} lacrimor lacrimārī lacrimātus sum","to weep, cry",1,Verb
+"lacus lacūs {m.}","lake",1,Noun
+"Laelius Laeliī {m.}","Laelius (a Roman name)",1,Noun
+"lancinō lancināre lancināvī lancinātus","to tear to pieces, rend",1,Verb
+"Lārīsa Lārīsae {f.}","Larisa (a city in Thessaly)",1,Noun
+"lassitūdō lassitūdinis {f.}","weariness, fatigue, exhaustion",1,Noun
+"latibulum latibulī {n.}","hiding place, lurking place, den",1,Noun
+"lātitūdō lātitūdinis {f.}","width, breadth",1,Noun
+"Latobrīgus Latobrīga Latobrīgum","of the Latobrigi (a Germanic tribe)",1,Adjective
+"latrō latrōnis {m.}","robber, bandit, brigand",1,Noun
+"laudābilis laudābile","praiseworthy, commendable",1,Adjective
+"lecticulus lecticulī {m.}","a small couch, litter",1,Noun
+"lectus lectī {m.}","bed, couch",1,Noun
+"legiōnārius legiōnāria legiōnārium","legionary, of a legion",1,Adjective
+"lēgitimus (lēgitumus) lēgitima lēgitimum","lawful, legal, legitimate",1,Adjective
+"Lemmanus Lemmanī {m.}","Lake Geneva",1,Noun
+"lēniter lēnius {(comp.)} lēnissimē {(superl.)}","gently, mildly, softly",1,Adverb
+"Leontīnus Leontīna Leontīnum","of Leontini (a city in Sicily)",1,Adjective
 "libenter","willingly, gladly",1,Adverb
-"lībertās lībertātis f.","freedom, liberty",1,Noun
-"lībertīnus –a –um","of a freedman",1,Adjective
-"lībertīnus –ī m.","freedman",1,Noun
-"lībertus","freedman",1,Noun
-"libīdinōsus –a –um","lustful, licentious",1,Adjective
-"līctor –ōris m.","lictor (an attendant of a magistrate)",1,Noun
-"līmen līminis n.","threshold, doorway, entrance",1,Noun
-"lītus lītoris n.","shore, coast, beach",1,Noun
-"longitūdō longitūdinis f.","length",1,Noun
-"lūmen luminis n.","light, lamp; eye",1,Noun
-"Lupercī –ōrum m.","the Luperci (priests of Pan)",1,Noun
+"lībertās lībertātis {f.}","freedom, liberty",1,Noun
+"lībertīnus lībertīna lībertīnum","of a freedman",1,Adjective
+"lībertīnus lībertīnī {m.}","freedman",1,Noun
+"lībertus lībertī {m.}","freedman",1,Noun
+"libīdinōsus libīdinōsa libīdinōsum","lustful, licentious",1,Adjective
+"līctor līctōris {m.}","lictor (an attendant of a magistrate)",1,Noun
+"līmen līminis {n.}","threshold, doorway, entrance",1,Noun
+"lītus lītoris {n.}","shore, coast, beach",1,Noun
+"longitūdō longitūdinis {f.}","length",1,Noun
+"lūmen lūminis {n.}","light, lamp; eye",1,Noun
+"Lupercī Lupercōrum {m. pl.}","the Luperci (priests of Pan)",1,Noun
 "lūstrō lūstrāre lūstrāvī lūstrātus","to purify, survey, traverse",1,Verb
-"macula –ae f.","spot, stain, blemish",1,Noun
-"Maelius –iī m.","Maelius (a Roman name)",1,Noun
-"maereō –ēre","to grieve, mourn",1,Verb
+"macula maculae {f.}","spot, stain, blemish",1,Noun
+"Maelius Maeliī {m.}","Maelius (a Roman name)",1,Noun
+"maereō maerēre","to grieve, mourn",1,Verb
 "magnopere","greatly, very much",1,Adverb
-"mālus –ī m.","mast (of a ship)",1,Noun
-"mandātum –ī n.","order, command, instruction",1,Noun
-"maneō, manēre, mānsī, mānsum","to remain, stay, wait",1,Verb
-"Mānlius –iī m.","Manlius (a Roman name)",1,Noun
-"mānsiō","a staying, remaining; a stopping-place",1,Noun
-"mānsuētus –a –um","tame, gentle, mild",1,Adjective
-"manus manūs f.","hand; band of men",1,Noun
-"maritimus –a –um","maritime, of the sea",1,Adjective
-"Matrona –ae m.","the Marne river",1,Noun
+"mālus mālī {m.}","mast (of a ship)",1,Noun
+"mandātum mandātī {n.}","order, command, instruction",1,Noun
+"maneō manēre mānsī mānsum","to remain, stay, wait",1,Verb
+"Mānlius Mānliī {m.}","Manlius (a Roman name)",1,Noun
+"mānsiō mānsiōnis {f.}","a staying, remaining; a stopping-place",1,Noun
+"mānsuētus mānsuēta mānsuētum","tame, gentle, mild",1,Adjective
+"manus manūs {f.}","hand; band of men",1,Noun
+"maritimus maritima maritimum","maritime, of the sea",1,Adjective
+"Matrona Matronae {m.}","the Marne river",1,Noun
 "mātūrō mātūrāre mātūrāvī mātūrātus","to hasten, ripen, make haste",1,Verb
-"Maurētānia –ae f.","Mauretania (a region in North Africa)",1,Noun
-"mediocritās –ātis f.","moderation, mediocrity",1,Noun
+"Maurētānia Maurētāniae {f.}","Mauretania (a region in North Africa)",1,Noun
+Latin Word,English Definition(s),Frequency,Part of Speech
+"mediocritās mediocritātis {f.}","moderation, mediocrity",1,Noun
 "meditor meditārī meditātus sum","to think about, meditate, practice",1,Verb
-"mediusfidius or medius fidius","by the god of truth! so help me God!",1,Interjection
-"mentiō mentiōnis f.","mention",1,Noun
-"mentula mentulae f.","penis",1,Noun
+"mediusfidius {or} medius fidius","by the god of truth! so help me God!",1,Interjection
+"mentiō mentiōnis {f.}","mention",1,Noun
+"mentula mentulae {f.}","penis",1,Noun
 "mereor merērī meritus sum","to deserve, earn, merit",1,Verb
-"meretrīcius –a –um","of a prostitute, harlot-like",1,Adjective
+"meretrīcius meretrīcia meretrīcium","of a prostitute, harlot-like",1,Adjective
 "meritō","deservedly, rightly",1,Adverb
 "meritus merita meritum","deserved, just, proper",1,Adjective
-"Messāla –ae m.","Messala (a Roman name)",1,Noun
+"Messāla Messālae {m.}","Messala (a Roman name)",1,Noun
 "mētior mētīrī mēnsus sum","to measure, distribute",1,Verb
-"Milō(n) –ōnis m.","Milo (a Roman politician)",1,Noun
-"minae –ārum f. pl.","threats, menaces",1,Noun
-"Minucius –iī m.","Minucius (a Roman name)",1,Noun
-"mīrus –a –um","wonderful, strange, surprising",1,Adjective
-"Mīsēnum –ī n.","Misenum (a promontory and town in Campania)",1,Noun
-"miserātiō –ōnis f.","pity, compassion",1,Noun
-"miseria miseriae f.","misery, wretchedness, suffering",1,Noun
-"missiō –ōnis f.","a sending, dismissal, discharge",1,Noun
-"moderātus –a –um","moderate, restrained, temperate",1,Adjective
-"moechus moechī m.","adulterer",1,Noun
-"molestus, -a, -um","annoying, troublesome, tiresome",1,Adjective
-"mōlior mōlīrī mōlītus","to strive, struggle, undertake",1,Verb
+"Milō (Milōn) Milōnis {m.}","Milo (a Roman politician)",1,Noun
+"minae minārum {f. pl.}","threats, menaces",1,Noun
+"Minucius Minuciī {m.}","Minucius (a Roman name)",1,Noun
+"mīrus mīra mīrum","wonderful, strange, surprising",1,Adjective
+"Mīsēnum Mīsēnī {n.}","Misenum (a promontory and town in Campania)",1,Noun
+"miserātiō miserātiōnis {f.}","pity, compassion",1,Noun
+"miseria miseriae {f.}","misery, wretchedness, suffering",1,Noun
+"missiō missiōnis {f.}","a sending, dismissal, discharge",1,Noun
+"moderātus moderāta moderātum","moderate, restrained, temperate",1,Adjective
+"moechus moechī {m.}","adulterer",1,Noun
+"molestus molesta molestum","annoying, troublesome, tiresome",1,Adjective
+"mōlior mōlīrī mōlītus sum","to strive, struggle, undertake",1,Verb
 "mollis molle","soft, gentle, tender",1,Adjective
 "molō molere moluī molitum","to grind",1,Verb
-"monumentum monumentī n.","monument, memorial, record",1,Noun
-"morbosus –a –um","diseased, morbid",1,Adjective
-"morbus, morbūs, m.","sickness, disease",1,Noun
-"mōtus mōtūs m.","motion, movement, disturbance",1,Noun
-"muliebris –e","womanly, feminine, effeminate",1,Adjective
-"mūniceps –ipis m.","citizen of a municipium, townsman",1,Noun
-"mūnicipium mūnicipi(ī) n.","a free town, municipality",1,Noun
-"mūnītiō –ōnis f.","fortification, defense",1,Noun
+"monumentum monumentī {n.}","monument, memorial, record",1,Noun
+"morbōsus morbōsa morbōsum","diseased, morbid",1,Adjective
+"morbus morbī {m.}","sickness, disease",1,Noun
+"mōtus mōtūs {m.}","motion, movement, disturbance",1,Noun
+"muliebris muliebre","womanly, feminine, effeminate",1,Adjective
+"mūniceps mūnicipis {m.}","citizen of a municipium, townsman",1,Noun
+"mūnicipium mūnicipiī {n.}","a free town, municipality",1,Noun
+"mūnītiō mūnītiōnis {f.}","fortification, defense",1,Noun
 "mūtō mūtāre mūtāvī mūtātus","to change, alter, exchange",1,Verb
-"Nammēius –ī m.","Nammeius (a chief of the Helvetii)",1,Noun
+"Nammēius Nammēiī {m.}","Nammeius (a chief of the Helvetii)",1,Noun
 "namque","for, and in fact",1,Conjunction
 "nancīscor nancīscī nanctus (nactus) sum","to obtain, get, find",1,Verb
 "nāscor nāscī nātus sum","to be born, arise",1,Verb
-"nauseō –āre –āvī","to be seasick, feel nausea",1,Verb
-"nāviculārius –a –um","of a ship-owner",1,Adjective
-"nāvigātiō –ōnis f.","sailing, navigation, voyage",1,Noun
+"nauseō nauseāre nauseāvī nauseātum","to be seasick, feel nausea",1,Verb
+"nāviculārius nāviculāria nāviculārium","of a ship-owner",1,Adjective
+"nāvigātiō nāvigātiōnis {f.}","sailing, navigation, voyage",1,Noun
 "nāvus nāva nāvum","diligent, active, zealous",1,Adjective
-"ne","(introduces a command or prohibition); that not, lest",1,"Adverb / Conjunction"
-"necessitūdō necessitūdinis f.","necessity, relationship, bond",1,Noun
+"nē","(introduces a command or prohibition); that not, lest",1,"Adverb / Conjunction"
+"necessitūdō necessitūdinis {f.}","necessity, relationship, bond",1,Noun
 "necne","or not",1,Conjunction
 "nefārius nefāria nefārium","wicked, impious, abominable",1,Adjective
 "negōtior negōtiārī negōtiātus sum","to do business, trade",1,Verb
 "nēquīquam","in vain, to no purpose",1,Adverb
-"nēquitia nēquitiae or nēquitiēs –ēī f.","worthlessness, wickedness, vice",1,Noun
-"nervus –ī m.","sinew, muscle, nerve",1,Noun
-"nesciō nescīre nescīvī/nesciī nescītus","to not know, be ignorant",1,Verb
-"nescioquis –qua –quid (also written as two words)","someone or other, I know not who",1,Pronoun
-"nihilōminus or nihilō minus","nevertheless, nonetheless",1,Adverb
-"Nīlus –ī m.","the Nile river",1,Noun
+"nēquitia nēquitiae {f.} ({or} nēquitiēs nēquitiēī {f.})","worthlessness, wickedness, vice",1,Noun
+"nervus nervī {m.}","sinew, muscle, nerve",1,Noun
+"nesciō nescīre nescīvī {/} nesciī nescītus","to not know, be ignorant",1,Verb
+"nescioquis nescioqua nescioquid {also written as two words}","someone or other, I know not who",1,Pronoun
+"nihilōminus {or} nihilō minus","nevertheless, nonetheless",1,Adverb
+"Nīlus Nīlī {m.}","the Nile river",1,Noun
 "nimis","too much, excessively",1,Adverb
 "nimium (nimiō)","too much, excessively",1,Adverb
-"nimius –a –um","excessive, too great",1,Adjective
+"nimius nimia nimium","excessive, too great",1,Adjective
 "nōbilitō nōbilitāre nōbilitāvī nōbilitātus","to make known, make famous",1,Verb
 "nōminātim","by name",1,Adverb
 "nōminō nōmināre nōmināvī nōminātus","to name, call by name",1,Verb
-"Nōrēia –ae f.","Noreia (a town in Noricum)",1,Noun
-"Nōricus –a –um","Noric, of Noricum",1,Adjective
-"nox noctis f.","night",1,Noun
+"Nōrēia Nōrēiae {f.}","Noreia (a town in Noricum)",1,Noun
+"Nōricus Nōrica Nōricum","Noric, of Noricum",1,Adjective
+"nox noctis {f.}","night",1,Noun
 "nūdō nūdāre nūdāvī nūdātus","to strip, make bare, expose",1,Verb
-"nūdus –a –um","naked, bare, stripped",1,Adjective
-"numquis numquae (–qua) numquod","is there any...?",1,Pronoun
-"nuncupō nuncupāre","to name, call, declare",1,Verb
-"nūntius nūnti(ī) m.","messenger, message",1,Noun
-"obaerātus –a –um","in debt; (as a noun) a debtor",1,Adjective
-"obeō obīre obiī/obīvī obitum","to go to meet, perform, die",1,Verb
-"obnuntio –āre –āvī –ātum","to announce an unfavorable omen, oppose",1,Verb
+"nūdus nūda nūdum","naked, bare, stripped",1,Adjective
+"numquis numquae (numqua) numquod","is there any...?",1,Pronoun
+"nuncupō nuncupāre nuncupāvī nuncupātus","to name, call, declare",1,Verb
+"nūntius nūntiī {m.}","messenger, message",1,Noun
+"obaerātus obaerāta obaerātum","in debt; (as a noun) a debtor",1,Adjective
+"obeō obīre obiī {/} obīvī obitum","to go to meet, perform, die",1,Verb
+"obnūntiō obnūntiāre obnūntiāvī obnūntiātum","to announce an unfavorable omen, oppose",1,Verb
 "observō observāre observāvī observātus","to watch, observe, pay attention to",1,Verb
-"obses obsidis m. or f.","hostage",1,Noun
-"obsidiō obsidiōnis f.","siege, blockade",1,Noun
-"obstrepō –strepere –strepuī –strepitum","to make a noise against, drown out",1,Verb
-"obstringō –ere –strīnxī –strictum","to bind, put under obligation",1,Verb
+"obses obsidis {m. or f.}","hostage",1,Noun
+"obsidiō obsidiōnis {f.}","siege, blockade",1,Noun
+"obstrepō obstrepere obstrepuī obstrepitum","to make a noise against, drown out",1,Verb
+"obstringō obstringere obstrīnxī obstrictum","to bind, put under obligation",1,Verb
 "obtemperō obtemperāre obtemperāvī obtemperātus","to obey, comply with",1,Verb
-"obtrectātiō obtrectātiōnis f.","disparagement, detraction",1,Noun
-"occāsiō occāsiōnis f.","opportunity, occasion",1,Noun
-"occāsus –ūs m.","setting (of the sun), downfall, ruin",1,Noun
-"occidēns –entis","the west",1,Noun
-"occultus –a –um","hidden, secret, concealed",1,Adjective
+"obtrectātiō obtrectātiōnis {f.}","disparagement, detraction",1,Noun
+"occāsiō occāsiōnis {f.}","opportunity, occasion",1,Noun
+"occāsus occāsūs {m.}","setting (of the sun), downfall, ruin",1,Noun
+"occidēns occidentis","the west",1,Noun
+"occultus occulta occultum","hidden, secret, concealed",1,Adjective
 "occurrō occurrere occurrī occursus","to run to meet, encounter, oppose",1,Verb
-"octō; octāvus –a –um","eight; eighth",1,Numeral
+"octō {;} octāvus octāva octāvum","eight; eighth",1,Numeral
 "ōdī ōdisse","to hate",1,Verb
-"offēnsiō –ōnis f.","offense, displeasure, setback",1,Noun
+"offēnsiō offēnsiōnis {f.}","offense, displeasure, setback",1,Noun
 "offundō offundere offūdī offūsum","to pour over, spread over, fill",1,Verb
 "omittō omittere omīsī omissus","to let go, neglect, omit",1,Verb
-"opīmus –a –um","rich, fat, splendid",1,Adjective
-"opīniō opīniōnis f.","opinion, belief, expectation",1,Noun
+"opīmus opīma opīmum","rich, fat, splendid",1,Adjective
+"opīniō opīniōnis {f.}","opinion, belief, expectation",1,Noun
 "oppōnō oppōnere opposuī oppositum","to set against, oppose",1,Verb
 "optō optāre optāvī optātus","to choose, desire, wish for",1,Verb
-"orō orāre orāvī orātus","to speak, plead, pray",1,Verb
-"ostentātiō –ōnis f.","display, ostentation, parade",1,Noun
+"ōrō ōrāre ōrāvī ōrātus","to speak, plead, pray",1,Verb
+"ostentātiō ostentātiōnis {f.}","display, ostentation, parade",1,Noun
 "palam","openly, publicly",1,Adverb
-"palleō –ēre –uī","to be pale, be anxious",1,Verb
-"palma palmae f.","palm (of the hand); palm tree; victory",1,Noun
-"palūdātus –a –um","wearing a military cloak",1,Adjective
+"palleō pallēre palluī","to be pale, be anxious",1,Verb
+"palma palmae {f.}","palm (of the hand); palm tree; victory",1,Noun
+"palūdātus palūdāta palūdātum","wearing a military cloak",1,Adjective
 "parcō parcere pepercī parsus","to spare, be lenient to (+ dative)",1,Verb
 "pāreō pārēre pāruī pāritus","to obey, be subject to (+ dative)",1,Verb
-"pariēs parietis m.","wall (of a house)",1,Noun
+"pariēs parietis {m.}","wall (of a house)",1,Noun
 "pariter","equally, in like manner, at the same time",1,Adverb
-"Parthus –a –um","Parthian",1,Adjective
+"Parthus Partha Parthum","Parthian",1,Adjective
 "particeps participis","sharing, participating in (+ genitive)",1,Adjective
-"parvum –ī n. –","a small thing, a trifle",1,Noun
-"pāstiō –ōnis f.","pasturage, grazing",1,Noun
-"pāstus –ūs m.","pasture, feeding",1,Noun
-"paternus –a –um","of a father, paternal, ancestral",1,Adjective
-"pathicus –a –um","sodomitical, pathic",1,Adjective
+"parvum parvī {n.}","a small thing, a trifle",1,Noun
+"pāstiō pāstiōnis {f.}","pasturage, grazing",1,Noun
+"pāstus pāstūs {m.}","pasture, feeding",1,Noun
+"paternus paterna paternum","of a father, paternal, ancestral",1,Adjective
+"pathicus pathica pathicum","sodomitical, pathic",1,Adjective
 "patienter","patiently",1,Adverb
-"patria patriae f.","fatherland, country",1,Noun
-"patrimōnium patrimōni(ī) n.","inheritance, patrimony",1,Noun
-"patrius –a –um","of a father, paternal, ancestral",1,Adjective
-"patrōnus patrōnī m.","patron, protector, defender",1,Noun
+"patria patriae {f.}","fatherland, country",1,Noun
+"patrimōnium patrimōniī {n.}","inheritance, patrimony",1,Noun
+"patrius patria patrium","of a father, paternal, ancestral",1,Adjective
+"patrōnus patrōnī {m.}","patron, protector, defender",1,Noun
 "paulisper","for a little while",1,Adverb
-"pectus pectoris n.","chest, breast, heart",1,Noun
-"pecū –ūs n.","cattle, flock, herd",1,Noun
+"pectus pectoris {n.}","chest, breast, heart",1,Noun
+"pecū pecūs {n.}","cattle, flock, herd",1,Noun
 "pellō pellere pepulī pulsus","to drive, push, strike",1,Verb
 "penes","in the power of, in the possession of (+ accusative)",1,Preposition
 "penetrō penetrāre penetrāvī penetrātus","to penetrate, enter",1,Verb
-"pēnsitō –āre","to weigh carefully, consider, pay",1,Verb
-"per–grātus –a –um ","very pleasant, very agreeable",1,Adjective
-"per–paucus –a –um","very few",1,Adjective
-"per–vertō –vertere –vertī –versum","to overturn, corrupt, pervert",1,Verb
+"pēnsitō pēnsitāre pēnsitāvī pēnsitātus","to weigh carefully, consider, pay",1,Verb
+"pergrātus pergrāta pergrātum","very pleasant, very agreeable",1,Adjective
+"perpaucus perpauca perpaucum","very few",1,Adjective
+"pervertō pervertere pervertī perversum","to overturn, corrupt, pervert",1,Verb
 "peragrō peragrāre peragrāvī peragrātus","to travel through, traverse",1,Verb
 "perambulō perambulāre perambulāvī perambulātus","to walk through, travel through",1,Verb
-"perbrevis –e","very short",1,Adjective
-"perditus –a –um","lost, ruined, corrupt",1,Adjective
-"perferō, perferre, pertulī perlātum","to carry through, endure, report",1,Verb
-"perfugium –ī n.","refuge, shelter",1,Noun
-"perhorrēscō perhorrēscere perhorruī —","to shudder greatly at, tremble at",1,Verb
-"perīclitor perīclitārī perīclitātus","to be in danger, risk, test",1,Verb
-"perītus –a –um","skilled, experienced in (+ genitive)",1,Adjective
-"permisceō –ēre –miscuī –mistus (–mixtus)","to mix thoroughly, mingle",1,Verb
-"permultus –a –um","very much, very many",1,Adjective
-"perpetuus –a –um","continuous, perpetual, entire",1,Adjective
+"perbrevis perbreve","very short",1,Adjective
+"perditus perdita perditum","lost, ruined, corrupt",1,Adjective
+"perferō perferre pertulī perlātum","to carry through, endure, report",1,Verb
+"perfugium perfugiī {n.}","refuge, shelter",1,Noun
+"perhorrēscō perhorrēscere perhorruī","to shudder greatly at, tremble at",1,Verb
+"perīclitor perīclitārī perīclitātus sum","to be in danger, risk, test",1,Verb
+"perītus perīta perītum","skilled, experienced in (+ genitive)",1,Adjective
+"permisceō permiscēre permiscuī permistus (permixtus)","to mix thoroughly, mingle",1,Verb
+"permultus permulta permultum","very much, very many",1,Adjective
+"perpetuus perpetua perpetuum","continuous, perpetual, entire",1,Adjective
 "persequor persequī persecūtus sum","to follow, pursue, persecute",1,Verb
-"perstringō –ere –strīnxī –strīctus","to graze, touch upon, criticize",1,Verb
+"perstringō perstringere perstrīnxī perstrīctus","to graze, touch upon, criticize",1,Verb
 "pertimēscō pertimēscere pertimuī","to become very frightened of",1,Verb
-"pertinācia –ae f.","stubbornness, obstinacy, persistence",1,Noun
-"petītiō petītiōnis f.","attack, request, candidacy",1,Noun
-"Phalēreus –eī/–eos (masc. only. adj.)","of Phalerum (the port of Athens)",1,Adjective
-"philosophor –ārī –ātus","to philosophize",1,Verb
+"pertinācia pertināciae {f.}","stubbornness, obstacy, persistence",1,Noun
+"petītiō petītiōnis {f.}","attack, request, candidacy",1,Noun
+"Phalēreus Phalēreī {/} Phalēreos {masc. only. adj.}","of Phalerum (the port of Athens)",1,Adjective
+"philosophor philosophārī philosophātus sum","to philosophize",1,Verb
 "plānē","plainly, clearly, completely",1,Adverb
-"plangor –ōris m.","beating of the breast, lamentation",1,Noun
-"plānitiēs –eī f.","plain, level ground",1,Noun
-"Platōnicus –a –um","Platonic, of Plato",1,Adjective
-"plausus –ūs m.","applause, clapping",1,Noun
+"plangor plangōris {m.}","beating of the breast, lamentation",1,Noun
+"plānitiēs plānitiēī {f.}","plain, level ground",1,Noun
+"Platōnicus Platōnica Platōnicum","Platonic, of Plato",1,Adjective
+"plausus plausūs {m.}","applause, clapping",1,Noun
 "plērumque","for the most part, generally",1,Adverb
-"Poenus –a –um","Carthaginian, Punic",1,Adjective
-"pollēō pollēre — —","to be strong, be powerful, have influence",1,Verb
-"Pompēiānus –a –um","of Pompey, Pompeian",1,Adjective
-"pondus","weight",1,Noun
-"Ponticus –a –um","of Pontus, Pontic",1,Adjective
-"porta portae f.","gate, entrance",1,Noun
-"porticus porticus f.","colonnade, portico",1,Noun
+"Poenus Poena Poenum","Carthaginian, Punic",1,Adjective
+"polleō pollēre","to be strong, be powerful, have influence",1,Verb
+"Pompēiānus Pompēiāna Pompēiānum","of Pompey, Pompeian",1,Adjective
+"pondus ponderis {n.}","weight",1,Noun
+"Ponticus Pontica Ponticum","of Pontus, Pontic",1,Adjective
+"porta portae {f.}","gate, entrance",1,Noun
+"porticus porticūs {f.}","colonnade, portico",1,Noun
 "portō portāre portāvī portātus","to carry, bring",1,Verb
-"possessiō possessiōnis f.","possession, property",1,Noun
+"possessiō possessiōnis {f.}","possession, property",1,Noun
 "posthāc","hereafter, after this",1,Adverb
 "postquam","after, when",1,Conjunction
-"postulātiō –ōnis f. or postulātum –ī n.","demand, claim, request",1,Noun
-"potis or pote (indecl.)","able, capable",1,Adjective
-"praecēdō –ere –cessī –cessus","to go before, precede, surpass",1,Verb
-"praeceptiō –ōnis f.","a precept, instruction, rule",1,Noun
-"praecipuus –a –um","special, particular, distinguished",1,Adjective
-"praeda","booty, plunder, prey",1,Noun
-"praeda praedae f.","booty, plunder, prey",1,Noun
+"postulātiō postulātiōnis {f.} ({or} postulātum postulātī {n.})","demand, claim, request",1,Noun
+"potis {or} pote {indecl.}","able, capable",1,Adjective
+"praecēdō praecēdere praecessī praecessus","to go before, precede, surpass",1,Verb
+"praeceptiō praeceptiōnis {f.}","a precept, instruction, rule",1,Noun
+"praecipuus praecipua praecipuum","special, particular, distinguished",1,Adjective
+"praeda praedae {f.}","booty, plunder, prey",1,Noun
 "praedicō praedicāre praedicāvī praedicātus","to proclaim, declare, praise",1,Verb
 "praedīcō praedīcere praedīxī praedictus","to predict, foretell, advise",1,Verb
-"praefectus praefectī m.","prefect, commander, governor",1,Noun
+"praefectus praefectī {m.}","prefect, commander, governor",1,Noun
 "praeficiō praeficere praefēcī praefectus","to put in charge of, appoint over",1,Verb
-"praegredior praegredī praegressus","to go before, precede",1,Verb
-"praeparō –parāre –parāvī –parātus","to prepare, make ready beforehand",1,Verb
-"praescrīptum –ī n.","rule, precept, regulation",1,Noun
-"praesentia praesentiae f.","presence",1,Noun
-"praesideō –ēre –sēdī","to preside over, protect, command",1,Verb
-"praetextātus –a –um","wearing the toga praetexta, youthful",1,Adjective
-"praetūra praetūrae f.","praetorship",1,Noun
-"prātum prātī n.","meadow",1,Noun
+"praegredior praegredī praegressus sum","to go before, precede",1,Verb
+"praeparō praeparāre praeparāvī praeparātus","to prepare, make ready beforehand",1,Verb
+"praescrīptum praescrīptī {n.}","rule, precept, regulation",1,Noun
+"praesentia praesentiae {f.}","presence",1,Noun
+"praesideō praesidēre praesēdī","to preside over, protect, command",1,Verb
+"praetextātus praetextāta praetextātum","wearing the toga praetexta, youthful",1,Adjective
+"praetūra praetūrae {f.}","praetorship",1,Noun
+"prātum prātī {n.}","meadow",1,Noun
 "premō premere pressī pressus","to press, press hard, overwhelm",1,Verb
 "prīdiē","on the day before",1,Adverb
-"probābilis –e","probable, plausible, commendable",1,Adjective
-"probitās probitātis f.","honesty, integrity, uprightness",1,Noun
+"probābilis probābile","probable, plausible, commendable",1,Adjective
+"probitās probitātis {f.}","honesty, integrity, uprightness",1,Noun
 "prōcēdō prōcēdere prōcessī prōcessus","to go forward, advance, proceed",1,Verb
-"prōdō prodere prōdidī prōditus","to bring forth, betray, hand down",1,Verb
+"prōdō prōdere prōdidī prōditus","to bring forth, betray, hand down",1,Verb
 "profugiō profugere profūgī","to flee, escape",1,Verb
 "prōgredior prōgredī prōgressus sum","to go forward, advance, proceed",1,Verb
-"proinde or proin","therefore, accordingly, just as",1,Adverb
-"prōmptus –a –um","ready, quick, at hand",1,Adjective
-"prōmptus –ūs m.","readiness, willingness",1,Noun
-"prōmulgō –āre","to make known, publish, propose (a law)",1,Verb
-"propinquus –a –um","near, neighboring; (as a noun) relative",1,Adjective
-"prōpraetor –ōris m.","propraetor (a governor of a province)",1,Noun
-"prōscriptiō, proscriptiōnis, f.","proscription, public notice of sale",1,Noun
+"proinde {or} proin","therefore, accordingly, just as",1,Adverb
+"prōmptus prōmpta prōmptum","ready, quick, at hand",1,Adjective
+"prōmptus prōmptūs {m.}","readiness, willingness",1,Noun
+"prōmulgō prōmulgāre prōmulgāvī prōmulgātus","to make known, publish, propose (a law)",1,Verb
+"propinquus propinqua propinquum","near, neighboring; (as a noun) relative",1,Adjective
+"prōpraetor prōpraetōris {m.}","propraetor (a governor of a province)",1,Noun
+"prōscriptiō prōscriptiōnis {f.}","proscription, public notice of sale",1,Noun
 "prōsequor prōsequī prōsecūtus sum","to follow, pursue, escort",1,Verb
-"prōsper or more frequently prōsperus –a –um","prosperous, fortunate, favorable",1,Adjective
+"prōsper ({or more frequently} prōsperus) prōspera prōsperum","prosperous, fortunate, favorable",1,Adjective
 "prosternō prosternere prostrāvī prostrātum","to knock down, overthrow, prostrate",1,Verb
+Latin Word,English Definition(s),Frequency,Part of Speech
 "prout","as, just as, according as",1,Conjunction
-"prūdentia, -ae, f.","foresight, wisdom, prudence",1,Noun
-"pūblicus –a –um","public, of the state",1,Adjective
-"Publius –iī m.","Publius (a Roman first name)",1,Noun
-"pudīcitia –ae f.","chastity, modesty, virtue",1,Noun
-"puella puellae f.","girl",1,Noun
-"puellula –ae f.","a little girl",1,Noun
-"purpureus –a –um","purple, crimson",1,Adjective
-"Pȳrēnaeus –a –um","of the Pyrenees",1,Adjective
-"Pyrrhō(n) –ōnis m.","Pyrrho (a Greek Skeptic philosopher)",1,Noun
-"quādrāginta; quādrāgesimus –a –um","forty; fortieth",1,Numeral
-"quadri(n)gentī –ae –a; quādrāgentesimus –a –um","four hundred; four-hundredth",1,Numeral
-"quaestor quaestōris m.","quaestor (a Roman magistrate)",1,Noun
-"quaestus quaestūs m.","gain, profit, occupation",1,Noun
+"prūdentia prūdentiae {f.}","foresight, wisdom, prudence",1,Noun
+"pūblicus pūblica pūblicum","public, of the state",1,Adjective
+"Pūblius Pūbliī {m.}","Publius (a Roman first name)",1,Noun
+"pudīcitia pudīcitiae {f.}","chastity, modesty, virtue",1,Noun
+"puella puellae {f.}","girl",1,Noun
+"puellula puellulae {f.}","a little girl",1,Noun
+"purpureus purpurea purpureum","purple, crimson",1,Adjective
+"Pȳrēnaeus Pȳrēnaea Pȳrēnaeum","of the Pyrenees",1,Adjective
+"Pyrrhō (Pyrrhōn) Pyrrhōnis {m.}","Pyrrho (a Greek Skeptic philosopher)",1,Noun
+"quadrāgintā {;} quadrāgēsimus quadrāgēsima quadrāgēsimum","forty; fortieth",1,Numeral
+"quadringentī (quadrigentī) quadringentae quadringenta {;} quadringentēsimus quadringentēsima quadringentēsimum","four hundred; four-hundredth",1,Numeral
+"quaestor quaestōris {m.}","quaestor (a Roman magistrate)",1,Noun
+"quaestus quaestūs {m.}","gain, profit, occupation",1,Noun
 "quālis quāle","of what sort, what kind of",1,Adjective
 "quamvīs","although, however much",1,Conjunction
 "quandō","when, since",1,Conjunction
 "quantuscumque quantacumque quantumcumque","however great, of whatever size",1,Adjective
-"quattuor; quārtus –a –um","four; fourth",1,Numeral
-"quattuordecim quārtus –a –um decimus –a –um","fourteen; fourteenth",1,Numeral
-"queō quīre quīvī/quiī quitus","to be able, can",1,Verb
-"querimōnia querimōniae f.","complaint",1,Noun
+"quattuor {;} quārtus quārta quārtum","four; fourth",1,Numeral
+"quattuordecim {;} quārtus decimus quārta decima quārtum decimum","fourteen; fourteenth",1,Numeral
+"queō quīre quīvī {/} quiī quitus","to be able, can",1,Verb
+"querimōnia querimōniae {f.}","complaint",1,Noun
 "quia","because",1,Conjunction
-"quīcumque, quaecumque, quodcumque","whoever, whatever",1,Pronoun
-"quiētus –a –um","quiet, calm, peaceful",1,Adjective
-"quīlibet quaelibet quodlibet (or quīlubet, etc.)","anyone you please, anything whatever",1,Pronoun
-"quīndecim; quintus –a –um decimus –a –um","fifteen; fifteenth",1,Numeral
-"quīvīs quaevīs quodvīs or (subst.) quidvīs","anyone you wish, anything whatever",1,Pronoun
+"quīcumque quaecumque quodcumque","whoever, whatever",1,Pronoun
+"quiētus quiēta quiētum","quiet, calm, peaceful",1,Adjective
+"quīlibet quaelibet quodlibet ({or} quīlubet, {etc.})","anyone you please, anything whatever",1,Pronoun
+"quīndecim {;} quīntus decimus quīnta decima quīntum decimum","fifteen; fifteenth",1,Numeral
+"quīvīs quaevīs quodvīs {or (subst.)} quidvīs","anyone you wish, anything whatever",1,Pronoun
 "quō","where, to what place",1,Adverb
-"quōmodō or separately quō modō","how, in what way",1,Adverb
-"quotiēnscumque or quotiēnsque","however often, as often as",1,Adverb
-"rapīna –ae f.","robbery, plunder",1,Noun
+"quōmodō {or separately} quō modō","how, in what way",1,Adverb
+"quotiēnscumque {or} quotiēnsque","however often, as often as",1,Adverb
+"rapīna rapīnae {f.}","robbery, plunder",1,Noun
 "rapiō rapere rapuī raptus","to seize, snatch, carry off",1,Verb
 "raptim","hurriedly, suddenly",1,Adverb
-"Rauracus –a –um","of the Rauraci (a Gallic tribe)",1,Adjective
-"Ravenna –ae f.","Ravenna (a city in Italy)",1,Noun
-"receptus –ūs m.","retreat, refuge",1,Noun
+"Rauracus Rauraca Rauracum","of the Rauraci (a Gallic tribe)",1,Adjective
+"Ravenna Ravennae {f.}","Ravenna (a city in Italy)",1,Noun
+"receptus receptūs {m.}","retreat, refuge",1,Noun
 "recitō recitāre recitāvī recitātus","to read aloud, recite",1,Verb
-"recordātiō –ōnis f.","recollection, remembrance",1,Noun
-"recuperō –āre –āvī –ātus","to recover, regain",1,Verb
-"recurrō –ere –currī –cursus","to run back, return",1,Verb
-"recūsātiō –ōnis f.","refusal, objection, protest",1,Noun
+"recordātiō recordātiōnis {f.}","recollection, remembrance",1,Noun
+"recuperō recuperāre recuperāvī recuperātus","to recover, regain",1,Verb
+"recurrō recurrere recurrī recursus","to run back, return",1,Verb
+"recūsātiō recūsātiōnis {f.}","refusal, objection, protest",1,Noun
 "redigō redigere redēgī redāctum","to drive back, reduce, render",1,Verb
-"reditiō –ōnis f.","a return",1,Noun
-"reditus reditūs m.","return",1,Noun
+"reditiō reditiōnis {f.}","a return",1,Noun
+"reditus reditūs {m.}","return",1,Noun
 "rēfert rēferre rētulit","it concerns, it matters, it is important",1,Verb
-"regiō regiōnis f.","region, district, country",1,Noun
-"rēgius –a –um","royal, of a king",1,Adjective
+"regiō regiōnis {f.}","region, district, country",1,Noun
+"rēgius rēgia rēgium","royal, of a king",1,Adjective
 "reiciō reicere reiēcī reiectum","to throw back, reject, drive back",1,Verb
-"remaneō","to remain behind, stay",1,Verb
+"remaneō remanēre remānsī remānsum","to remain behind, stay",1,Verb
 "reprimō reprimere repressī repressus","to check, restrain, repress",1,Verb
-"repulsa –ae f.","rejection, defeat (in an election)",1,Noun
+"repulsa repulsae {f.}","rejection, defeat (in an election)",1,Noun
 "requiēscō requiēscere requiēvī requiētum","to rest, find rest",1,Verb
 "requīrō requīrere requīsīvī requīsītus","to seek, ask for, need",1,Verb
-"rescindō –ere –scidī –scissus","to cut down, tear down, annul",1,Verb
-"rēsedeō, rēsedēre, rēsēdī, rēsessum","to sit back, remain sitting; subside",1,Verb
+"rescindō rescindere rescidī rescissus","to cut down, tear down, annul",1,Verb
+"rēsedeō rēsedēre rēsēdī rēsessum","to sit back, remain sitting; subside",1,Verb
 "reservō reservāre reservāvī reservātus","to keep back, reserve, save",1,Verb
-"resideō residēre resēdī ressus","to sit down, remain, reside",1,Verb
+"resideō residēre resēdī resessum","to sit down, remain, reside",1,Verb
 "resistō resistere restitī","to resist, oppose, withstand (+ dative)",1,Verb
 "resonō resonāre resonāvī resonātus","to resound, echo",1,Verb
 "respectō respectāre respectāvī respectātus","to look back at, regard, await",1,Verb
-"rēspōnsum –ī n. or rēsponsus –ūs m.","answer, response",1,Noun
-"restō, restāre, restitī, restitum","to remain, be left",1,Verb
-"retardō –āre","to delay, hinder, slow down",1,Verb
+"rēspōnsum rēspōnsī {n. or} respōnsus respōnsūs {m.}","answer, response",1,Noun
+"restō restāre restitī restitum","to remain, be left",1,Verb
+"retardō retardāre retardāvī retardātus","to delay, hinder, slow down",1,Verb
 "revocō revocāre revocāvī revocātus","to call back, recall, revoke",1,Verb
-"rhētor rhētoris","rhetorician, teacher of rhetoric",1,Noun
-"rīpa rīpae f.","bank (of a river)",1,Noun
-"rīvālis –is m.","rival (in love)",1,Noun
-"rōbur rōboris n.","oak, strength, hardness",1,Noun
-"Roscius –a –um","Roscian, of Roscius",1,Adjective
-"Roscius –iī m.","Roscius (a Roman actor)",1,Noun
-"rōstrum rōstrī n.","beak (of a ship); (pl.) the Rostra (speaker's platform)",1,Noun
-"rudis –e","rough, crude, unpolished",1,Adjective
-"Rūfus –ī m.","Rufus (a Roman name)",1,Noun
-"rūmor rūmōris m.","rumor, gossip, report",1,Noun
+"rhētor rhētoris {m.}","rhetorician, teacher of rhetoric",1,Noun
+"rīpa rīpae {f.}","bank (of a river)",1,Noun
+"rīvālis rīvālis {m.}","rival (in love)",1,Noun
+"rōbur rōboris {n.}","oak, strength, hardness",1,Noun
+"Rōscius Rōscia Rōscium","Roscian, of Roscius",1,Adjective
+"Rōscius Rōsciī {m.}","Roscius (a Roman actor)",1,Noun
+"rōstrum rōstrī {n.}","beak (of a ship); (pl.) the Rostra (speaker's platform)",1,Noun
+"rudis rude","rough, crude, unpolished",1,Adjective
+"Rūfus Rūfī {m.}","Rufus (a Roman name)",1,Noun
+"rūmor rūmōris {m.}","rumor, gossip, report",1,Noun
 "rumpō rumpere rūpī ruptus","to break, burst, rupture",1,Verb
 "ruō ruere ruī rūtum","to rush, fall, be ruined",1,Verb
-"rūrsus or rūrsum","again, back",1,Adverb
-"sacrāmentum –ī n.","oath of allegiance, sacrament",1,Noun
-"saeculum saeculī n.","age, generation, century",1,Noun
-"Sagae –ārum m.","the Sagae (a Scythian people)",1,Noun
+"rūrsus {or} rūrsum","again, back",1,Adverb
+"sacrāmentum sacrāmentī {n.}","oath of allegiance, sacrament",1,Noun
+"saeculum saeculī {n.}","age, generation, century",1,Noun
+"Sagae Sagārum {m. pl.}","the Sagae (a Scythian people)",1,Noun
 "sagittifer sagittifera sagittiferum","arrow-bearing, armed with arrows",1,Adjective
-"salīnae –ārum f.","salt-works, salt pits",1,Noun
-"sapiēns –ntis","wise; (as a noun) a wise man, philosopher",1,Adjective
-"sapienter sapientius sapientissime","wisely",1,Adverb
-"satis or sat (comp. satius)","enough, sufficient",1,"Adverb / Adjective (indecl.)"
-"satisfaciō or (satis faciō) –facere –fēcī –factum","to satisfy, make amends",1,Verb
-"satisfīō –fierī –factus sum","to be satisfied",1,Verb
-"Sāturnīnus –ī m.","Saturninus (a Roman name)",1,Noun
-"scelerātus –a –um","wicked, criminal, accursed",1,Adjective
-"scortum scortī n.","prostitute, harlot",1,Noun
-"scrīptūra –ae f.","a writing, composition, tax on pasturage",1,Noun
-"sēdēs sēdis f.","seat, home, residence",1,Noun
-"sēditiō sēditiōnis f.","sedition, rebellion, mutiny",1,Noun
+"salīnae salīnārum {f. pl.}","salt-works, salt pits",1,Noun
+"sapiēns sapientis","wise; (as a noun) a wise man, philosopher",1,Adjective
+"sapienter sapientius sapientissimē","wisely",1,Adverb
+"satis {or} sat ({comp.} satius)","enough, sufficient",1,"Adverb / Adjective (indecl.)"
+"satisfaciō (satis faciō) satisfacere satisfēcī satisfactum","to satisfy, make amends",1,Verb
+"satisfīō satisfierī satisfactus sum","to be satisfied",1,Verb
+"Sāturnīnus Sāturnīnī {m.}","Saturninus (a Roman name)",1,Noun
+"scelerātus scelerāta scelerātum","wicked, criminal, accursed",1,Adjective
+"scortum scortī {n.}","prostitute, harlot",1,Noun
+"scrīptūra scrīptūrae {f.}","a writing, composition, tax on pasturage",1,Noun
+"sēdēs sēdis {f.}","seat, home, residence",1,Noun
+"sēditiō sēditiōnis {f.}","sedition, rebellion, mutiny",1,Noun
 "sēdō sēdāre sēdāvī sēdātus","to settle, calm, allay",1,Verb
 "sēgnis sēgne","slow, lazy, sluggish",1,Adjective
 "sēiungō sēiungere sēiūnxī sēiūnctus","to separate, disjoin",1,Verb
-"sēmentis –is f.","a sowing, seeding",1,Noun
-"septemgeminus –a –um","sevenfold",1,Adjective
-"Sēquana –ae f.","the Seine river",1,Noun
+"sēmentis sēmentis {f.}","a sowing, seeding",1,Noun
+"septemgeminus septemgemina septemgeminum","sevenfold",1,Adjective
+"Sēquana Sēquanae {f.}","the Seine river",1,Noun
 "sērō","late, too late",1,Adverb
-"Sertōriānus –a –um","of Sertorius, Sertorian",1,Adjective
-"sestertiūm gen. pl; rarely sestertiōrum or sestertiūm nummūm","of sesterces",1,Noun
-"sexāgiēs (–ēns)","sixty times",1,Adverb
-"significātiō significātiōnis f.","meaning, indication, sign",1,Noun
+"Sertōriānus Sertōriāna Sertōriānum","of Sertorius, Sertorian",1,Adjective
+"sestertiūm {gen. pl.; rarely} sestertiōrum {or} sestertiūm nummūm","of sesterces",1,Noun
+"sexāgiēs (sexāgiēns)","sixty times",1,Adverb
+"significātiō significātiōnis {f.}","meaning, indication, sign",1,Noun
 "significō significāre significāvī significātus","to signify, indicate, mean",1,Verb
-"silentium (silentum) silenti(ī) n.","silence",1,Noun
-"simplex –icis","simple, single, plain",1,Adjective
-"sincērus –a –um","sincere, pure, genuine",1,Adjective
-"singulī –ae –a","one each, single, individual",1,Numeral
-"sinister –a –um","left, on the left side; unfavorable",1,Adjective
-"Sisapō –ōnis f.","Sisapo (a town in Spain)",1,Noun
-"situs –a –um","situated, located, placed",1,Adjective
-"sōbrius –a –um","sober, moderate",1,Adjective
-"socer socerī m.","father-in-law",1,Noun
-"Sōcraticus –a –um","Socratic, of Socrates",1,Adjective
-"sollicitus, -a, -um","worried, anxious, troubled",1,Adjective
-"solūtiō –ōnis f.","a loosening, payment, explanation",1,Noun
-"sonus sonī m.","sound, noise",1,Noun
-"splendidus –a –um","splendid, brilliant, illustrious",1,Adjective
-"spondeō, -ēre, spondī spōnsum","to promise solemnly, pledge, vow",1,Verb
-"stimulus –ī m.","goad, spur, stimulus",1,Noun
-"stīpendium stīpendi(ī) n.","pay, salary, tribute",1,Noun
-"stola –ae f.","stola (a woman's long outer garment)",1,Noun
-"stuprum stuprī n.","debauchery, dishonor, rape",1,Noun
-"suādeō, suadēre, suāsī, suāsum","to advise, recommend, persuade (+ dative)",1,Verb
+"silentium (silentum) silentiī {n.}","silence",1,Noun
+"simplex simplicis","simple, single, plain",1,Adjective
+"sincērus sincēra sincērum","sincere, pure, genuine",1,Adjective
+"singulī singulae singula","one each, single, individual",1,Numeral
+"sinister sinistra sinistrum","left, on the left side; unfavorable",1,Adjective
+"Sisapō Sisapōnis {f.}","Sisapo (a town in Spain)",1,Noun
+"situs sita situm","situated, located, placed",1,Adjective
+"sōbrius sōbria sōbrium","sober, moderate",1,Adjective
+"socer socerī {m.}","father-in-law",1,Noun
+"Sōcraticus Sōcratica Sōcraticum","Socratic, of Socrates",1,Adjective
+"sollicitus sollicita sollicitum","worried, anxious, troubled",1,Adjective
+"solūtiō solūtiōnis {f.}","a loosening, payment, explanation",1,Noun
+"sonus sonī {m.}","sound, noise",1,Noun
+"splendidus splendida splendidum","splendid, brilliant, illustrious",1,Adjective
+"spondeō spondēre spondī spōnsum","to promise solemnly, pledge, vow",1,Verb
+"stimulus stimulī {m.}","goad, spur, stimulus",1,Noun
+"stīpendium stīpendiī {n.}","pay, salary, tribute",1,Noun
+"stola stolae {f.}","stola (a woman's long outer garment)",1,Noun
+"stuprum stuprī {n.}","debauchery, dishonor, rape",1,Noun
+"suādeō suādēre suāsī suāsum","to advise, recommend, persuade (+ dative)",1,Verb
 "sub","under, below (+ ablative or accusative)",1,Preposition
-"subsequor sequī secūtus sum","to follow closely, pursue",1,Verb
-"subtīlis –e","fine, slender, subtle",1,Adjective
+"subsequor subsequī subsecūtus sum","to follow closely, pursue",1,Verb
+"subtīlis subtīle","fine, slender, subtle",1,Adjective
 "sūdō sūdāre sūdāvī sūdātus","to sweat, perspire",1,Verb
-"Sulpicius –iī m.","Sulpicius (a Roman name)",1,Noun
-"sumittō (submittō) –mittere –mīsī –missum","to lower, let down, submit",1,Verb
-"superfluō superfluere superflūxī superflūxus","to overflow, be superfluous",1,Verb
+"Sulpicius Sulpiciī {m.}","Sulpicius (a Roman name)",1,Noun
+"sumittō (submittō) sumittere sumīsī sumissum","to lower, let down, submit",1,Verb
+"superfluō superfluere superflūxī superflūxum","to overflow, be superfluous",1,Verb
 "superō superāre superāvī superātus","to overcome, conquer, surpass",1,Verb
-"suppeditō –āre","to supply, furnish, be available",1,Verb
-"suppetō –petere –petīvī (–petiī) –petītum","to be at hand, be available, suffice",1,Verb
+"suppeditō suppeditāre suppeditāvī suppeditātus","to supply, furnish, be available",1,Verb
+"suppetō suppetere suppetīvī (suppetiī) suppetītum","to be at hand, be available, suffice",1,Verb
 "supplex supplicis","suppliant, humble, beseeching",1,Adjective
 "suprā","above, before (adverb and preposition + accusative)",1,Preposition
-"Tagus –ī m.","the Tagus river",1,Noun
-"tam..quam…","as...as...",1,Adverb
+"Tagus Tagī {m.}","the Tagus river",1,Noun
+"tam...quam...","as...as...",1,Adverb
 "tamdiū","for so long",1,Adverb
-"tametsī or tamenetsī","although, though",1,Conjunction
+"tametsī {or} tamenetsī","although, though",1,Conjunction
 "tamquam","as, just as, as if",1,Adverb
 "tangō tangere tetigī tāctus","to touch",1,Verb
-"Tarquinius –a –um","Tarquinian, of Tarquinius",1,Adjective
-"Tarraco (Tarracon) –ōnis f.","Tarraco (a city in Spain)",1,Noun
+"Tarquinius Tarquinia Tarquinium","Tarquinian, of Tarquinius",1,Adjective
+"Tarracō (Tarracōn) Tarracōnis {f.}","Tarraco (a city in Spain)",1,Noun
 "tegō tegere tēxī tēctus","to cover, protect, hide",1,Verb
-"tēgula –ae f.","tile, roof-tile",1,Noun
-"temeritās temeritātis f.","rashness, recklessness",1,Noun
-"temperantia –ae f.","moderation, self-control, temperance",1,Noun
-"temperātus –a –um","temperate, moderate",1,Adjective
-"templum templī n.","temple, sacred precinct",1,Noun
+"tēgula tēgulae {f.}","tile, roof-tile",1,Noun
+"temeritās temeritātis {f.}","rashness, recklessness",1,Noun
+"temperantia temperantiae {f.}","moderation, self-control, temperance",1,Noun
+"temperātus temperāta temperātum","temperate, moderate",1,Adjective
+"templum templī {n.}","temple, sacred precinct",1,Noun
 "terreō terrēre terruī territus","to frighten, terrify",1,Verb
-"testimōnium testimōni(ī) n.","testimony, evidence, proof",1,Noun
-"Theophrastus –ī m.","Theophrastus (a Greek philosopher)",1,Noun
+"testimōnium testimōniī {n.}","testimony, evidence, proof",1,Noun
+"Theophrastus Theophrastī {m.}","Theophrastus (a Greek philosopher)",1,Noun
 "trahō trahere trāxī tractus","to drag, draw, pull",1,Verb
-"trānsiliō –īre –īvī (–iī or –uī)","to jump across, leap over",1,Verb
-"trecentī –ae –a; trecentēsimus –a –um","three hundred; three-hundredth",1,Numeral
+"trānsiliō trānsilīre trānsilīvī (trānsiliī {or} trānsiluī)","to jump across, leap over",1,Verb
+"trecentī trecentae trecenta {;} trecentēsimus trecentēsima trecentēsimum","three hundred; three-hundredth",1,Numeral
 "trecentiēs","three hundred times",1,Adverb
-"trīgintā; trīcēsimus or trīcēnsimus –a –um","thirty; thirtieth",1,Numeral
-"tuba –ae f.","trumpet",1,Noun
-"Tulingus –a –um","of the Tulingi (a Germanic tribe)",1,Adjective
-"Tullius –iī m.","Tullius (a Roman name, e.g., Cicero)",1,Noun
-"tumultus tumultūs m.","uproar, commotion, tumult",1,Noun
+"trīgintā {;} trīcēsimus (trīcēnsimus) trīcēsima trīcēsimum","thirty; thirtieth",1,Numeral
+"tuba tubae {f.}","trumpet",1,Noun
+"Tulingus Tulinga Tulingum","of the Tulingi (a Germanic tribe)",1,Adjective
+"Tullius Tulliī {m.}","Tullius (a Roman name, e.g., Cicero)",1,Noun
+"tumultus tumultūs {m.}","uproar, commotion, tumult",1,Noun
 "tundō tundere tutudī tūnsus","to beat, strike",1,Verb
-"turba, turbae, f.","crowd, mob, disturbance",1,Noun
+"turba turbae {f.}","crowd, mob, disturbance",1,Noun
 "turbō turbāre turbāvī turbātus","to disturb, confuse, throw into disorder",1,Verb
-"turbulentus –a –um","turbulent, stormy, agitated",1,Adjective
-"turma turmae f.","squadron, troop (of cavalry)",1,Noun
+"turbulentus turbulenta turbulentum","turbulent, stormy, agitated",1,Adjective
+"turma turmae {f.}","squadron, troop (of cavalry)",1,Noun
 "tūtō","safely",1,Adverb
 "ūber ūberis","fertile, rich, abundant",1,Adjective
-"ūbertās –ātis f.","fertility, abundance",1,Noun
-"unda undae f.","wave",1,Noun
+"ūbertās ūbertātis {f.}","fertility, abundance",1,Noun
+"unda undae {f.}","wave",1,Noun
 "unde","from where, whence",1,Adverb
-"ūnicus –a –um","only, sole, unique",1,Adjective
+"ūnicus ūnica ūnicum","only, sole, unique",1,Adjective
 "usquam","anywhere",1,Adverb
 "ūsurpō ūsurpāre ūsurpāvī ūsurpātus","to seize, make use of, usurp",1,Verb
 "vacō vacāre vacāvī vacātus","to be empty, be free from, have leisure",1,Verb
-"vacuus –a –um","empty, vacant, free from",1,Adjective
-"vadum –ī n.","a shallow place, ford, shoal",1,Noun
-"vagor –ārī –ātus sum","to wander, roam",1,Verb
-"varius –a –um","various, different, changeable",1,Adjective
-"vehemēns –ntis","violent, strong, vehement",1,Adjective
-"velut or velutī","just as, as if",1,Adverb
+"vacuus vacua vacuum","empty, vacant, free from",1,Adjective
+"vadum vadī {n.}","a shallow place, ford, shoal",1,Noun
+"vagor vagārī vagātus sum","to wander, roam",1,Verb
+"varius varia varium","various, different, changeable",1,Adjective
+"vehemēns vehementis","violent, strong, vehement",1,Adjective
+"velut {or} velutī","just as, as if",1,Adverb
 "ventitō ventitāre ventitāvī ventitātus","to come often, keep coming",1,Verb
-"venustās venustātis f.","charm, beauty, grace",1,Noun
-"verber –eris n.","lash, whip, blow",1,Noun
-"verēcundia –ae f.","modesty, shame, respect",1,Noun
-"verēcundus –a –um","modest, shy, respectful",1,Adjective
+"venustās venustātis {f.}","charm, beauty, grace",1,Noun
+"verber verberis {n.}","lash, whip, blow",1,Noun
+"verēcundia verēcundiae {f.}","modesty, shame, respect",1,Noun
+"verēcundus verēcunda verēcundum","modest, shy, respectful",1,Adjective
 "vereor verērī veritus sum","to fear, respect, be in awe of",1,Verb
-"vergō –ere","to bend, incline, turn",1,Verb
-"Verucloetius –ī m.","Verucloetius (a chief of the Helvetii)",1,Noun
-"vesper vesperis m. or vesper vesperī m.","evening",1,Noun
+"vergō vergere","to bend, incline, turn",1,Verb
+"Verucloetius Verucloetiī {m.}","Verucloetius (a chief of the Helvetii)",1,Noun
+"vesper vesperis {m. or} vesper vesperī {m.}","evening",1,Noun
 "vetō (votō) vetāre vetuī vetitus","to forbid, prohibit",1,Verb
-"vetustās vetustātis f.","old age, antiquity, long duration",1,Noun
-"vīctus vīctūs m.","food, nourishment, way of life",1,Noun
+"vetustās vetustātis {f.}","old age, antiquity, long duration",1,Noun
+"vīctus vīctūs {m.}","food, nourishment, way of life",1,Noun
 "virīlis virīle","manly, masculine, virile",1,Adjective
 "vīsō vīsere vīsī vīsus","to look at, view, visit",1,Verb
-"vitiōsus –a –um","faulty, vicious, corrupt",1,Adjective
+"vitiōsus vitiōsa vitiōsum","faulty, vicious, corrupt",1,Adjective
 "vītō vītāre vītāvī vītātus","to avoid, shun",1,Verb
-"voluntārius –a –um","voluntary, willing",1,Adjective
-"voluptās voluptātis f.","pleasure, delight, enjoyment",1,Noun
-"vōtum vōtī n.","vow, prayer, offering",1,Noun
-"vulgāris –e","common, ordinary, vulgar",1,Adjective
+"voluntārius voluntāria voluntārium","voluntary, willing",1,Adjective
+"voluptās voluptātis {f.}","pleasure, delight, enjoyment",1,Noun
+"vōtum vōtī {n.}","vow, prayer, offering",1,Noun
+"vulgāris vulgāre","common, ordinary, vulgar",1,Adjective
 "vulgō","commonly, publicly, everywhere",1,Adverb
 "vulnerō vulnerāre vulnerāvī vulnerātus","to wound, injure",1,Verb
