@@ -33,7 +33,7 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "etiam","also, even",43,Adverb
 "habeō habēre habuī habitus","to have, hold, consider",41,Verb
 "enim","for, because (always second in its clause)",40,Conjunction
-"magnus magna magnum","big, great, large",39,Adjective
+"magnus magna magnum; māior, maius; maximus, maxima, maximum","big, great, large",39,Adjective
 "aut {;} aut…aut","or; either...or",35,Conjunction
 "ipse ipsa ipsum","he himself, she herself, that very thing",35,Pronoun
 "sī","if",35,Conjunction
@@ -224,7 +224,7 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "cōnficiō cōnficere cōnfēcī cōnfectus","to finish, accomplish",7,Verb
 "cōnscrībō cōnscrībere cōnscrīpsī cōnscrīptus","to enlist, enroll",7,Verb
 "cōnstituō cōnstituere cōnstituī cōnstitūtus","to decide, establish, set up",7,Verb
-"conveniō convenīre convēnī conventus","to come together, assemble",7,Verb
+"conveniō convenīre convēnī conventus","to come together, assemble; to be appropriate",7,Verb
 "cūra cūrae {f.}","care, concern, anxiety",7,Noun
 "ēvocō ēvocāre ēvocāvī ēvocātus","call out, summon",7,Verb
 "hostis hostis {m.}","(public) enemy, enemy combatant",7,Noun
