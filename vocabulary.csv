@@ -1140,7 +1140,7 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "cūrō cūrāre cūrāvī cūrātus","to care for, look after, attend to",1,Verb
 "curriculum curriculī {n.}","race, course, career",1,Noun
 "currō currere cucurrī cursus","to run",1,Verb
-"custōdia custōdiae {f.}","custody, guard, protection",1,Noun
+"custōdia custōdiae {f.}","guard, guard-house",1,Noun
 "custōs custōdis {m.}","guard, guardian",1,Noun
 "Cȳzicēnus Cȳzicēna Cȳzicēnum","of Cyzicus",1,Adjective
 "damnō damnāre damnāvī damnātus","to condemn, sentence",1,Verb
@@ -1751,6 +1751,7 @@ Latin Word,English Definition(s),Frequency,Part of Speech
 "Sagae Sagārum {m. pl.}","the Sagae (a Scythian people)",1,Noun
 "sagittifer sagittifera sagittiferum","arrow-bearing, armed with arrows",1,Adjective
 "salīnae salīnārum {f. pl.}","salt-works, salt pits",1,Noun
+"saltus saltūs {m}","a woody district, uncultivated but used for pasture, a forest-pasture, woodland-pasture, woodland",1,Noun
 "sapiēns sapientis","wise; (as a noun) a wise man, philosopher",1,Adjective
 "sapienter sapientius sapientissimē","wisely",1,Adverb
 "satis {or} sat ({comp.} satius)","enough, sufficient",1,"Adverb / Adjective (indecl.)"
